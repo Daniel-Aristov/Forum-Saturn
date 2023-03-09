@@ -1,10 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/news-main-page.css">
+    <link rel="stylesheet" href="css/speakers-main-page.css">
+    <link rel="stylesheet" href="css/video-main-page.css">
+    <link rel="stylesheet" href="css/trends-main-page.css">
+    <link rel="stylesheet" href="css/culture-main-page.css">
+    <link rel="stylesheet" href="css/partners-main-page.css">
+    <link rel="stylesheet" href="css/info-main-page.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
+<!--=======Шапка=======-->
+<header class="bg-dark-blue">
+    <div class="container-xxl">
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark-blue">
+            <a class="navbar-brand" href="index.html"><img src="https://www.floodinfo.ie/frs/media/filer_public_thumbnails/filer_public/88/e3/88e387fd-780f-4000-9368-4e7c2b77477d/logo_placeholder_KzjeIWk.jpg__1170x0_q85_subsampling-2_upscale.jpg" width="70" height="70" alt="logo" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Форум</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">События</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">Посетителям</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">Участникам</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">Пресса</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" aria-current="page" href="#">О нас</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-stars" type="submit">★ Избранное</button>
+                    <button class="btn btn-input" type="submit">Войти</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="row justify-content-between header__main">
+            <div class="col">
+                <p class="header__date">17 - 21 April 2023</p>
+                <h1 class="header__title">INDUSTRIAL TRANSFORMATION STARTS HERE</h1>
+                <p class="header__subtitle">#HM23 | Home of Industrial Pioneers</p>
+                <div class="input-group mt-5 mb-5">
+                    <input type="text" class="form-control" placeholder="Поиск..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">🔍</button>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href=""><img src="//placehold.it/300x230/0289A7/fff" class="d-block img-shadow" alt=""></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="//placehold.it/300x230/0289A7/fff" class="d-block img-shadow" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-end">
+                <a href="#"><img src="//placehold.it/610x500/0289A7/fff" class="mx-auto d-block img-shadow" alt=""></a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <a href="#"><img src="//placehold.it/300x230/0289A7/fff" class=" mx-auto d-block img-shadow" alt=""></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="//placehold.it/300x230/0289A7/fff" class="mx-auto d-block img-shadow" alt=""></a>
+            </div>
+            <div class="col">
+                <a href=""><img src="//placehold.it/300x230/0289A7/fff" class="mx-auto d-block img-shadow" alt=""></a>
+            </div>
+            <div class="col">
+                <a href=""><img src="//placehold.it/300x230/0289A7/fff" class="mx-auto d-block img-shadow" alt=""></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--=======Новости======== -->
+<section class="news bg-white">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <h2 class="news__title">Последние новости</h2>
+                <article class="news__item">
+                    <p class="news__item-title">
+                        Открыта регистрация на форум
+                    </p>
+                    <p class="news__item-text">
+                        Идейные соображения высшего порядка, а также начало
+                        повседневной работы по формированию позиции предоставляет
+                        широкие возможности для своевременного выполнения сверхзадачи.
+                        Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности требует от нас анализа существующих финансовых
+                        и административных условий. Следует отметить, что синтетическое тестирование
+                        однозначно фиксирует необходимость укрепления моральных ценностей.
+                    </p>
+                </article>
+                <article href="#" class="news__item">
+                    <p class="news__item-title">
+                        Открыта регистрация на форум
+                    </p>
+                    <p class="news__item-text">
+                        Идейные соображения высшего порядка, а также начало
+                        повседневной работы по формированию позиции предоставляет
+                        широкие возможности для своевременного выполнения сверхзадачи.
+                        Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности требует от нас анализа существующих финансовых
+                        и административных условий. Следует отметить, что синтетическое тестирование
+                        однозначно фиксирует необходимость укрепления моральных ценностей.
+                    </p>
+                </article>
+                <a href="#" class="all-news-link">Все новости</a>
+            </div>
+            <div class="col">
+                <p class="news__subtitle">Определена ключевая тема форума</p>
+                <div>
+                    <img src="//placehold.it/300x200/0289A7/fff" width="100%" alt="">
+                </div>
+                <article href="#" class="news__item">
+                    <p class="news__item-title">
+                        Подготовка форума
+                    </p>
+                    <p class="news__item-text">
+                        Идейные соображения высшего порядка, а также начало
+                        повседневной работы по формированию позиции предоставляет
+                        широкие возможности для своевременного выполнения сверхзадачи.
+                        Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности требует от нас анализа существующих финансовых
+                        и административных условий. Следует отметить, что синтетическое тестирование
+                        однозначно фиксирует необходимость укрепления моральных ценностей.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=======Спикеры======== -->
+<section class="speakers" style="overflow-x: hidden">
+    <div class="container-xxl" style="overflow-x: hidden">
+        <h2 class="speakers__title">Основные спикеры форума</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="1"></div>
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="2"></div>
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="3"></div>
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="4"></div>
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="5"></div>
+                <div class="swiper-slide"><img src="//placehold.it/350x350/0289A7/fff" alt="6"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=======Видеоролик======== -->
+<section class="video-forum">
+    <div class="container-xxl">
+        <div class="thumb-wrap">
+            <iframe width="1200" height="700" src="https://www.youtube.com/embed/dqoI2Y_PvC8" title="HANNOVER MESSE 2023 - Making the Difference" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!--=======Тренды======== -->
+<section class="trends">
+    <div class="container-xxl">
+        <h2 class="trends__title">Индустриальные тренды</h2>
+        <div class="row justify-content-center">
+            <div class="col align-self-center"><a class="trends__link" href="#">Цифровые двойники</a></div>
+            <div class="col align-self-center"><a class="trends__link" href="#">Новые материалы</a></div>
+            <div class="col align-self-center"><a class="trends__link" href="#">Индустрия 4.0</a></div>
+            <div class="col align-self-center"><a class="trends__link" href="#">VR&AR</a></div>
+        </div>
+    </div>
+</section>
+
+<!--=======Культура общения======== -->
+<section class="culture">
+    <div class="container-xxl">
+        <h2 class="culture__title">#МТФ Культура общения</h2>
+        <div class="row justify-content-center">
+            <div class="col align-self-center">
+                <div class="card card-cult">
+                    <img src="//placehold.it/500x300/0289A7/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card__title">Фото галереи</p>
+                        <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center">
+                <div class="card card-cult">
+                    <img src="//placehold.it/500x300/0289A7/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card__title">Фото галереи</p>
+                        <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center">
+                <div class="card card-cult">
+                    <img src="//placehold.it/500x300/0289A7/fff" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card__title">Фото галереи</p>
+                        <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=======Information======== -->
+<section class="info bg-red">
+    <div class="container-xxl">
+        <div class="row justify-content-end">
+            <div class="card-group">
+                <div class="col-4">
+                    <div class="card card-info bg-dark-blue">
+                        <div class="card-body">
+                            <h5 class="info__card-title">Заголовок</h5>
+                            <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            <a href="#" class="btn btn-info btn-info-modify_1">Стань участником</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-info bg-white">
+                        <div class="card-body">
+                            <h5 class="info__card-title info__card-title-dark-blue">Заголовок</h5>
+                            <p class="info__card-text info__card-text-dark-blue">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            <a href="#" class="btn btn-info btn-info-modify_2">Стань участником</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-info bg-light-blue">
+                        <div class="card-body">
+                            <h5 class="info__card-title">Заголовок</h5>
+                            <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную потребность дальнейших направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            <a href="#" class="btn btn-info btn-info-modify_3">Стань участником</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=======Партнеры======== -->
+<section class="partners bg-white">
+    <div class="container-xxl">
+        <p class="partners__title">Информационные партнеры 2023</p>
+        <div class="partners__inner">
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+            <div class="partners__item"><img src="//placehold.it/150x150/0289A7/fff" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!--=======Футер======== -->
+<footer>
+    <div class="container-xxl">
+        <div class="footer__title">
+            <p>Заинтересовались высокими технологиями и трендами индустрии?</p>
+            <p>Следите за новостями</p>
+        </div>
+        <div class="row footer__info">
+            <div class="col-3">
+                <img src="https://www.floodinfo.ie/frs/media/filer_public_thumbnails/filer_public/88/e3/88e387fd-780f-4000-9368-4e7c2b77477d/logo_placeholder_KzjeIWk.jpg__1170x0_q85_subsampling-2_upscale.jpg" width="60" height="60" alt="logo" loading="lazy">
+                <span class="forum-name">Промышленный форум</span>
+                <p class="company-name">ПАО ОДК "САТУРН"</p>
+            </div>
+            <div class="col-3 border-line">
+                <p><a href="#">Контакты</a></p>
+                <p><a href="#">Пресса</a></p>
+                <p><a href="#">Новости</a></p>
+                <p><a href="#">Создание аккаунта</a></p>
+            </div>
+            <div class="col-3 border-line">
+                <p><a href="#">Посетителям</a></p>
+                <p><a href="#">Для участников</a></p>
+                <p><a href="#">Новости</a></p>
+                <p><a href="#">План форума</a></p>
+            </div>
+            <div class="col-3 border-line">
+                <p><a href="#">Контакты</a></p>
+                <p><a href="#">Билеты</a></p>
+                <p><a href="#">Магазин</a></p>
+                <p><a href="#">Контакты</a></p>
+                <div class="socials">
+                    <p><a href="#"><img src="src/icons/vkontakte.png" width="25px" height="25px" alt="vk"></a></p>
+                    <p><a href="#"><img src="src/icons/facebook.png" width="25px" height="25px" alt="fb"></a></p>
+                    <p><a href="#"><img src="src/icons/telegram.png" width="25px" height="25px" alt="tg"></a></p>
+                    <p><a href="#"><img src="src/icons/instagram.png" width="25px" height="25px" alt="inst"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>

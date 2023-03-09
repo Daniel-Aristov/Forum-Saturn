@@ -1,0 +1,28 @@
+.speakers {
+    background-color: #02385A;
+    color: white;
+}
+
+.speakers__title {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/*Cлайдер*/
+.swiper-container {
+    width: calc(100% - 100px);
+    height: 100%;
+    padding: 30px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #02385A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.culture {
+    background-color: #02385A;
+}
+
+.culture__title {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.card-cult {
+    background-color: #02385A;
+    border: none;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card__title {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 15px 0 5px;
+}
+
+.card-text {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}

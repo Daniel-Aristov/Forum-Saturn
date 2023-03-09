@@ -1,0 +1,18 @@
+.partners__title {
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+}
+
+.partners__inner {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.partners__item:hover {
+    box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
+    transition: box-shadow 0.3s;
+}
