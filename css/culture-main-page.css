@@ -6,7 +6,7 @@
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.6rem;
     padding-bottom: 50px;
 }
 
@@ -24,12 +24,12 @@
 .card__title {
     color: white;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.6rem;
     padding: 15px 0 5px;
 }
 
 .card-text {
     color: white;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.1rem;
 }

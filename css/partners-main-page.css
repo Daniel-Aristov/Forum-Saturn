@@ -1,7 +1,7 @@
 .partners__title {
     color: black;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -15,4 +15,28 @@
 .partners__item:hover {
     box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
     transition: box-shadow 0.3s;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .partners__inner {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .partners__inner {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .partners__inner {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .partners__inner {
+        grid-template-columns: repeat(6,1fr);
+    }
 }

@@ -11,7 +11,7 @@
 .info__card-title {
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.3rem;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -75,3 +75,4 @@
     background-color: white;
     transition: all 0.2s linear;
 }
+

@@ -40,7 +40,7 @@ footer {
 
 .company-name {
     margin-top: 120px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
@@ -48,8 +48,27 @@ footer {
     display: flex;
     justify-content: flex-start;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .socials a {
     margin-right: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .border-line {
+        border-left: 1px solid #d5d5d5;
+        padding-left: 10px;
+    }
+
+    .forum-name {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .border-line {
+        border-left: 1px solid #d5d5d5;
+        padding-left: 30px;
+    }
 }

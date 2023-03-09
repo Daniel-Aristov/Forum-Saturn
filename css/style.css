@@ -1,3 +1,6 @@
+html, body {
+    font-size: 16px;
+}
 section {
     padding: 100px 0;
 }
@@ -17,6 +20,21 @@ section {
 .bg-red {
     background-color: red;
 }
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    section {
+        padding: 40px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    section {
+        padding: 70px 0;
+    }
+}
+
+
+
 
 
 

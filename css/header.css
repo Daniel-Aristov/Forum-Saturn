@@ -6,7 +6,7 @@ header {
     position: relative;
     color: white;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-decoration: none;
     margin-left: 30px;
 }
@@ -32,37 +32,56 @@ header {
     color: white;
 }
 
-.dropdown {
+.nav-logo {
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    background-color: #02385A;
+    color: #02385A;
+}
+
+.navbar-drop {
     position: relative;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: static;
     display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
     background-color: #02385A;
-    padding-top: 30px;
-    width: 1000px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown-content__inner {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 120px 90px;
 }
 
 .dropdown-content a {
     font-weight: bolder;
     text-align: start;
-    padding-left: 10px;
+    font-size: 1.2rem;
+    padding-left: 20px;
     padding-top: 100px;
+    margin-right: 10px;
+    margin-top: 10px;
     color: white;
     text-decoration: none;
     display: block;
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 170px;
     background-color: #04ADC0;
 }
 
@@ -72,16 +91,19 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
 }
 
 .btn-input {
     color: white;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: red;
     padding: 5px;
     letter-spacing: 4px;
+    z-index: 1000;
 }
 
 .btn-input:hover {
@@ -94,8 +116,9 @@ header {
     border: none;
     color: white;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: 5px;
+    z-index: 1000;
 }
 
 .btn-stars:hover {
@@ -110,22 +133,71 @@ header {
 .header__date {
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .header__title {
     color: white;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 4.3rem;
 }
 
 .header__subtitle {
     color: white;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .img-shadow:hover {
     box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
     transition: box-shadow 0.4s;
 }
+
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .header__title {
+        font-size: 1.6rem;
+    }
+
+    .header-img {
+        width: 350px;
+        height: 280px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header__title {
+        font-size: 2rem;
+    }
+
+    .header-img {
+        width: 370px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .menu-item {
+        font-size: 0.9rem;
+        margin-left: 18px;
+    }
+
+    .btn-input {
+        font-size: 0.9rem;
+    }
+
+    .btn-stars {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content a {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+

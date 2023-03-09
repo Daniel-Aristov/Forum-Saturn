@@ -7,7 +7,7 @@
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.6rem;
     padding-bottom: 20px;
 }
 
@@ -20,9 +20,37 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.1rem;
     background: #02385A;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .swiper-slide img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .swiper-slide img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .swiper-slide img {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .swiper-slide img {
+        width: 270px;
+        height: 270px;
+    }
 }
