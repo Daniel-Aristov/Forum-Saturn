@@ -1,21 +1,22 @@
 .speakers {
     background-color: #02385A;
     color: white;
+    padding: 50px 0;
 }
 
 .speakers__title {
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding-bottom: 20px;
 }
 
 /*Cлайдер*/
 .swiper-container {
-    width: calc(100% - 100px);
+    width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 20px 0;
 }
 
 .swiper-slide {
@@ -27,10 +28,33 @@
     align-items: center;
 }
 
+.swiper-slide img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.slider-text {
+    text-align: right;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    text-shadow: 2px 2px 0 #000000;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
     .swiper-slide img {
         width: 130px;
         height: 130px;
+    }
+
+    .slider-text {
+        font-size: 0.8rem;
+        bottom: 10px;
+        right: 10px;
     }
 }
 
@@ -39,6 +63,18 @@
         width: 180px;
         height: 180px;
     }
+
+    .slider-text {
+        font-size: 1rem;
+        bottom: 10px;
+        right: 30px;
+    }
+
+    .slider-text {
+        font-size: 1.2rem;
+        bottom: 20px;
+        right: 15px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -46,11 +82,23 @@
         width: 240px;
         height: 240px;
     }
+
+    .slider-text {
+        font-size: 1.2rem;
+        bottom: 20px;
+        right: 30px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .swiper-slide img {
         width: 270px;
         height: 270px;
+    }
+
+    .slider-text {
+        font-size: 1.3rem;
+        bottom: 20px;
+        right: 30px;
     }
 }

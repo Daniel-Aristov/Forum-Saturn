@@ -1,14 +1,18 @@
+.partners {
+    padding: 50px 0;
+}
+
 .partners__title {
     color: black;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .partners__inner {
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    margin-top: 30px;
+    margin-top: 50px;
     gap: 40px;
 }
 
@@ -17,7 +21,7 @@
 }
 
 .partners__inner > div:hover {
-    box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
+    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
     transition: all 0.3s linear;
 }
 

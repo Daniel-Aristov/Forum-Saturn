@@ -1,17 +1,19 @@
 .trends {
     background-color: red;
+    padding: 50px 0;
 }
 
 .trends__title {
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 2em;
     padding-bottom: 50px;
 }
 
 .trends__link {
     display: block;
+    font-size: 1.2rem;
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -21,6 +23,7 @@
     font-style: normal;
     font-weight: bolder;
     padding: 8px 20px;
+    transition: all 0.2s linear;
 }
 
 .trends__link:hover {

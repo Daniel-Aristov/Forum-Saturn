@@ -1,4 +1,5 @@
 .culture {
+    padding: 50px;
     background-color: #02385A;
 }
 
@@ -6,7 +7,7 @@
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding-bottom: 50px;
 }
 
@@ -22,13 +23,15 @@
 }
 
 .card__title {
+    text-transform: uppercase;
     color: white;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 15px 0 5px;
 }
 
 .card-text {
+    text-align: justify;
     color: white;
     font-weight: normal;
     font-size: 1.1rem;

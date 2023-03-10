@@ -1,5 +1,5 @@
 header {
-    padding-bottom: 80px;
+    padding-bottom: 0;
 }
 
 .menu-item {
@@ -41,7 +41,7 @@ header {
     color: #02385A;
 }
 
-.navbar-drop {
+.navbar-drop2 {
     position: relative;
     margin-bottom: 20px;
 }
@@ -83,11 +83,12 @@ header {
     width: 300px;
     height: 170px;
     background-color: #04ADC0;
+    transition: all 0.1s linear;
 }
 
 .dropdown-content a:hover {
     background-color: red;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 
 .dropdown:hover .dropdown-content {
@@ -127,16 +128,18 @@ header {
 }
 
 .header__main {
-    padding-top: 30px;
+    padding: 30px 0 80px;
 }
 
 .header__date {
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .header__title {
+    text-transform: uppercase;
     color: white;
     font-weight: bold;
     font-size: 4.3rem;
@@ -146,6 +149,8 @@ header {
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
+    margin-bottom: 100px;
+    text-transform: uppercase;
 }
 
 .img-shadow {
@@ -153,40 +158,69 @@ header {
 }
 
 .img-shadow:hover {
-    box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
+    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
     transition: all 0.3s linear;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
+    .dropdown-content__inner {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 40px 90px;
+    }
+
     .header__title {
-        font-size: 1.6rem;
+        font-size: 2.8rem;
     }
 
     .header-img {
         width: 350px;
         height: 280px;
+        margin: 20px 0;
+    }
+
+    .btn-stars {
+        z-index: 0;
+    }
+
+    .btn-input {
+        z-index: 0;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .header__title {
-        font-size: 2rem;
+        font-size: 2.9rem;
     }
 
     .header-img {
         width: 370px;
         height: 300px;
     }
+
+    .btn-stars {
+        z-index: 0;
+    }
+
+    .btn-input {
+        z-index: 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .btn-stars {
+        z-index: 0;
+    }
 
+    .btn-input {
+        z-index: 0;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .menu-item {
-        font-size: 0.9rem;
-        margin-left: 18px;
+        font-size: 1.1rem;
+        margin-left: 19px;
     }
 
     .btn-input {
