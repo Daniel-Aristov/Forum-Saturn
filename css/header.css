@@ -148,11 +148,14 @@ header {
     font-size: 1.2rem;
 }
 
-.img-shadow:hover {
-    box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
-    transition: box-shadow 0.4s;
+.img-shadow {
+    transition: all 0.3s linear;
 }
 
+.img-shadow:hover {
+    box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
+    transition: all 0.3s linear;
+}
 
 @media (min-width: 0px) and (max-width: 575.98px) {
     .header__title {

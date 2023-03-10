@@ -12,9 +12,13 @@
     gap: 40px;
 }
 
-.partners__item:hover {
+.partners__inner > div {
+    transition: all 0.3s linear;
+}
+
+.partners__inner > div:hover {
     box-shadow: -7px 7px 0 3px rgba(160, 190, 212, 1);
-    transition: box-shadow 0.3s;
+    transition: all 0.3s linear;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
