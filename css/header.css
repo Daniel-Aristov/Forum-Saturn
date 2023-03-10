@@ -153,6 +153,29 @@ header {
     text-transform: uppercase;
 }
 
+.header-card-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 1000;
+    letter-spacing: 2px;
+    left: 20px;
+    bottom: 20px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000000;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.card-img {
+    display: block;
+    position: relative;
+    background-color: #04ADC0;
+}
+
 .img-shadow {
     transition: all 0.3s linear;
 }
