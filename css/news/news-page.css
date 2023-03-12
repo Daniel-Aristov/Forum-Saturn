@@ -168,8 +168,12 @@
     position: relative;
 }
 
-.last-news-category__card__inner:hover {
+.last-news-category__card__inner:hover > .last-news-card__img img {
     box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
+    transition: all 0.1s linear;
+}
+
+.last-news-card__img img {
     transition: all 0.1s linear;
 }
 
@@ -248,14 +252,17 @@
 }
 
 .page-link:hover {
+    border: 1px solid red;
     background-color: red;
     color: white;
 }
 
-.active {
-    background-color: red;
+.pagination > .active > a
+{
+    background-color: red !Important;;
     color: white;
     font-weight: bolder;
+    border: solid 1px red !Important;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
