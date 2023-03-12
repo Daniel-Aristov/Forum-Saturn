@@ -1,11 +1,11 @@
 html, body {
     font-size: 16px;
-    height: 100%;
 }
 
 .wrapper {
-    position: relative;
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -26,6 +26,10 @@ section {
 
 .bg-red {
     background-color: red;
+}
+
+[aria-current="page"] {
+    color: red;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {

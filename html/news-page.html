@@ -1,171 +1,374 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форум</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/news-page.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main/header.css">
+    <link rel="stylesheet" href="../css/main/footer.css">
+    <link rel="stylesheet" href="../css/news/news-page.css">
 </head>
 <body>
 
 <div class="wrapper">
-    <!--=======Шапка=======-->
-    <header class="bg-dark-blue">
-      <div class="container-xxl">
-        <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
-          <div class="navbar-drop"></div>
-          <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo" loading="lazy"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="html/forum.html">Форум</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">События</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">Новости</a>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">Посетителям</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">Участникам</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">Пресса</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="menu-item" aria-current="page" href="#">О нас</a>
-                <div class="dropdown-content">
-                  <div class="dropdown-content__inner">
-                    <div><a href="#">Продукты</a></div>
-                    <div><a href="#">Разделы</a></div>
-                    <div><a href="#">Партнеры</a></div>
-                    <div><a href="#">Инновации</a></div>
-                    <div><a href="#">Технологии</a></div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
-              <button class="btn btn-input" type="submit">ВОЙТИ</button>
-            </form>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <!--=======Навигация=======-->
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
+        <div class="container-xxl">
+            <div class="navbar-drop"></div>
+            <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo"
+                                                                       loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="forum-page.html">Форум</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">События</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item active-menu-item" aria-current="page" href="news-page.html">Новости</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Посетителям</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Участникам</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Пресса</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">О нас</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
+                    <button class="btn btn-input" type="submit">ВОЙТИ</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <!--=======Основная часть======== -->
-    <section class="news">
-      <div class="container-xxl">
-
-      </div>
+    <section class="news__category bg-red">
+        <div class="container-xxl">
+            <div class="news__category__inner">
+                <buttun class="news-category-btn">AI & Машинное обучение</buttun>
+                <buttun class="news-category-btn">Карбон-нейтральная продукция</buttun>
+                <buttun class="news-category-btn">Энергетический менеджмент</buttun>
+                <buttun class="news-category-btn">Водород & Топливо</buttun>
+                <buttun class="news-category-btn">Индустрия 4.0</buttun>
+                <buttun class="news-category-btn all-btn category-active">Все новости</buttun>
+                <buttun class="news-category-btn all-btn">Все разделы</buttun>
+            </div>
+        </div>
+    </section>
+    <section class="top-news bg-dark-blue">
+        <div class="container-xxl">
+            <h2 class="top-news-title">Топ новостей</h2>
+            <div class="row breakpoints top-news__inner">
+                <div class="col-lg-8">
+                    <article class="top-news__item-main top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <div class="top-news__news-img">
+                            <img src="../src/img/main-news.jpg" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Индустриальная трансформация</p>
+                        <p class="top-news__item-title">
+                            Премьера промышленной трансформации в октябре на форуме
+                        </p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <div class="top-news__news-img">
+                            <img src="../src/img/сжатый%20воздух%20и%20вакуум.jpg" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Германия - страна компрессоров и мыслителей
+                        </p>
+                    </article>
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <div class="top-news__news-img">
+                            <img src="../src/img/будущее%20работы.jpg" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="row breakpoints top-news__inner">
+                <div class="col-lg-4">
+                    <h2 class="top-last-title">Последние новости</h2>
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Германия - страна компрессоров и мыслителей
+                        </p>
+                    </article>
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры
+                        </p>
+                    </article>
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры
+                        </p>
+                    </article>
+                    <article class="top-news__item top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <p class="top-news__item-title top-news__item-title-submain">
+                            Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры
+                        </p>
+                    </article>
+                </div>
+                <div class="col-lg-8">
+                    <article class="top-news__item-main top-news__item-line" onclick="location.href='news-item-page.html';">
+                        <div class="top-news__news-img">
+                            <img src="../src/img/автоматизация%20логистики.jpg" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Автоматизация логистики</p>
+                        <p class="top-news__item-title">
+                            Новое поколение TMS-системы для автоматизации транспортной компании
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last-news-category bg-white">
+        <div class="container-xxl">
+            <div class="row breakpoints justify-content-center">
+                <div class="col-lg-12">
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card" onclick="location.href='news-item-page.html';">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <h5 class="card-title">Возведение в квадрат генерации сжатого воздуха</h5>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pagination">
+        <div class="container-xxl">
+            <nav aria-label="Пример навигации по страницам">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Предыдущая">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item" disabled><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Следующая">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
     <!--=======Футер======== -->
     <footer>
-      <div class="container-xxl">
-        <div class="footer__title">
-          <p>Интересуют индустриальные тренды или новости форума?</p>
-          <p>Подпишись на новости сайта</p>
-        </div>
-        <div class="row footer__info">
-          <div class="col-3">
-            <div class="logo-footer">
-              <p><img src="../src/img/logo.png" width="70" height="70" alt="logo" loading="lazy"></p>
-              <div class="forum-name">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</div>
+        <div class="container-xxl">
+            <div class="footer__title">
+                <p>Интересуют индустриальные тренды или новости форума?</p>
+                <p>Подпишись на новости сайта</p>
             </div>
-            <p class="company-name">ПАО "ОДК-САТУРН"</p>
-          </div>
-          <div class="col-3 border-line">
-            <p><a href="#">Контакты</a></p>
-            <p><a href="#">Пресса</a></p>
-            <p><a href="#">Новости</a></p>
-            <p><a href="#">Регистрация</a></p>
-          </div>
-          <div class="col-3 border-line">
-            <p><a href="#">Как добраться</a></p>
-            <p><a href="#">Размещение</a></p>
-            <p><a href="#">План форума</a></p>
-            <p><a href="#">Питание</a></p>
-            <p><a href="#">Условия участия</a></p>
-          </div>
-          <div class="col-3 border-line">
-            <p><a href="#">Организаторы</a></p>
-            <p><a href="#">Партнеры</a></p>
-            <p><a href="#">Участники</a></p>
-            <p><a href="#">Спикеры</a></p>
-            <p><a href="#">Архив форума</a></p>
-            <div class="socials">
-              <p><a href="#"><img src="../src/icons/tellegram.png" alt="telegram"></a></p>
-              <p><a href="#"><img src="../src/icons/VK.png" alt="vkontakte"></a></p>
-              <p><a href="#"><img src="../src/icons/Youtube.png" alt="youtube"></a></p>
+            <div class="row footer__info">
+                <div class="col-3">
+                    <div class="logo-footer">
+                        <p><img src="../src/img/logo.png" width="70" height="70" alt="logo" loading="lazy"></p>
+                        <div class="forum-name">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</div>
+                    </div>
+                    <p class="company-name">ПАО "ОДК-САТУРН"</p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Контакты</a></p>
+                    <p><a href="#">Пресса</a></p>
+                    <p><a href="#">Новости</a></p>
+                    <p><a href="#">Регистрация</a></p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Как добраться</a></p>
+                    <p><a href="#">Размещение</a></p>
+                    <p><a href="#">План форума</a></p>
+                    <p><a href="#">Питание</a></p>
+                    <p><a href="#">Условия участия</a></p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Организаторы</a></p>
+                    <p><a href="#">Партнеры</a></p>
+                    <p><a href="#">Участники</a></p>
+                    <p><a href="#">Спикеры</a></p>
+                    <p><a href="#">Архив форума</a></p>
+                    <div class="socials">
+                        <p><a href="#"><img src="../src/icons/tellegram.png" alt="telegram"></a></p>
+                        <p><a href="#"><img src="../src/icons/VK.png" alt="vkontakte"></a></p>
+                        <p><a href="#"><img src="../src/icons/Youtube.png" alt="youtube"></a></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
 </body>
 </html>

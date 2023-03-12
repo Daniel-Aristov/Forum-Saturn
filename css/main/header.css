@@ -8,7 +8,7 @@ header {
     font-weight: bolder;
     font-size: 1.1rem;
     text-decoration: none;
-    margin-left: 30px;
+    margin: 0 20px;
 }
 
 .menu-item::before {
@@ -23,7 +23,7 @@ header {
     transition: 0.3s;
 }
 
-.menu-item:hover::before {
+.menu-item:has(+ .dropdown-content:hover)::before, .menu-item:hover::before {
     transform: scaleX(1);
     transition: 0.25s;
 }
@@ -32,23 +32,25 @@ header {
     color: white;
 }
 
+.active-menu-item::before {
+    content: ' ';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transform: scaleX(1);
+}
+
 .nav-logo {
     z-index: 1000;
-}
-
-.navbar-toggler {
-    background-color: #02385A;
-    color: #02385A;
-}
-
-.navbar-drop2 {
-    position: relative;
-    margin-bottom: 20px;
 }
 
 .dropdown {
     position: static;
     display: inline-block;
+    text-align: center;
 }
 
 .dropdown-content {
@@ -59,14 +61,16 @@ header {
     right: 0;
     text-align: center;
     width: 100%;
-    background-color: #02385A;
     z-index: 10;
 }
 
 .dropdown-content__inner {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 120px 90px;
+    justify-content: flex-start;
+    padding: 50px 150px 50px;
+    margin-top: 1rem;
+    background-color: #02385A;
 }
 
 .dropdown-content a {
@@ -80,8 +84,8 @@ header {
     color: white;
     text-decoration: none;
     display: block;
-    width: 300px;
-    height: 170px;
+    width: 270px;
+    height: 160px;
     background-color: #04ADC0;
     transition: all 0.1s linear;
 }
@@ -171,9 +175,46 @@ header {
 }
 
 .card-img {
-    display: block;
+    cursor: pointer;
     position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-bg-blue {
     background-color: #04ADC0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.img-bg-blue:hover {
+    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
+    transition: all 0.3s linear;
+}
+
+.img-bg-red {
+    background-color: red;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.img-bg-red:hover {
+    box-shadow: -6px 6px 0 3px rgb(38, 151, 216);
+    transition: all 0.3s linear;
 }
 
 .img-shadow {
@@ -209,6 +250,11 @@ header {
     .btn-input {
         z-index: 0;
     }
+
+    .header-card-text {
+        font-size: 1.4rem;
+        left: 120px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -228,6 +274,11 @@ header {
     .btn-input {
         z-index: 0;
     }
+
+    .header-card-text {
+        font-size: 1.4rem;
+        left: 200px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -238,12 +289,17 @@ header {
     .btn-input {
         z-index: 0;
     }
+
+    .header-card-text {
+        font-size: 1.1rem;
+        left: 10px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .menu-item {
         font-size: 1.1rem;
-        margin-left: 19px;
+        margin: 0 10px;
     }
 
     .btn-input {
@@ -257,6 +313,10 @@ header {
     .dropdown-content a {
         width: 270px;
         height: 150px;
+    }
+
+    .header-card-text {
+        font-size: 1.2rem;
     }
 }
 

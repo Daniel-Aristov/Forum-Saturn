@@ -17,16 +17,28 @@
 }
 
 .news__item {
-    padding: 0 30px;
-    border-bottom: 5px solid #04ADC0;
+    padding: 0 10px;
+    margin-bottom: 60px;
     position: relative;
     cursor: pointer;
     transition: all 0.2s linear;
 }
 
-.news__item:hover {
-    border-bottom: 5px solid red;
-    transition: all 0.3s linear;
+.news__item:before {
+    content: ' ';
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    transform: scaleY(1);
+    transition: all 0.2s;
+}
+
+.news__item:hover:before {
+    transform: scaleY(1.7);
+    transition: all 0.2s;
 }
 
 .news__item-date {

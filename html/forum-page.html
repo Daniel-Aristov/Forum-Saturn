@@ -8,108 +8,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/forum-page.css">
+    <link rel="stylesheet" href="../css/main/header.css">
+    <link rel="stylesheet" href="../css/main/footer.css">
+    <link rel="stylesheet" href="../css/forum/forum-page.css">
 </head>
 <body>
 
 <div class="wrapper">
-    <!--=======Шапка=======-->
-    <header class="bg-dark-blue">
+    <!--=======Навигация=======-->
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
         <div class="container-xxl">
-            <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
-                <div class="navbar-drop"></div>
-                <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo" loading="lazy"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="html/forum.html">Форум</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+            <div class="navbar-drop"></div>
+            <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="dropdown">
+                        <a class="menu-item active-menu-item" aria-current="page" href="html/forum.html">Форум</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">События</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">События</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">Новости</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">Посетителям</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="news-page.html">Новости</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Посетителям</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">Участникам</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Участникам</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">Пресса</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Пресса</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                        <li class="dropdown">
-                            <a class="menu-item" aria-current="page" href="#">О нас</a>
-                            <div class="dropdown-content">
-                                <div class="dropdown-content__inner">
-                                    <div><a href="#">Продукты</a></div>
-                                    <div><a href="#">Разделы</a></div>
-                                    <div><a href="#">Партнеры</a></div>
-                                    <div><a href="#">Инновации</a></div>
-                                    <div><a href="#">Технологии</a></div>
-                                </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">О нас</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
                             </div>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
-                        <button class="btn btn-input" type="submit">ВОЙТИ</button>
-                    </form>
-                </div>
-            </nav>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
+                    <button class="btn btn-input" type="submit">ВОЙТИ</button>
+                </form>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!--=======Основная часть======== -->
     <section class="forum">

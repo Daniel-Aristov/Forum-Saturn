@@ -18,6 +18,12 @@
     width: 90%;
 }
 
+.card-cult img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 .card-body {
     padding: 5px;
 }
@@ -27,7 +33,8 @@
     color: white;
     font-weight: bolder;
     font-size: 1.4rem;
-    padding: 15px 0 5px;
+    padding: 15px 0 0;
+    margin: 0;
 }
 
 .card-text {
@@ -35,4 +42,5 @@
     color: white;
     font-weight: normal;
     font-size: 1.1rem;
+    margin: 0;
 }
