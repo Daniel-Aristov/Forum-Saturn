@@ -65,6 +65,11 @@
     margin-bottom: 40px;
 }
 
+.news__img img {
+    background-size: cover;
+    position: center;
+}
+
 .all-news-link {
     text-transform: uppercase;
     display: block;
