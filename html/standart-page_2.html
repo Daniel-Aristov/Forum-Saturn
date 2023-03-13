@@ -1,135 +1,367 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Стандартная страница 2</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/main/header.css">
-  <link rel="stylesheet" href="../css/main/footer.css">
-  <link rel="stylesheet" href="../css/standart/standart-page_1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стандартная страница 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main/header.css">
+    <link rel="stylesheet" href="../css/main/footer.css">
+    <link rel="stylesheet" href="../css/standart/standart-page_1.css">
+    <link rel="stylesheet" href="../css/standart/standart-page_2.css">
 </head>
 <body>
 
 <div class="wrapper">
-  <!--=======Навигация======== -->
-  <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
-    <div class="container-xxl">
-      <div class="navbar-drop"></div>
-      <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo"
-                                                                 loading="lazy"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="forum-page.html">Форум</a>
-            <div class="dropdown-content">
-              <div class="dropdown-content__inner">
-                <div><a href="#">Продукты</a></div>
-                <div><a href="#">Разделы</a></div>
-                <div><a href="#">Партнеры</a></div>
-                <div><a href="#">Инновации</a></div>
-                <div><a href="#">Технологии</a></div>
-              </div>
+    <!--=======Навигация======== -->
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue">
+        <div class="container-xxl">
+            <div class="navbar-drop"></div>
+            <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="70" alt="logo"
+                                                                       loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="forum-page.html">Форум</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">Продукты</a></div>
+                                <div><a href="#">Разделы</a></div>
+                                <div><a href="#">Партнеры</a></div>
+                                <div><a href="#">Инновации</a></div>
+                                <div><a href="#">Технологии</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="program-page.html">События</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="news-page.html">Новости</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content__inner">
+                                <div><a href="#">AI & Машинное обучение</a></div>
+                                <div><a href="#">Энергетический менеджмент</a></div>
+                                <div><a href="#">Карбон-нейтральная продукция</a></div>
+                                <div><a href="#">Водород & Топливо</a></div>
+                                <div><a href="#">Индустрия 4.0</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Посетителям</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">Участникам</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="press-page.html">Пресса</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="menu-item" aria-current="page" href="#">О нас</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
+                    <button class="btn btn-input" type="submit">ВОЙТИ</button>
+                </form>
             </div>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="program-page.html">События</a>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="news-page.html">Новости</a>
-            <div class="dropdown-content">
-              <div class="dropdown-content__inner">
-                <div><a href="#">AI & Машинное обучение</a></div>
-                <div><a href="#">Энергетический менеджмент</a></div>
-                <div><a href="#">Карбон-нейтральная продукция</a></div>
-                <div><a href="#">Водород & Топливо</a></div>
-                <div><a href="#">Индустрия 4.0</a></div>
-              </div>
+        </div>
+    </nav>
+
+    <!--=======Основная часть======== -->
+    <header class="page-header bg-dark-blue">
+        <div class="container-xxl">
+            <div class="page-item__title-block__inner">
+                <div class="page-item__title-text">
+                    <p class="page-item__title__category">Выбор отеля</p>
+                    <h2 class="page-item__title">Лучшее размещение</h2>
+                    <p class="page-item__subtitle">Kaeser является частью HANNOVER MESSE с 1954 года. Для
+                        жителей Верхней Франконии всегда было важно показать, что они могут предложить нечто
+                        большее, чем просто компоненты для производства сжатого воздуха. Постоянные дальнейшие
+                        разработки были и будут направлены на повышение рентабельности, эффективности,
+                        надежности и, следовательно, устойчивости - в том числе благодаря инновациям,
+                        представленным в 2023 году, которые представляют собой еще один шаг к углеродно-нейтральному
+                        производству.</p>
+                </div>
+                <div class="page-img"><img src="//placehold.it/230x230/0289A7/fff" alt="img"></div>
             </div>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="#">Посетителям</a>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="#">Участникам</a>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="press-page.html">Пресса</a>
-          </li>
-          <li class="dropdown">
-            <a class="menu-item" aria-current="page" href="#">О нас</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <button class="btn btn-stars" type="submit">★ ИЗБРАННОЕ</button>
-          <button class="btn btn-input" type="submit">ВОЙТИ</button>
-        </form>
-      </div>
+            <nav class="page-item__title-block__nav">
+                <ul>
+                    <li class="nav-item"><a href="#">Выбранный отель</a></li>
+                    <li class="nav-item"><a href="#">Переселение в отель</a></li>
+                    <li class="nav-item"><a href="#">Привилегии</a></li>
+                    <li class="nav-item"><a href="#">Кэмпинг</a></li>
+                    <li class="nav-item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="page__inner">
+        <div class="container-xxl">
+            <h2 class="page-title">Программа выбранного отеля</h2>
+            <p class="page-subtitle">Равным образом, перспективное планирование выявляет срочную потребность.</p>
+            <div class="row breakpoint d-flex justify-content-center mt-4">
+                <div class="col-lg-4 page__inner-item">Равным образом, перспективное планирование выявляет срочную
+                    потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров. Равным образом, перспективное планирование
+                    выявляет срочную потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров.
+                </div>
+                <div class="col-lg-4 page__inner-item">Равным образом, перспективное планирование выявляет срочную
+                    потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров. Равным образом, перспективное планирование
+                    выявляет срочную потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров.
+                </div>
+                <div class="col-lg-4 page__inner-item">Равным образом, перспективное планирование выявляет срочную
+                    потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров. Равным образом, перспективное планирование
+                    выявляет срочную потребность дальнейших
+                    направлений развития. Внезапно, независимые государства могут быть объединены в целые кластеры себе
+                    подобных. Следует отметить, что граница обучения кадров.
+                </div>
+            </div>
+            <button class="btn page-btn">Выбрать</button>
+        </div>
+    </section>
+    <section class="info bg-red">
+        <div class="container-xxl">
+            <div class="row breakpoints gy-5 justify-content-end">
+                <div class="card-group">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card card-info bg-dark-blue">
+                            <div class="card-body">
+                                <h5 class="info__card-title">Посетителям</h5>
+                                <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную
+                                    потребность дальнейших направлений развития. Внезапно, независимые государства могут
+                                    быть объединены в целые кластеры себе подобных. Следует отметить, что граница
+                                    обучения
+                                    кадров.</p>
+                                <a href="#" class="btn btn-info btn-info-modify_1">Спланировать посещение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card card-info bg-white">
+                            <div class="card-body">
+                                <h5 class="info__card-title info__card-title-dark-blue">Участникам</h5>
+                                <p class="info__card-text info__card-text-dark-blue">Равным образом, перспективное
+                                    планирование выявляет срочную потребность дальнейших направлений развития. Внезапно,
+                                    независимые государства могут быть объединены в целые кластеры себе подобных.
+                                    Следует
+                                    отметить, что граница обучения кадров.</p>
+                                <a href="#" class="btn btn-info btn-info-modify_2">Стать участником</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card card-info bg-dark-red">
+                            <div class="card-body">
+                                <h5 class="info__card-title">Журналистам</h5>
+                                <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную
+                                    потребность дальнейших направлений развития. Внезапно, независимые государства могут
+                                    быть объединены в целые кластеры себе подобных. Следует отметить, что граница
+                                    обучения
+                                    кадров.</p>
+                                <a href="#" class="btn btn-info btn-info-modify_3">Аккридитация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-part">
+        <div class="container-xxl">
+            <div class="main-part__card">
+                <div>
+                    <p class="main-part__card-title">Курс на социально-ориентированный национальный проект</p>
+                    <p class="main-part__card-discription">Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений. Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений.</p>
+                    <button class="btn page-btn">Подробнее...</button>
+                </div>
+                <div class="main-part__card-img"><img class="card-img-top" src="//placehold.it/550x400/0289A7/fff" alt="img"></div>
+            </div>
+            <div class="main-part__card">
+                <div class="main-part__card-img"><img class="card-img-top" src="//placehold.it/550x400/0289A7/fff" alt="img"></div>
+                <div>
+                    <p class="main-part__card-title">Курс на социально-ориентированный национальный проект</p>
+                    <p class="main-part__card-discription">Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений. Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений.</p>
+                    <button class="btn page-btn">Подробнее...</button>
+                </div>
+            </div>
+            <div class="main-part__card">
+                <div>
+                    <p class="main-part__card-title">Курс на социально-ориентированный национальный проект</p>
+                    <p class="main-part__card-discription">Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений. Таким образом, базовый вектор развития, в своём классическом
+                        представлении, допускает внедрение поставленных обществом задач. Принимая во внимание показатели
+                        успешности, высококачественный прототип будущего проекта позволяет выполнить важные задания по
+                        разработке новых предложений.</p>
+                    <button class="btn page-btn">Подробнее...</button>
+                </div>
+                <div class="main-part__card-img"><img class="card-img-top" src="//placehold.it/550x400/0289A7/fff" alt="img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="page-insert bg-dark-blue">
+        <div class="container-xxl">
+            <h2 class="page-title">Вот вам яркий пример современных тенденций</h2>
+            <div class="page-insert__inner">
+                <p class="page-insert-text">Следует отметить, что внедрение современных методик играет важную роль в
+                    формировании форм воздействия. Разнообразный и богатый опыт говорит нам, что базовый вектор развития
+                    однозначно фиксирует необходимость укрепления моральных ценностей.</p>
+                <ul class="page-insert-text">
+                    <li>Современные технологии достигли такого уровня</li>
+                    <li>Банальные, но неопровержимые выводы, а также независимые государства</li>
+                    <li>Ключевые особенности структуры проекта</li>
+                    <li>Значимость этих проблем настолько очевидна</li>
+                    <li>Интерактивные прототипы превращены в посмешище</li>
+                    <li>Команды профессионалов однозначно определяет каждого участника</li>
+                    <li>Представители современных социальных резервов</li>
+                </ul>
+                <p class="page-insert-text">Следует отметить, что внедрение современных методик играет важную роль в
+                    формировании форм воздействия. Разнообразный и богатый опыт говорит нам, что базовый вектор развития
+                    однозначно фиксирует необходимость укрепления моральных ценностей. Следует отметить, что внедрение
+                    современных методик играет важную роль в
+                    формировании форм воздействия. Разнообразный и богатый опыт говорит нам, что базовый вектор развития
+                    однозначно фиксирует необходимость укрепления моральных ценностей.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="downloads">
+        <div class="container-xxl">
+            <h2 class="page-title">Скачать</h2>
+            <div class="row breakpoints">
+                <div class="col-lg-6">
+                    <div class="downloads__card">
+                        <div class="downloads__card-icon"><img src="../src/icons/download.png" alt="download"></div>
+                        <div class="downloads__card__inner">
+                            <h2 class="downloads__card-title">Conditions of Participation Call for Papers</h2>
+                            <p class="downloads__card-subtitle">PDF, 452KB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="downloads__card">
+                        <div class="downloads__card-icon"><img src="../src/icons/download.png" alt="download"></div>
+                        <div class="downloads__card__inner">
+                            <h2 class="downloads__card-title">Event Program - 2nd Issue</h2>
+                            <p class="downloads__card-subtitle">PDF, 346KB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-
-  <!--=======Основная часть======== -->
-
-
-  <!--=======Футер======== -->
-  <footer>
-    <div class="container-xxl">
-      <div class="footer__title">
-        <p>Интересуют индустриальные тренды или новости форума?</p>
-        <p>Подпишись на новости сайта</p>
-      </div>
-      <div class="row footer__info">
-        <div class="col-3">
-          <div class="logo-footer">
-            <p><img src="../src/img/logo.png" width="70" height="70" alt="logo" loading="lazy"></p>
-            <div class="forum-name">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</div>
-          </div>
-          <p class="company-name">ПАО "ОДК-САТУРН"</p>
+    <div class="contacts mb-5">
+        <div class="container-xxl">
+            <h2 class="page-title">Контакты</h2>
+            <div class="row breakpoints d-flex justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="contacts__card">
+                        <div class="contacts__card-avatar">
+                            <img src="//placehold.it/120x120/0289A7/fff" alt="avatar">
+                            <a href="#" class="contacts__card-mail-btn">E-mail</a>
+                        </div>
+                        <div class="contacts__card__inner">
+                            <h2 class="contacts__card-title">Иван Иванов</h2>
+                            <p class="contacts__card-subtitle">Инженер</p>
+                            <p class="contacts__card-subtitle">+7-920-152-65-78</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contacts__card">
+                        <div class="contacts__card-avatar">
+                            <img src="//placehold.it/120x120/0289A7/fff" alt="avatar">
+                            <a href="#" class="contacts__card-mail-btn">E-mail</a>
+                        </div>
+                        <div class="contacts__card__inner">
+                            <h2 class="contacts__card-title">Евгений Смирнов</h2>
+                            <p class="contacts__card-subtitle">Программист</p>
+                            <p class="contacts__card-subtitle">+7-914-157-89-56</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-3 border-line">
-          <p><a href="#">Контакты</a></p>
-          <p><a href="#">Пресса</a></p>
-          <p><a href="#">Новости</a></p>
-          <p><a href="#">Регистрация</a></p>
-        </div>
-        <div class="col-3 border-line">
-          <p><a href="#">Как добраться</a></p>
-          <p><a href="#">Размещение</a></p>
-          <p><a href="#">План форума</a></p>
-          <p><a href="#">Питание</a></p>
-          <p><a href="#">Условия участия</a></p>
-        </div>
-        <div class="col-3 border-line">
-          <p><a href="#">Организаторы</a></p>
-          <p><a href="#">Партнеры</a></p>
-          <p><a href="#">Участники</a></p>
-          <p><a href="#">Спикеры</a></p>
-          <p><a href="#">Архив форума</a></p>
-          <div class="socials">
-            <p><a href="#"><img src="../src/icons/tellegram.png" alt="telegram"></a></p>
-            <p><a href="#"><img src="../src/icons/VK.png" alt="vkontakte"></a></p>
-            <p><a href="#"><img src="../src/icons/Youtube.png" alt="youtube"></a></p>
-          </div>
-        </div>
-      </div>
     </div>
-  </footer>
+
+    <!--=======Футер======== -->
+    <footer>
+        <div class="container-xxl">
+            <div class="footer__title">
+                <p>Интересуют индустриальные тренды или новости форума?</p>
+                <p>Подпишись на новости сайта</p>
+            </div>
+            <div class="row footer__info">
+                <div class="col-3">
+                    <div class="logo-footer">
+                        <p><img src="../src/img/logo.png" width="70" height="70" alt="logo" loading="lazy"></p>
+                        <div class="forum-name">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</div>
+                    </div>
+                    <p class="company-name">ПАО "ОДК-САТУРН"</p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Контакты</a></p>
+                    <p><a href="#">Пресса</a></p>
+                    <p><a href="#">Новости</a></p>
+                    <p><a href="#">Регистрация</a></p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Как добраться</a></p>
+                    <p><a href="#">Размещение</a></p>
+                    <p><a href="#">План форума</a></p>
+                    <p><a href="#">Питание</a></p>
+                    <p><a href="#">Условия участия</a></p>
+                </div>
+                <div class="col-3 border-line">
+                    <p><a href="#">Организаторы</a></p>
+                    <p><a href="#">Партнеры</a></p>
+                    <p><a href="#">Участники</a></p>
+                    <p><a href="#">Спикеры</a></p>
+                    <p><a href="#">Архив форума</a></p>
+                    <div class="socials">
+                        <p><a href="#"><img src="../src/icons/tellegram.png" alt="telegram"></a></p>
+                        <p><a href="#"><img src="../src/icons/VK.png" alt="vkontakte"></a></p>
+                        <p><a href="#"><img src="../src/icons/Youtube.png" alt="youtube"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="js/slider.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
