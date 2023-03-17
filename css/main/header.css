@@ -43,6 +43,10 @@ header {
     transform: scaleX(1);
 }
 
+.navbar-toggler {
+    margin-right: 60px;
+}
+
 .nav-logo {
     z-index: 1000;
 }
