@@ -21,7 +21,11 @@ section {
 }
 
 .bg-white {
-    background-color: #c7c7c7;
+    background-color: #ececec;
+}
+
+.bg-grey {
+    background-color: #e1e1e1;
 }
 
 .bg-red {
