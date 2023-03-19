@@ -244,53 +244,44 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 20px;
-    gap: 20px;
     padding: 0 20px;
 }
 
-.similar-company__inner > div {
-    transition: all 0.2s linear;
-}
-
-.similar-company__inner > div img:hover {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
-    transition: all 0.2s linear;
-}
-
 .similar-company__item {
-    width: 100%;
-    height: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px 25px;
 }
 
 .similar-company__item img {
-    background-size: cover;
-    overflow: hidden;
+    border: 2px solid #cacaca;
+    width: 170px;
+    height: 170px;
 }
 
-.similar-company__item-discription {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    padding-right: 18px;
+.shadow-hover {
+    transition: all 0.09s linear;
 }
 
-.similar-company-btn-more {
-    display: block;
+.similar-company__item:hover > .shadow-hover {
+    box-shadow: -12px 12px 0 -1px rgb(206, 5, 5);;
+    transition: all 0.09s linear;
+}
+
+.similar-company-btn-more a {
     color: white;
     background-color: #02385A;
     border: 2px solid white;
     border-radius: 30px;
     text-align: center;
-    font-weight: bolder;
-    font-size: 1rem;
-    width: 20%;
-    padding: 8px 20px;
+    font-weight: 700;
+    padding: 7px 45px;
     margin: 50px auto 20px;
-    text-decoration: none;
     transition: all 0.2s linear;
 }
 
-.similar-company-btn-more:hover {
+.similar-company-btn-more a:hover {
     color: #02385A;
     background-color: #ffffff;
     border: 2px solid white;
@@ -327,14 +318,15 @@
     }
 
     .similar-company__inner {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 20px;
-        gap: 10px;
         padding: 0 20px;
     }
 
-    .similar-company-btn-more {
-        width: 35%;
+    .similar-company__item img {
+        border: 2px solid #cacaca;
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -354,17 +346,24 @@
     .similar-company__inner {
         grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
-        gap: 10px;
         padding: 0 20px;
     }
 
-    .similar-company-btn-more {
-        width: 35%;
+    .similar-company__item img {
+        border: 2px solid #cacaca;
+        width: 150px;
+        height: 150px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .news-item__text-block {
         padding: 30px 100px 30px 0;
+    }
+
+    .similar-company__inner {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        padding: 0 20px;
     }
 }

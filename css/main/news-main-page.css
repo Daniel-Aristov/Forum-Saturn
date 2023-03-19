@@ -5,7 +5,7 @@
 .news__title {
     color: red;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 2.1rem;
 }
 
@@ -49,39 +49,23 @@
     color: #2f2f2f;
 }
 
-.news__item-title {
-    font-weight: bolder;
-    font-size: 1.3rem;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.news__item-title a {
+.news__item a {
     display: block;
     padding-top: 0;
     margin-top: 0;
     color: black;
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
-.news__item-title a {
-    display: block;
-    padding-top: 0;
-    margin-top: 0;
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.3rem;
-}
-
-.news__item-title a:hover {
+.news__item a:hover {
     color: black;
     text-decoration: none;
 }
 
-.news__item-title a[href]::after {
+.news__item a[href]::after {
     content: " ";
     display: block;
     position: absolute;
@@ -108,23 +92,20 @@
     position: center;
 }
 
-.all-news-link {
+.all-news-link a {
     text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
     text-align: center;
-    font-weight: bolder;
-    width: 20%;
+    font-weight: 800;
     background-color: #04ADC0;
     color: white;
     border: 0;
     border-radius: 30px;
-    padding: 12px 30px;
+    padding: 12px 50px;
     transition: all 0.2s linear;
 }
 
-.all-news-link:hover {
+.all-news-link a:hover {
     background-color: #02385A;
     color: white;
     transition: all 0.2s linear;

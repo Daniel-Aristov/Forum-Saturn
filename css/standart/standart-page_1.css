@@ -87,12 +87,12 @@ section {
     cursor: pointer;
     margin: 18px auto;
     width: 90%;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 
 .downloads__card:hover {
-    transition: all 0.2s linear;
-    box-shadow: -6px 6px 5px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: -7px 7px 0 3px rgb(206, 11, 11);
+    transition: all 0.1s linear;
 }
 
 .downloads__card-icon {

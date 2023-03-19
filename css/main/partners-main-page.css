@@ -13,16 +13,27 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     margin-top: 50px;
-    gap: 40px;
 }
 
-.partners__inner > div {
-    transition: all 0.3s linear;
+.partners__item {
+    display: block;
+    text-decoration: none;
+    padding: 0 20px 40px;
 }
 
-.partners__inner > div:hover {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
-    transition: all 0.3s linear;
+.partners__item img {
+    border: 2px solid #cacaca;
+    width: 150px;
+    height: 150px;
+}
+
+.shadow-hover {
+    transition: all 0.09s linear;
+}
+
+.partners__item:hover > .shadow-hover {
+    box-shadow: -12px 12px 0 -1px rgb(206, 5, 5);;
+    transition: all 0.09s linear;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {

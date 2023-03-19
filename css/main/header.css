@@ -1,12 +1,5 @@
-header {
-    padding-bottom: 0;
-}
-
 .menu-item {
     position: relative;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.1rem;
     text-decoration: none;
     margin: 0 20px;
 }
@@ -18,7 +11,7 @@ header {
     background-color: white;
     position: absolute;
     left: 0;
-    bottom: -7px;
+    bottom: -0px;
     transform: scaleX(0);
     transition: 0.3s;
 }
@@ -106,16 +99,17 @@ header {
 
 .btn-input {
     color: white;
-    font-weight: bolder;
-    font-size: 1rem;
-    background-color: red;
-    padding: 5px;
-    letter-spacing: 4px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    border-radius: 0;
+    padding: 2px 15px;
+    background-color: #cc0808;
     z-index: 1000;
+    transition: all 0.2s linear;
 }
 
 .btn-input:hover {
-    color: red;
+    color: black;
     background-color: white;
     transition: all 0.2s linear;
 }
@@ -123,19 +117,18 @@ header {
 .btn-stars {
     border: none;
     color: white;
-    font-weight: bolder;
-    font-size: 1rem;
-    letter-spacing: 5px;
+    font-weight: 800;
+    border-radius: 0;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
     z-index: 1000;
+    padding: 0 10px;
+    transition: all 0.2s linear;
 }
 
 .btn-stars:hover {
     color: #a4a4a4;
     transition: all 0.2s linear;
-}
-
-.header__main {
-    padding: 30px 0 80px;
 }
 
 .header__date {
@@ -148,7 +141,7 @@ header {
 .header__title {
     text-transform: uppercase;
     color: white;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 4.3rem;
 }
 
@@ -156,96 +149,57 @@ header {
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
-    margin-bottom: 100px;
+    margin-bottom: 45px;
     text-transform: uppercase;
 }
 
 .header-card-text {
     color: white;
-    font-weight: bolder;
-    font-size: 1.4rem;
+    font-weight: 800;
+    font-size: 1.3rem;
     position: absolute;
     z-index: 1000;
     letter-spacing: 2px;
     left: 20px;
     bottom: 20px;
     padding: 0;
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 0 #000000;
-    transition: all 0.3s linear;
-    cursor: pointer;
+}
+
+.shadow-custom > .card-img img, .shadow-custom-blue > .card-img img  {
+    transition: all 0.1s linear;
+    box-shadow: none;
+}
+
+.shadow-custom:hover > .card-img img {
+    box-shadow: -7px 7px 0 3px rgb(206, 11, 11);
+    transition: all 0.1s linear;
+}
+
+.sshadow-custom-blue:hover > .card-img img {
+    box-shadow: -7px 7px 0 3px rgb(38, 151, 216);
+    transition: all 0.1s linear;
 }
 
 .card-img {
     cursor: pointer;
     position: relative;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.card-img a[href]::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: all 0.3s linear;
+    display: inline-block;
 }
 
 .card-img img {
     background-size: cover;
     position: center;
+    width: 300px;
+    height: 230px;
 }
 
-.img-bg-blue {
-    background-color: #04ADC0;
-    bottom: 0;
-    display: block;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    transition: all 0.3s linear;
-}
-
-.img-bg-blue:hover {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
-    transition: all 0.3s linear;
-}
-
-.img-bg-red {
-    background-color: red;
-    bottom: 0;
-    display: block;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    transition: all 0.3s linear;
-}
-
-.img-bg-red:hover {
-    box-shadow: -6px 6px 0 3px rgb(38, 151, 216);
-    transition: all 0.3s linear;
-}
-
-.img-shadow {
-    transition: all 0.3s linear;
-}
-
-.img-shadow:hover {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
-    transition: all 0.3s linear;
+.big-foto img {
+    background-size: cover;
+    position: center;
+    width: 630px;
+    height: 510px;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
