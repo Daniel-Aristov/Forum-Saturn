@@ -1,9 +1,61 @@
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
+const speakerSwiper = new Swiper('.swiper-container', {
+    slidesPerView: 5,
+    slideToClickedSlide: true,
+    grabCursor: true,
+    centeredSlides: true,
+    initialSlide: 4,
     loop: true,
-    spaceBetween: 10,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    spaceBetween: 0,
+
+    breakpoints: {
+        100: {
+            slidesPerView: 3,
+            spaceBetween: 5
+        },
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+        1400: {
+            slidesPerView: 5,
+            spaceBetween: 0
+        }
     }
 });
+
+// Событие на кнопку получения подробной информации о спикере
+let btnsCloseMoreInfoSpeaker = document.querySelectorAll('.close-more-info');
+let btnsMoreInfoSpeaker = document.querySelectorAll('.swiper-icon');
+btnsMoreInfoSpeaker.forEach(function(btn) {
+    btn.addEventListener("click", () => {
+        let items = document.querySelectorAll('.swiper-slide.swiper-slide-active .moreInfo-speaker')[0];
+        items.classList.add("show");
+    })
+    btnsCloseMoreInfoSpeaker.forEach(function (btn) {
+        btn.addEventListener("click", () => {
+            let items = document.querySelectorAll('.swiper-slide.swiper-slide-active .moreInfo-speaker')[0];
+            items.classList.remove("show");
+        })
+    })
+})
+
+document.addEventListener("click", (e)=>{
+    if (e.target.closest('.slide-img') || e.target.closest('.slider-text')) {
+        let slides = document.querySelectorAll('.swiper-slide .moreInfo-speaker');
+        slides.forEach(function (slide) {
+            slide.classList.remove("show");
+        })
+    }
+})

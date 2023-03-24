@@ -1,3 +1,19 @@
+header {
+    background-image: url("../../src/img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    width: 100%
+}
+
 .menu-item {
     position: relative;
     text-decoration: none;
@@ -11,14 +27,20 @@
     background-color: white;
     position: absolute;
     left: 0;
-    bottom: -0px;
+    bottom: 2px;
     transform: scaleX(0);
     transition: 0.3s;
 }
 
-.menu-item:has(+ .dropdown-content:hover)::before, .menu-item:hover::before {
+.date {
+    color: #02385A;
+}
+
+.dropdown:hover > .menu-item::before,
+.menu-item:has(+ .dropdown-content:hover)::before,
+.menu-item:hover::before {
     transform: scaleX(1);
-    transition: 0.25s;
+    transition: all 0.25s linear;
 }
 
 .menu-item:hover {
@@ -32,7 +54,7 @@
     background-color: white;
     position: absolute;
     left: 0;
-    bottom: -7px;
+    bottom: 2px;
     transform: scaleX(1);
 }
 
@@ -41,6 +63,7 @@
 }
 
 .nav-logo {
+    margin-left: 40px;
     z-index: 1000;
 }
 
@@ -136,6 +159,7 @@
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 0;
+    text-shadow: 2px 2px 0 #000000;
 }
 
 .header__title {
@@ -143,6 +167,7 @@
     color: white;
     font-weight: 800;
     font-size: 4.3rem;
+    text-shadow: 2px 2px 0 #000000;
 }
 
 .header__subtitle {
@@ -151,6 +176,7 @@
     font-size: 1.2rem;
     margin-bottom: 45px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000000;
 }
 
 .header-card-text {
@@ -228,14 +254,40 @@
     }
 
     .header-card-text {
-        font-size: 1.4rem;
-        left: 120px;
+        font-size: 1.9rem;
+        left: 50px;
+    }
+
+    .card-img {
+        margin-bottom: 20px;
+    }
+
+    .card-img img {
+        background-size: cover;
+        position: center;
+        width: 500px;
+        height: 420px;
+    }
+
+    .big-foto img {
+        background-size: cover;
+        position: center;
+        width: 500px;
+        height: 420px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        background-image: url("../../src/img/header_bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     .header__title {
-        font-size: 2.9rem;
+        font-size: 3.5rem;
     }
 
     .header-img {
@@ -252,12 +304,35 @@
     }
 
     .header-card-text {
-        font-size: 1.4rem;
-        left: 200px;
+        font-size: 1.9rem;
+        left: 40px;
+        bottom: 50px;
+    }
+
+    .card-img img {
+        background-size: cover;
+        position: center;
+        width: 500px;
+        height: 420px;
+    }
+
+    .big-foto img {
+        background-size: cover;
+        position: center;
+        width: 500px;
+        height: 420px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+        background-image: url("../../src/img/header_bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     .btn-stars {
         z-index: 0;
     }
@@ -267,12 +342,31 @@
     }
 
     .header-card-text {
-        font-size: 1.1rem;
-        left: 10px;
+        font-size: 1.3rem;
+        left: 40px;
+    }
+
+    .card-img {
+        margin-bottom: 20px;
+    }
+
+    .big-foto img {
+        background-size: cover;
+        position: center;
+        width: 400px;
+        max-height: 300px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        background-image: url("../../src/img/header_bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     .menu-item {
         font-size: 1.1rem;
         margin: 0 10px;
@@ -293,6 +387,45 @@
 
     .header-card-text {
         font-size: 1.2rem;
+    }
+
+    .header__title {
+        font-size: 3.3rem;
+    }
+
+    .big-foto img {
+        background-size: cover;
+        position: center;
+        width: 630px;
+        max-height: 420px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .menu-item {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    .btn-input {
+        font-size: 0.9rem;
+    }
+
+    .btn-stars {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content a {
+        width: 270px;
+        height: 150px;
+    }
+
+    .header-card-text {
+        font-size: 1.2rem;
+    }
+
+    .header__title {
+        font-size: 4rem;
     }
 }
 

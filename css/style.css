@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 html, body {
+    scroll-behavior: smooth !important;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }

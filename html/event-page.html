@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Программа форума</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -18,19 +23,20 @@
 
 <div class="wrapper">
     <!--=======Навигация======== -->
-    <div class="sticky-top bg-dark-blue">
-        <div class="container">
-            <div class="d-flex justify-content-end">
-                <button class="btn btn-stars" type="submit">
-                    <i class="bi bi-star-fill"></i>
-                    ИЗБРАННОЕ
-                </button>
-                <a href="html/login-page.html" class="btn btn-input" type="submit">ВОЙТИ</a>
-            </div>
-        </div>
-    </div>
     <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue pt-0">
-        <div class="container">
+        <div class="nav-container">
+
+            <div class="--nav-meta w-100 justify-content-between d-none d-lg-flex" style="margin-bottom: -1.5rem">
+                <div class="date d-flex">asd</div>
+                <div class="meta d-flex">
+                    <button class="btn btn-stars" type="submit">
+                        <i class="bi bi-star-fill"></i>
+                        ИЗБРАННОЕ
+                    </button>
+                    <a href="login-page.html" class="btn btn-input btn-meta-login" type="submit">ВОЙТИ</a>
+                </div>
+            </div>
+
             <a class="navbar-brand nav-logo" href="../index.html"><img src="../src/img/logo.png" height="65" alt="logo"
                                                                        loading="lazy"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,6 +46,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="dropdown d-lg-none">
+                        <a class="menu-item text-red fs-5 fw-bold py-2" aria-current="page" href="login-page.html"
+                           style="color: red">Войти</a>
+                    </li>
                     <li class="dropdown">
                         <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
                            href="forum-page.html">Форум</a>
@@ -54,7 +64,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                        <a class="menu-item text-white fs-5 fw-bold py-2 active-menu-item" aria-current="page"
                            href="event-page.html">События</a>
                     </li>
                     <li class="dropdown">
@@ -62,20 +72,19 @@
                            href="news-page.html">Новости</a>
                         <div class="dropdown-content">
                             <div class="dropdown-content__inner">
-                                <div><a href="#">AI & Машинное обучение</a></div>
-                                <div><a href="#">Энергетический менеджмент</a></div>
-                                <div><a href="#">Карбон-нейтральная продукция</a></div>
-                                <div><a href="#">Водород & Топливо</a></div>
+                                <div><a href="#">Цифровые двойники</a></div>
+                                <div><a href="#">Новые материалы</a></div>
                                 <div><a href="#">Индустрия 4.0</a></div>
+                                <div><a href="#">VR&AR</a></div>
                             </div>
                         </div>
                     </li>
                     <li class="dropdown">
                         <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
-                           href="standart-page_2.html">Посетителям</a>
+                           href="standart-page_1.html">Посетителям</a>
                     </li>
                     <li class="dropdown">
-                        <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                        <a class="menu-item text-white fs-5 fw-bold py-2 a" aria-current="page"
                            href="standart-page_2.html">Участникам</a>
                     </li>
                     <li class="dropdown">
@@ -92,7 +101,7 @@
     </nav>
 
     <!--=======Основная часть======== -->
-    <header class="bg-dark-blue">
+    <div class="bg-dark-blue pb-5 pt-3">
         <div class="container-xxl">
             <div class="event-item__title-text">
                 <h2 class="event-item__title">Деловая программа форума</h2>
@@ -114,118 +123,854 @@
                     производству.</p>
             </div>
         </div>
-    </header>
+    </div>
     <main class="event-list">
-        <div class="container-xxl">
+        <div class="container">
             <div class="btns-event-list-sort d-flex justify-content-start">
-                <button class="btn btn-sort-event-list btn-sort-active">По дате</button>
-                <button class="btn btn-sort-event-list">По тематическим трекам</button>
+                <button type="button" id="filter-date" class="btn-sort-event-list btn-sort-active">По дате</button>
+                <button type="button" id="filter-track" class="btn-sort-event-list">По тематическим трекам</button>
             </div>
             <div class="event-list__inner">
+                <div id="date-filter" class="py-3 px-0" style="display: block">
+                    <div class="date-filter-item">
+                        <div class="date-item">
+                            <button class="btn date-btn w-100">20 апреля</button>
+                        </div>
+                        <div class="date-item">
+                            <button class="btn date-btn w-100">21 апреля</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tracks" class="py-3 px-0" style="display: none">
+                    <button class="btn btn-track">Передовые инженерные школы</button>
+                    <button class="btn btn-track">Цифровые двойники</button>
+                    <button class="btn btn-track">Новые материалы</button>
+                    <button class="btn btn-track">Индустрия 4.0.</button>
+                    <button class="btn btn-track">Новые продукты</button>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon my-0"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">8:00-9:00</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Сбор и регистрация участников</h5>
+                    </div>
+                </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">9:30-11:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Пленарная дискуссия <br>
+                            Сотрудничество высокотехнологичного бизнеса и вузов: путь к развитию</h5>
+                        <div class="fs-5 mt-2">
+                            Вопросы для обсуждения:
+                            <ol>
+                                <li>Подготовка кадров для организаций отрасли (проект проект корпораций, передовые
+                                    инженерные школы, инженерные классы и др.);
+                                </li>
+                                <li>Развитие университетского предпринимательства и стартапов, как инкубаторов
+                                    инновационных решений;
+                                </li>
+                                <li>Роль инновационной инфраструктуры (лаборатории и образовательные пространства)
+                                    образовательных организаций для проведения научных исследований,
+                                    опытно-конструкторских
+                                    и технологических работ.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
                             <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item__date">20 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Главная секция «Клуб индустриальных партнеров передовых инженерных
+                            школ»</h5>
+                        <div class="fs-5 mt-2">
+                            Вопросы для обсуждения на первом заседании клуба:
+                            <ol>
+                                <li>
+                                    Что проект ПИШ изменит в инженерном образовании?
+                                </li>
+                                <li>
+                                    Роль индустриальных партнеров в развитии ПИШ и роль ПИШ в трансформации корпораций.
+                                </li>
+                                <li>
+                                    Как формируются задачи для ПИШ по 3м направлениям: образование, исследования,
+                                    инновации – реалии и планы.
+                                </li>
+                                <li>
+                                    Организационные модели, повышающие эффективность использования результатов ПИШ в
+                                    экономической деятельности.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                        <p></p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">16.30-18.30</p>
+                            <p class="event-list-item__date">20 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Дискуссия «Критические элементы развития ПИШ – от общего к частному» (по
+                            приглашениям)</h5>
+                        <div class="fs-5 mt-2">
+                            Обсуждение вопросов методического обеспечения ПИШ:
+                            <ol>
+                                <li>
+                                    Кто определяет тематику НИР и НИОКТР ПИШ?
+                                </li>
+                                <li>
+                                    На каких основаниях ПИШ формирует научное/технологическое видение и экспертизу? Как
+                                    планируется их развивать?
+                                </li>
+                                <li>
+                                    Планирует ли ПИШ участвовать в коммерциализации результатов вашего НИР/НИОКТР? Есть
+                                    ли задача масштабирования использования результатов на рынке, где работает
+                                    индустриальный партнер и на других рынках?
+                                </li>
+                                <li>
+                                    Как планируется обеспечить накопление внутренних знаний и компетенций по выбранной
+                                    тематике ПИШ?
+                                </li>
+                                <li>
+                                    Как обеспечить рост объема НИР/НИОКТР выполняемых ПИШ?
+                                </li>
+                                <li>
+                                    Кто будет основным работодателем выпускников ПИШ? В каких ролях они будут работать?
+                                    Будут ли работодатели готовы нанимать сотрудников «нужных завтра» уже сегодня?
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">14:30-15:45</p>
+                            <p class="event-list-item__date">20 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Заседание рабочей группы «Цифровая Россия»</h5>
+                        <p class="fs-5">Реализация экономического и технологического суверенитета России определяет
+                            концепцию
+                            развития цифровой экономики на базе передовых производственных технологий при тесной
+                            интеграции программ цифровизации высокотехнологичных предприятий, развития кадров для
+                            цифровой экономики, развития информационной инфраструктуры. Ключевой проблемой при таком
+                            подходе становится синхронизация федеральных программ развития с отдельными региональными и
+                            корпоративными программами, их совместное соответствие имеющейся цифровой культуре регионов
+                            РФ и целевых ориентиров для образовательных и социальных инициатив.</p>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">10:00-16:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Технологии создания цифровых двойников ГТД на основных этапах жизненного
+                            цикла.</h5>
+                        <p class="fs-5">Часть 1. Проектирование ГТД на основе цифровых двойников. Ключевые технологии
+                            для повышения
+                            эффективности НИОКР.</p>
+                        <p class="fs-5">Разработка ГТД с применением комплексных математических моделей (цифровых
+                            двойников) основывается на технологиях интеграции основных видов данных об изделии на этапе
+                            ОКР: целевых показателях изделия, конфигурации изделия, данных об изготовлении ДСЕ опытных
+                            двигателей, данных об измеренных параметрах опытных двигателей.
+                            Несмотря на значительные продвижения в области управления инженерными данными сохраняется
+                            проблематика использования разнородных систем с низкой степенью автоматизации и интеграции,
+                            что снижает доступность данных и скорость принятия технических решений.
+                            Целью проведения секции является актуализация задач и рассмотрение предлагаемых
+                            отечественных технологий и цифровых платформ по автоматизации информационных потоков при
+                            выполнении ОКР.</p>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">10:00-16:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Технологии создания цифровых двойников ГТД на основных этапах жизненного
+                            цикла.</h5>
+                        <p class="fs-5">Часть 2. Применение цифровых двойников ГТД при эксплуатации изделий. Стратегия
+                            проектирования с учетом требований эксплуатирующих организаций и возможностей технологии
+                            ЦД</p>
+                        <p class="fs-5">На текущий момент цифровой двойник изделия как объект является внутренним
+                            инструментом разработчика и создается без учета требований эксплуатанта. Однако ЦДИ,
+                            созданный на этапе ОКР открывает широкие возможности для создания цифровых двойников,
+                            отвечающих целям и задачам эксплуатантов как основных бенефициаров этапа применения изделий
+                            по их основному назначению.
+                            Цель секции – организация диалога между разработчиками и эксплуатантами ГТД для обсуждения
+                            существующих целей и задач применения цифровых двойников эксплуатируемых изделий, требований
+                            к цифровым двойникам, как к объектам, а также существующих барьеров для их применения.</p>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
                 </div>
                 <div class="card event-list-item">
                     <div class="event-list-item-date">
                         <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
                         <div>
-                            <p class="event-list-item-date__time">11:00-13:00</p>
-                            <p class="event-list-item__date">14.04.2023</p>
+                            <p class="event-list-item-date__time">9:00 – 18:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-tema">Новая мобильность</p>
-                        <h5 class="card-title">Пленарная сессия: транспорт будущего, вызовы и решения</h5>
-                        <p class="card-address">Просп. Ленина 25</p>
+                        <h5 class="card-title">Полимерные композиционные материалы: <br>
+                            Достижения и задачи предприятий авиакосмической отрасли. <br>
+                            Организация взаимодействия с передовыми инженерными школами.</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Рекомендуемые темы докладов в рамках секции:</span>
+                            <p class="my-0 fw-bold">Для предприятий:</p>
+                            <ol>
+                                <li>Актуальные задачи в области материаловедения и технологии полимерных композиционных
+                                    материалов;
+                                </li>
+                                <li>Опыт взаимодействия с передовыми инженерными школами (ПИШ) и передовыми вузами в
+                                    решении задач и подготовке инженерно-технических кадров для предприятий;
+                                </li>
+                                <li>Предложения по организации взаимодействия ваших опорных вузов и ПИШ в рамках сетевой
+                                    магистратуры или с использованием прочих форм взаимодействия.
+                                </li>
+                            </ol>
+                            <p class="my-0 fw-bold">От ПИШ, опорных вузов корпораций и передовых ВУЗов в области ПКМ
+                                ждём доклады на
+                                темы:</p>
+                            <ol>
+                                <li>Презентации программ ПИШ в области ПКМ, фронтирные задачи, материалы, технологии,
+                                    программы ДПО, программы магистратуры.
+                                </li>
+                                <li>Опыт организации программ сетевой магистратуры в области полимерных композиционных
+                                    материалов.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
                     </div>
-                    <div class="card-img"><img src="../src/img/Комерсант.jpg" class="card-img-top" alt="..."></div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-14:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Гибридные силовые установки, электрические двигатели для ГСУ и
+                            механизации ГТД</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Обсуждение работ, выполняемых вузами по тематикам гибридных и электрических силовых
+                                    установок.
+                                </li>
+                                <li>Задачи, решаемые вузами в рамках ПИШ, планируемые сроки их реализации.
+                                </li>
+                                <li>Достигнутые результаты на текущем этапе работ, связанных с тематикой секции.
+                                </li>
+                                <li>
+                                    Имеющееся в вузах лабораторное оснащение по тематике секции.
+                                </li>
+                                <li>
+                                    Степень готовности результатов проводимых работ к интеграции в деятельность ОДК.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">14:00-17:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Вопросы прочности энергоустановок морских ГТД <br>
+                            Круглый стол</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Прогнозирование остаточного ресурса ГТД ДР59Л с наработкой свыше 100 тыс. часов на
+                                    основании данных полученных при капремонте.
+                                    <br>
+                                    Докладчик: Клименко Андрей Юрьевич, АО «Кронштадский морской завод».
+                                </li>
+                                <li>Опыт создания и эксплуатации газотурбинных установок морских судов. <br>
+                                    Докладчик: Голуб Евгений Степанович, АО «ЦНИИМФ».
+                                </li>
+                                <li>Жаростойкие керамические материары для элементов ГТД. <br>
+                                    Докладчик: Перевислов Сергей Николаевич, ЦНИИ КМ «Прометей».
+                                </li>
+                                <li>
+                                    Модульный подход к оценке прочности и других характеристик жаропрочных никелевых
+                                    сплавов на основе их химического анализа.
+                                    <br>Докладчик: Багерман Анатолий Захарович, Леонова Ирина Павловна.
+                                </li>
+                                <li>
+                                    Перспективы морского газотурбостроения. <br>
+                                    Докладчик: Буров Максим Николаевич, ПАО «ОДК-Сатурн»
+                                </li>
+                                <li>
+                                    Перспективные жаропрочные сплавы для морских ГТД. <br>
+                                    Докладчик: Данилов Денис Викторович, ПАО «ОДК-Сатурн»
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">14:00-18:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Актуальные задачи современных методов неразрушающего контроля
+                            перспективных материалов в условиях санкционных ограничений</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Тенденции развития и перспективы применения методов неразрушающего контроля
+                                    современных материалов.
+                                </li>
+                                <li>Альтернативные рынки оборудования для неразрушающих методов контроля в условиях
+                                    санкционных ограничений.
+                                </li>
+                                <li>Сертификация специалистов по неразрушающим методам контроля.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">14:00-18:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                            <p class="event-list-item-date__time mt-2">9:00-12:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Развитие и внедрение АТ в Аэрокосмической отрасли в России</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Опыт практического применения аддитивных технологий и их внедрение в
+                                    цикл производства продукции на этапах НИР, ОКР, серийного производства на ведущих
+                                    предприятиях Аэрокосмической отрасли (материалы, технологии, контроль,
+                                    сертификация).
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-13:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Применение искусственного интеллекта для решения задач машинного зрения в
+                            производстве. Практика и перспективы</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Как выявлять задачи для машинного зрения?
+                                </li>
+                                <li>Каков алгоритм проверки гипотезы по возможности применения машинного зрения?</li>
+                                <li>ИИ или детерминированные алгоритмы. Что где когда?</li>
+                                <li>Своя команда – исполнитель. Где оптимальный баланс?</li>
+                                <li>Какие требования к ресурсам для решения задач МЗ и ИИ?</li>
+                                <li>Что является результатом оценки применимости технологии машинного зрения?</li>
+                                <li>Каковы основные барьеры при внедрении машинного зрения, и как их преодолевать?</li>
+                                <li>Машинное зрение + автоматизация и роботизация. Какой порядок действий?</li>
+                                <li>Какие подходы к оценке эффективности внедрения видеоаналитики на производстве?</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">11:00-18:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                            <p class="event-list-item-date__time mt-2">9:00-14:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Новые рынки металлообрабатывающего оборудования и режущего инструмента в
+                            период импортозамещения</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Альтернативные рынки поставщиков импортного оборудования и
+                                    программного обеспечения для станков с ЧПУ.
+                                </li>
+                                <li>Тенденции развития отечественной станкостроительной отрасли.</li>
+                                <li>Тенденции развития современного российского металлорежущего инструмента и
+                                    инструментальной оснастки и перспективных технологий.
+                                </li>
+                                <li>Перспективные направления в области обработки деталей ГТД из труднообрабатываемых
+                                    материалов.
+                                </li>
+                                <li>Перспективные тенденции в развитии высокопроизводительных технологий ЭЭО и ЭХО.</li>
+                                <li>Высокоэффективные технологии безразмерной финишной обработки деталей ГТД.</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-15:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Импортозамещение в жаропрочном литье по выплавляемым моделям:
+                            оборудование, материалы, технологии</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Современные тенденции в развитии технологи литья по выплявляемым моделям жаропрочных
+                                    никелевых сплавов.
+                                </li>
+                                <li>Основные направления в импортозамещении литейных технологий: оборудование,
+                                    материалы.
+                                </li>
+                                <li>Альтернативные рынки оборудования для создания технологической цепочки литейного
+                                    производства в соответствии с мировыми стандартами качества.
+                                </li>
+                                <li>Рассмотрение существующих программных продуктов, позволяющих выполнять моделирование
+                                    литейных процессов. Создание баз данных программного обеспечения для моделирования.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-14:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Экономические методы оценки технологической подготовки производства (ТПП)
+                            и оптимизация затрат на ТПП</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Разработка единой модели данных для оценки ТПП – «технологический двойник стоимости
+                                    ТПП».
+                                </li>
+                                <li>Анализ существующих систем и методик оценки стоимости ТПП на предприятиях АО
+                                    «ОДК».
+                                </li>
+                                <li>Особенности формирования объемов и затрат ТПП при проведении ОКР и НИОКР.</li>
+                                <li>Особенности формирования объемов и затрат ТПП для обеспечения серийного выпуска
+                                    изделий.
+                                </li>
+                                <li>Возможность создания единой корпоративной информационной системы (КИС) по управлению
+                                    затратами на ТПП АО «ОДК».
+                                </li>
+                                <li>Возможность внедрения единой методики и подходов оценки затрат ТПП на предприятиях
+                                    АО «ОДК».
+                                </li>
+                                <li>Формирование единых баз для расчетных систем, позволяющих оценить затраты на ТПП при
+                                    создании новых производственных мощностей.
+                                </li>
+                                <li>Анализ существующих методов формирования НМЦ для проведения торговых процедур.</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-15:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Поставка и обслуживание контрольно-измерительного оборудования (КИО) в
+                            условиях санкций, системы мониторинга эффективности работы КИО</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Современные тенденции в развитии измерений (контактные и бесконтактные). Особенности
+                                    кинематики, точностные характеристики, возможности программного обеспечения (ПО) и
+                                    т.п. Современные координатно-измерительные машины (КИМ), измерительные руки,
+                                    трекеры, сканеры (3-4D) и т.п. Опыт применения различных типов измерений в
+                                    авиадвигателестроении.
+                                </li>
+                                <li>Работа в режиме санкций – организация техподдержки со стороны иностранных
+                                    производителей, альтернативные поставщики оборудования, программного обеспечения и
+                                    запасных частей.
+                                </li>
+                                <li>Рассмотрение существующих программных продуктов, позволяющих в режиме реального
+                                    времени отслеживать состояние и загрузку координатно-измерительного оборудования
+                                    (работа по программе, работа в ручном режиме, простой, неисправность, аварийная
+                                    ситуация и т.п.).
+                                </li>
+                                <li>Рассмотрение существующих программных продуктов, позволяющих выполнять настройку
+                                    сохранения протоколов измерений (или данных измерений) и их статистическую
+                                    обработку.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-15:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Оптимизация работ по метрологическому обеспечению машиностроительных
+                            предприятий</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Современные тенденции в оптимизации процесса метрологического обеспечения (МО).
+                                </li>
+                                <li>Рассмотрение существующих программных продуктов, позволяющих автоматизировать
+                                    процесс ведения учета и обращения СИ.
+                                </li>
+                                <li>Рассмотрение существующих программных продуктов, позволяющих выполнять подбор
+                                    средств измерений (СИ).
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-16:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Решение производственных задач и задач из сферы услуг с использованием
+                            методологии ТРИЗ</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Применение ТРИЗ на предприятиях ОДК — результаты и перспективные направления.
+                                </li>
+                                <li>Формирование ТРИЗ-сообщества АО «ОДК» — планы, проблемы, задачи.
+                                </li>
+                                <li>Интеграция ТРИЗ в бизнес-процессы АО «ОДК».
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">Уточняется</p>
+                            <p class="event-list-item__date">Уточняется</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Непрерывное инженерное образование: школа-университет-индустрия. Лучшие
+                            работают с лучшими</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Год наставника и новые педагогические роли в образовании.
+                                </li>
+                                <li>Реализация проекта инженерные классы: опыт и перспективы развития.
+                                </li>
+                                <li>Интеллектуальный реактор как модель взаимодействия "школа-вуз-предприятие".
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">Уточняется</p>
+                            <p class="event-list-item__date">Уточняется</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Беспилотные авиационные системы</h5>
+                        <div class="fs-5 mt-2">
+                            <p class="fs-5 mb-3">Цель: анализ текущего состояния отечественных беспилотных систем,
+                                систематизация перечня
+                                проблем и задач разработки, серийного производства, масштабной эксплуатации и вопросов
+                                сертификации беспилотных систем различного назначения.</p>
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Конструкция, системы управления, связи и навигации, силовые установки, вопросы
+                                    сертификации, области применения.
+                                </li>
+                            </ol>
+                            <span>Вопросы для работы секции:</span>
+                            <ol>
+                                <li>Новые решения в авионике (средства связи, мониторинга, энергетические установки,
+                                    навигация и т.д.).
+                                </li>
+                                <li>Разработка высокоскоростных и высокоточных систем навигации. Переход с GPS на
+                                    ГЛОНАСС.
+                                </li>
+                                <li>Пути импортозамещения элементной базы беспилотных систем.</li>
+                                <li>Информационная безопасность систем связи и управления.</li>
+                                <li>Возможности внедрения систем управления беспилотных аппаратов в единую сеть
+                                    управления (экологический мониторинг, транспорт и грузоперевозки).
+                                </li>
+                                <li>Интеграция систем управления и мониторинга беспилотных аппаратов в систему
+                                    интернет-вещей.
+                                </li>
+                                <li>Цифровое моделирование и проектирование БАС.</li>
+                                <li>Вопросы сертификации БАС.</li>
+                                <li>Образовательные программы в беспилотных технолог.</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">Уточняется</p>
+                            <p class="event-list-item__date">Уточняется</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Сетевые образовательные программы и академическая мобильность: цели и
+                            механизмы реализации в подготовке нового поколения инженеров и исследователей</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Цели и механизмы реализации в подготовке нового поколения инженеров и
+                                    исследователей.
+                                </li>
+                                <li>Определение сетевой формы. Цели сетевого взаимодействия. Критерии сетевого
+                                    взаимодействия. Задачи, решаемые с помощью сетевого взаимодействия. Модели сетевого
+                                    взаимодействия. Документы, регламентирующие реализацию сетевых образовательных
+                                    программ.
+                                </li>
+                                <li>Академическая мобильность студентов и преподавателей. Положение об академической
+                                    мобильности.
+                                </li>
+                                <li>Система совместных НИР студентов. Совместная НИР студентов на предприятиях, в
+                                    учреждениях и организациях различных правовых форм.
+                                </li>
+                                <li>Перевод студента на индивидуальный план.</li>
+                                <li>Опыт реализации сетевых образовательных программ. Проект «Крылья Ростеха».</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-15:00</p>
+                            <p class="event-list-item__date">20 апреля</p>
+                            <p class="event-list-item-date__time">9:00-15:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Система управления надёжностью. Управление техническими рисками
+                            жизненного цикла парка ГТД. Способы реализации в ПАО «ОДК-Сатурн</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>
+                                    Система управления надёжностью (СУН). Методы, способы и пути реализации СУН, как
+                                    подсистемы авиационной транспортной системы (АТС). Отказобезопасность и
+                                    безотказность
+                                    авиационных и промышленных ГТД.
+                                </li>
+                                <li>
+                                    Безопасность полетов. Безотказность. Технические риски. Эффективность эксплуатации.
+                                    Жизненный цикл ГТД в терминах надежности. Вопросы идентификации, прогнозирования и
+                                    оценки технических рисков ЖЦ ГТД.
+                                </li>
+                                <li>Программы обеспечения надёжности. Программы обеспечения безопасности полётов.</li>
+                                <li>Система прогнозирования и мониторинга безотказности жизненного цикла ГТД.</li>
+                                <li>Анализ и прогнозирование отказобезопасности конструкции на этапе сертификации типа
+                                    двигателя (реализация теоретических методов и некоторых экспериментальных способов
+                                    подтверждения отказобезопасности на этапе сертификации типа).
+                                </li>
+                                <li>Модели эксплуатации парков ГТД. Системы баз данных регистрации инцидентов при
+                                    разработке и эксплуатации ГТД. Подходы, конфигурация, система выработки решений в
+                                    области надёжности. Организация управления проектами через управление параметрами
+                                    надежности изделий. Информационные системы поддержки эксплуатации ГТД.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">Уточняется</p>
+                            <p class="event-list-item__date">Уточняется</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Высокоэффективное производство водородсодержащего топлива из углеводородного сырья</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Рассмотреть имеющиеся в РФ компетенции по производству водорода и определить наиболее перспективное направление для использования в составе с промышленным газотурбинным двигателем.
+                                </li>
+                                <li>Сформировать кооперацию для создания установки производства водорода на стенде испытаний ГТД и одногорелочного отсека,
+                                    работающего на водородсодержащем топливе.
+                                </li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">9:00-11:00</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">«Передовые инженерные школы: особенности подготовки инженерных кадров в интересах отрасли авиационного двигателестроения»</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Формирование облика выпускника ПИШ: запрос отраслевых предприятий на формат и наполнение основных образовательных программ и программ ДПО.</li>
+                                <li>Совместная работа с отраслевыми предприятиями: формирование целевых показателей для реализации ДПО.</li>
+                                <li>Формирование механизмов по реализации совместных сетевых образовательных программ.</li>
+                                <li>Обсуждение возможностей совместной работы в рамках перспективных НИР / НИОКР.</li>
+                                <li>Формирование требований к образовательным пространствам, создаваемым в рамках ПИШ.</li>
+                                <li>Демонстрация лучших практик.</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
+                </div>
+                <div class="card event-list-item">
+                    <div class="event-list-item-date">
+                        <p class="event-list-item-date-icon"><img src="../src/icons/time.png" alt="time"></p>
+                        <div>
+                            <p class="event-list-item-date__time">11:30-13:30</p>
+                            <p class="event-list-item__date">21 апреля</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">«Модель взаимодействия «вуз-предприятие» при создании цифровых двойников»</h5>
+                        <div class="fs-5 mt-2">
+                            <span>Вопросы для обсуждения:</span>
+                            <ol>
+                                <li>Механизм взаимодействия «ВУЗ – Инженерное предприятие» при постановке задач НИР / НИОКР.</li>
+                                <li>Механизм взаимодействия «ВУЗ – Инженерное предприятие» при контрактации НИР / НИОКР в рамках ПИШ.</li>
+                                <li>Трансформация облика вузов и отраслевых предприятий для успешной реализации задач ПИШ.</li>
+                                <li>Обсуждение возможностей совместной работы в рамках перспективных НИР / НИОКР.</li>
+                                <li>Вклад в будущее: особенности организации производственных стажировок и практик для студентов ПИШ.</li>
+                                <li>Демонстрация лучших практик.</li>
+                            </ol>
+                        </div>
+                        <p class="card-address">Место проведения: Общественно-культурный центр, Большой зал
+                            (ул. Чкалова, д. 89)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,6 +1060,7 @@
     </footer>
 </div>
 
+<script src="../js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

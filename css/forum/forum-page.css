@@ -4,11 +4,26 @@
 }
 
 .section-forum-name {
+    font-size: 3rem;
+    font-weight: bolder;
     text-align: center;
-    display: block;
-    font-size: 1.8rem;
+    margin-bottom: 30px;
     color: white;
-    padding: 30px;
+}
+
+.forum-item__text {
+    font-size: 1.2rem;
+    padding: 0;
+    color: white;
+}
+
+.forum-item__subtitle {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 0;
+    margin-bottom: 6px;
+    margin-top: 20px;
 }
 
 .forum__inner {

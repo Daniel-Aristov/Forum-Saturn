@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -30,20 +30,21 @@
 <div class="wrapper">
 
     <!--=======Навигация======== -->
-    <div class="sticky-top bg-dark-blue">
-        <div class="container">
-            <div class="d-flex justify-content-end">
-                <button class="btn btn-stars" type="submit">
-                    <i class="bi bi-star-fill"></i>
-                    ИЗБРАННОЕ
-                </button>
-                <a href="html/login-page.html" class="btn btn-input" type="submit">ВОЙТИ</a>
-            </div>
-        </div>
-    </div>
     <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue pt-0">
-        <div class="container">
-            <a class="navbar-brand nav-logo" href="index.html"><img src="src/img/logo.png" height="65" alt="logo"
+        <div class="nav-container">
+
+            <div class="--nav-meta w-100 justify-content-between d-none d-lg-flex" style="margin-bottom: -1.5rem">
+                <div class="date d-flex">asd</div>
+                <div class="meta d-flex">
+                    <button class="btn btn-stars" type="submit">
+                        <i class="bi bi-star-fill"></i>
+                        ИЗБРАННОЕ
+                    </button>
+                    <a href="html/login-page.html" class="btn btn-input btn-meta-login" type="submit">ВОЙТИ</a>
+                </div>
+            </div>
+
+            <a class="navbar-brand nav-logo" href="index.html"><img src="src/img/logo.png" height="70" alt="logo"
                                                                     loading="lazy"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,6 +53,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="dropdown d-lg-none">
+                        <a class="menu-item text-red fs-5 fw-bold py-2" aria-current="page" href="login-page.html"
+                           style="color: red">Войти</a>
+                    </li>
                     <li class="dropdown">
                         <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
                            href="html/forum-page.html">Форум</a>
@@ -74,17 +79,16 @@
                            href="html/news-page.html">Новости</a>
                         <div class="dropdown-content">
                             <div class="dropdown-content__inner">
-                                <div><a href="#">AI & Машинное обучение</a></div>
-                                <div><a href="#">Энергетический менеджмент</a></div>
-                                <div><a href="#">Карбон-нейтральная продукция</a></div>
-                                <div><a href="#">Водород & Топливо</a></div>
+                                <div><a href="#">Цифровые двойники</a></div>
+                                <div><a href="#">Новые материалы</a></div>
                                 <div><a href="#">Индустрия 4.0</a></div>
+                                <div><a href="#">VR&AR</a></div>
                             </div>
                         </div>
                     </li>
                     <li class="dropdown">
                         <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
-                           href="html/standart-page_2.html">Посетителям</a>
+                           href="html/standart-page_1.html">Посетителям</a>
                     </li>
                     <li class="dropdown">
                         <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
@@ -104,7 +108,7 @@
     </nav>
 
     <!--=======Шапка======== -->
-    <header class="pt-5 pb-5 bg-dark-blue">
+    <header class="pt-5 pb-5">
         <div class="container">
             <div class="row gy-5 justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 ">
@@ -112,21 +116,21 @@
                     <h1 class="header__title">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</h1>
                     <p class="header__subtitle">Передовые инженерные школы - локомотив развития корпорации</p>
                     <div class="row breakpoints gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
-                        <div class="col-sm-12 col-md-6 col-lg-6 shadow-custom">
+                        <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
                             <div class="card-img">
                                 <a href="#">
                                     <img src="src/img/Возможности%20для%20участия.png"
-                                         class="mx-auto d-block" width="100%"
+                                         class="mx-auto d-block img-fluid" width="100%"
                                          alt="">
                                     <span class="header-card-text">Возможности для участия</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6 shadow-custom">
+                        <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
                             <div class="card-img">
                                 <a href="#">
                                     <img src="src/img/Заглушка.jpg"
-                                         class="mx-auto d-block"
+                                         class="mx-auto d-block img-fluid"
                                          width="100%" alt="">
                                     <span class="header-card-text">Программа форума</span>
                                 </a>
@@ -137,7 +141,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 align-self-end shadow-custom">
                     <div class="card-img big-foto">
                         <a href="#">
-                            <img src="src/img/big-img-header.png" class="mx-auto d-block"
+                            <img src="src/img/big-img-header.png" class="mx-auto d-block img-fluid"
                                  width="100%" alt="">
                             <span class="header-card-text fs-1">Что вы можете увидеть на нашем форуме 2023</span>
                         </a>
@@ -145,41 +149,41 @@
                 </div>
             </div>
             <div class="row mt-4 breakpoints gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
-                <div class="col-md-3 col-lg-3 shadow-custom">
+                <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
                             <img src="src/img/Заглушка.jpg"
-                                 class="mx-auto d-block" width="100%"
+                                 class="mx-auto d-block img-fluid" width="100%"
                                  alt="">
                             <span class="header-card-text">Партнеры</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 shadow-custom">
+                <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
                             <img src="src/img/Как%20добраться.png"
-                                 class="mx-auto d-block" width="100%"
+                                 class="mx-auto d-block img-fluid" width="100%"
                                  alt="">
                             <span class="header-card-text shadow-custom">Как добраться</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 shadow-custom">
+                <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
                             <img src="src/img/Заглушка.jpg"
-                                 class="mx-auto d-block" width="100%"
+                                 class="mx-auto d-block img-fluid" width="100%"
                                  alt="">
                             <span class="header-card-text">Регистрация</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-3 shadow-custom">
+                <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="">
                             <img src="src/img/Проживание.png"
-                                 class="mx-auto d-block" width="100%" alt="">
+                                 class="mx-auto d-block img-fluid" width="100%" alt="">
                             <span class="header-card-text">Проживание</span>
                         </a>
                     </div>
@@ -252,33 +256,134 @@
     </section>
 
     <!--=======Спикеры======== -->
-    <section class="speakers" style="overflow-x: hidden">
-        <div class="container-xxl" style="overflow-x: hidden">
-            <h2 class="speakers__title">Основные спикеры форума</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="src/img/Яныкина.png" class="img-fluid" alt="1">
+    <section class="speakers">
+        <h2 class="speakers__title">Основные спикеры форума</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="src/img/Яныкина.png" class="img-fluid slide-img" alt="1">
                         <p class="slider-text">Нина Яныкина <br> Деловой альянс</p>
+                        <button class="swiper-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </button>
+                        <div class="moreInfo-speaker text-black">
+                            <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Нина Яныкина</p>
+                            <p class="d-block fw-bold fs-6 text-start my-0 px-3">Деловой альянс</p>
+                            <button class="close-more-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                     class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="src/img/Авдеев.png" class="img-fluid" alt="2">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="src/img/Авдеев.png" class="img-fluid slide-img" alt="1">
                         <p class="slider-text">Максим Авдеев <br> Ярославская область</p>
+                        <button class="swiper-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </button>
+                        <div class="moreInfo-speaker text-black">
+                            <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Максим Авдеев</p>
+                            <p class="d-block fw-bold fs-6 text-start my-0 px-3">Ярославская область</p>
+                            <button class="close-more-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                     class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="src/img/Степанова.png" class="img-fluid" alt="3">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="src/img/Степанова.png" class="img-fluid slide-img" alt="1">
                         <p class="slider-text">Елена Степанова <br> ЯГТУ</p>
+                        <button class="swiper-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </button>
+                        <div class="moreInfo-speaker text-black">
+                            <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Елена Степанова</p>
+                            <p class="d-block fw-bold fs-6 text-start my-0 px-3">ЯГТУ</p>
+                            <button class="close-more-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                     class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="src/img/Боровков.png" class="img-fluid" alt="4">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="src/img/Боровков.png" class="img-fluid slide-img" alt="1">
                         <p class="slider-text">Алексей Боровков <br> СПбПУ</p>
+                        <button class="swiper-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </button>
+                        <div class="moreInfo-speaker text-black">
+                            <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Алексей Боровков</p>
+                            <p class="d-block fw-bold fs-6 text-start my-0 px-3">СПбПУ</p>
+                            <button class="close-more-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                     class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="src/img/Поляков.png" class="img-fluid" alt="5">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image">
+                        <img src="src/img/Поляков.png" class="img-fluid slide-img" alt="1">
                         <p class="slider-text">Виктор Поляков <br> ПАО "ОДК-САТУРН"</p>
+                        <button class="swiper-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="red"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </button>
+                        <div class="moreInfo-speaker text-black">
+                            <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Виктор Поляков</p>
+                            <p class="d-block fw-bold fs-6 text-start my-0 px-3">ПАО "ОДК-САТУРН"</p>
+                            <button class="close-more-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                     class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <button type="button" id="btn-speakers" class="btn btn-speakers">Обзор докладчиков</button>
         </div>
     </section>
 
@@ -526,7 +631,7 @@
     </footer>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

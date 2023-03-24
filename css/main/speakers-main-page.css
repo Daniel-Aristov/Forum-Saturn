@@ -1,3 +1,11 @@
+:root {
+    --swiper-image-ratio: 33.3%;
+    --swiper-width: 50%;
+    --swiper-inactive-scale: .85;
+    --swiper-mobile-width: 90%;
+    --swiper-mobile-inactive-scale: .95;
+}
+
 .speakers {
     background-color: #02385A;
     color: white;
@@ -14,41 +22,148 @@
 
 /*Cлайдер*/
 .swiper-container {
+    padding: 80px 0;
+    position: relative;
     width: 100%;
-    height: 100%;
-    padding: 20px 0;
+    height: calc(var(--swiper-width) * var(--swiper-image-ratio) / 100);
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    margin-left: 330px;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 1.1rem;
-    background: #02385A;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
-.swiper-slide img {
+.swiper-backface-hidden .swiper-slide {
+    transform: scale(1) translateZ(0);
+}
+
+.swiper-slide.swiper-slide-active {
+    z-index: 10;
+    transform: scale(1.3) !important;
+    opacity: 1 !important;
+}
+
+.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    z-index: 10;
+    transform: scale(1.3) translateZ(0) !important;
+}
+
+.swiper-slide .swiper-icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+}
+
+.swiper-slide.swiper-slide-active .swiper-icon {
+    display: block;
+}
+
+.swiper-image {
     position: relative;
+    overflow: hidden;
+}
+
+.moreInfo-speaker {
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transform: translateY(100%);
+    transition: all 0.15s linear;
+}
+
+.show {
+    transform: translateY(0);
+    transition: all 0.15s linear;
+}
+
+.swiper-slide.swiper-slide-active .close-more-info {
+    background: transparent;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.swiper-image img {
     width: 300px;
     height: 300px;
+    background-size: cover;
+    border: none;
+    display: block;
+    background: #6d6d6d;
 }
 
 .slider-text {
     text-align: right;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: 25px;
+    right: 20px;
     text-shadow: 2px 2px 0 #000000;
 }
 
+.swiper-slide.slider-text {
+    text-align: right;
+    right: 20px;
+}
+
+.swiper-slide.swiper-slide-active .slider-text {
+    text-align: left;
+    left: 25px;
+}
+
+.btn-speakers {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 30px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    border-radius: 30px;
+    padding: 7px 45px;
+    transition: all 0.2s linear;
+}
+
+.btn-speakers:hover {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    transition: all 0.2s linear;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
+    .swiper-wrapper {
+        margin-left: 20px;
+    }
+
     .swiper-slide img {
-        width: 130px;
-        height: 130px;
+        width: 180px;
+        height: 180px;
     }
 
     .slider-text {
@@ -59,25 +174,27 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .swiper-wrapper {
+        margin-left: 100px;
+    }
+
     .swiper-slide img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
 
     .slider-text {
-        font-size: 1rem;
+        font-size: 0.9rem;
         bottom: 10px;
         right: 30px;
-    }
-
-    .slider-text {
-        font-size: 1.2rem;
-        bottom: 20px;
-        right: 15px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .swiper-wrapper {
+        margin-left: 200px;
+    }
+
     .swiper-slide img {
         width: 240px;
         height: 240px;
@@ -91,9 +208,26 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .swiper-wrapper {
+        margin-left: 230px;
+    }
+
     .swiper-slide img {
         width: 270px;
         height: 270px;
+    }
+
+    .slider-text {
+        font-size: 1.3rem;
+        bottom: 20px;
+        right: 30px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .swiper-slide img {
+        width: 300px;
+        height: 300px;
     }
 
     .slider-text {
