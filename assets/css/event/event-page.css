@@ -136,6 +136,10 @@ header {
     align-items: center;
 }
 
+.event-list-item-date-icon {
+    margin-bottom: 0.2rem;
+}
+
 .event-list-item-date-icon img {
     margin-top: 6px;
     width: 30px;
