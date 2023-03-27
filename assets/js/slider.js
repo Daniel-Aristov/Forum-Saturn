@@ -30,7 +30,7 @@ const speakerSwiper = new Swiper('.swiper-container', {
         },
         1400: {
             slidesPerView: 5,
-            spaceBetween: 0
+            spaceBetween: 15
         }
     }
 });

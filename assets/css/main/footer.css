@@ -54,20 +54,8 @@ footer {
     font-weight: bolder;
 }
 
-.socials {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.socials a {
-    margin-right: 10px;
-}
-
-.socials img {
-    width: 40px;
-    height: 40px;
+.socials a:hover {
+    text-decoration: none;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {

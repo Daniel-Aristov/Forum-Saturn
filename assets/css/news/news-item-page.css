@@ -240,13 +240,6 @@
     padding-bottom: 20px;
 }
 
-.similar-company__inner {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-top: 20px;
-    padding: 0 20px;
-}
-
 .similar-company__item {
     display: block;
     text-align: center;
@@ -257,7 +250,6 @@
 .similar-company__item img {
     border: 2px solid #cacaca;
     width: 170px;
-    height: 170px;
 }
 
 .shadow-hover {
@@ -316,18 +308,6 @@
     .card-body {
         padding-right: 70px;
     }
-
-    .similar-company__inner {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 20px;
-        padding: 0 20px;
-    }
-
-    .similar-company__item img {
-        border: 2px solid #cacaca;
-        width: 140px;
-        height: 140px;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -342,28 +322,10 @@
     .card-body {
         padding-right: 70px;
     }
-
-    .similar-company__inner {
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 20px;
-        padding: 0 20px;
-    }
-
-    .similar-company__item img {
-        border: 2px solid #cacaca;
-        width: 150px;
-        height: 150px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .news-item__text-block {
         padding: 30px 100px 30px 0;
-    }
-
-    .similar-company__inner {
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 20px;
-        padding: 0 20px;
     }
 }

@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth !important;
-}
-
 html, body {
     scroll-behavior: smooth !important;
     font-family: 'Nunito', sans-serif;
@@ -14,24 +10,8 @@ html, body {
     flex-direction: column;
 }
 
-.bg-dark-blue {
-    background-color: #02385A;
-}
-
-.bg-light-blue {
-    background-color: #04ADC0;
-}
-
-.bg-white {
-    background-color: #ececec;
-}
-
-.bg-grey {
-    background-color: #e1e1e1;
-}
-
-.bg-red {
-    background-color: red;
+.container-xxl {
+    --bs-gutter-x: 8.0rem;
 }
 
 

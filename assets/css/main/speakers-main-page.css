@@ -6,25 +6,12 @@
     --swiper-mobile-inactive-scale: .95;
 }
 
-.speakers {
-    background-color: #02385A;
-    color: white;
-    padding: 50px 0;
-}
-
-.speakers__title {
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 2rem;
-    padding-bottom: 20px;
-}
-
-/*Cлайдер*/
 .swiper-container {
     padding: 80px 0;
     position: relative;
     width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
     height: calc(var(--swiper-width) * var(--swiper-image-ratio) / 100);
     overflow: hidden;
 }

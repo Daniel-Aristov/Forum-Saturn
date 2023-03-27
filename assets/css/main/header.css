@@ -11,7 +11,9 @@ nav .nav-container {
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 5rem;
-    width: 100%
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .menu-item {
@@ -36,6 +38,7 @@ nav .nav-container {
     color: #02385A;
 }
 
+.dropdown.active>.menu-item::before,
 .dropdown:hover > .menu-item::before,
 .menu-item:has(+ .dropdown-content:hover)::before,
 .menu-item:hover::before {
@@ -109,6 +112,10 @@ nav .nav-container {
     transition: all 0.1s linear;
 }
 
+.dropdown-content a.active {
+    background-color: #c70404;
+}
+
 .dropdown-content a:hover {
     background-color: red;
     transition: all 0.1s linear;
@@ -137,6 +144,19 @@ nav .nav-container {
     transition: all 0.2s linear;
 }
 
+.btn-input:active {
+    color: red;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+.btn-input:checked + .btn-input, :not(.btn-check) + .btn-input:active {
+    color: var(--bs-red);
+    background-color: var(--bs-white);
+    border-color: var(--bs-red);
+    transition: all 0.2s linear;
+}
+
 .btn-stars {
     border: none;
     color: white;
@@ -151,6 +171,11 @@ nav .nav-container {
 
 .btn-stars:hover {
     color: #a4a4a4;
+    transition: all 0.2s linear;
+}
+
+.btn-stars:checked + .btn-stars, :not(.btn-check) + .btn-stars:active {
+    color: white;
     transition: all 0.2s linear;
 }
 
