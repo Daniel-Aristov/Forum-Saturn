@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
+    <title>Дашборд</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/main/header.css">
     <link rel="stylesheet" href="../assets/css/main/footer.css">
-    <link rel="stylesheet" href="../assets/css/news/news-page.css">
+    <link rel="stylesheet" href="../assets/css/account/account.css">
 </head>
 <body>
 <svg style="display: none">
@@ -131,7 +131,6 @@
     <!--=======Навигация======== -->
     <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue pt-0">
         <div class="nav-container">
-
             <div class="--nav-meta w-100 justify-content-between d-none d-lg-flex" style="margin-bottom: -1.5rem">
                 <div class="date d-flex">asd</div>
                 <div class="meta d-flex">
@@ -141,11 +140,21 @@
                         </svg>
                         ИЗБРАННОЕ
                     </button>
-                    <a href="login-page.html" class="btn btn-input btn-meta-login" type="submit">ВОЙТИ</a>
+                    <div class="dropdown-account">
+                        <button class="btn btn-input btn-meta-login">МОЙ АККАУНТ &#9660;</button>
+                        <div class="dropdown-content-account">
+                            <span class="droapdown-note">Профиль</span>
+                            <p class="my-3"><a href="dashboard-page.html">Дашборд</a></p>
+                            <p class="my-3"><a href="account-page.html">Аккаунт пользователя</a></p>
+                            <p class="my-3"><a href="news-page.html">Сервис новостей</a></p>
+                            <p class="mt-3"><a href="../index.html">Выйти</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <a class="navbar-brand nav-logo" href="../index.html"><img src="../assets/img/logo.png" height="65" alt="logo"
+            <a class="navbar-brand nav-logo" href="../index.html"><img src="../assets/img/logo.png" height="65"
+                                                                       alt="logo"
                                                                        loading="lazy"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -155,10 +164,11 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ">
                     <li class="dropdown d-lg-none">
-                        <a class="menu-item text-red fs-5 fw-bold py-2" aria-current="page" href="login-page.html" style="color: red">Войти</a>
+                        <a class="menu-item text-red fs-5 fw-bold py-2" aria-current="page" href="login-page.html"
+                           style="color: red">Мой аккаунт &#9660;</a>
                     </li>
                     <li class="dropdown">
-                        <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                        <a class="menu-item text-white fs-5 fw-bold py-2 active-menu-item" aria-current="page"
                            href="forum-page.html">Форум</a>
                         <div class="dropdown-content">
                             <div class="dropdown-content__inner">
@@ -175,7 +185,7 @@
                            href="event-page.html">События</a>
                     </li>
                     <li class="dropdown">
-                        <a class="menu-item text-white fs-5 fw-bold py-2 active-menu-item" aria-current="page"
+                        <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
                            href="news-page.html">Новости</a>
                         <div class="dropdown-content">
                             <div class="dropdown-content__inner">
@@ -208,190 +218,102 @@
     </nav>
 
     <!--=======Основная часть======== -->
-    <section class="news__category bg-red">
-        <div class="container-xxl">
-            <div class="news__category__inner">
-                <buttun class="news-category-btn">Цифровые двойники</buttun>
-                <buttun class="news-category-btn">Новые материалы</buttun>
-                <buttun class="news-category-btn">Индустрия 4.0</buttun>
-                <buttun class="news-category-btn">VR&AR</buttun>
-                <buttun class="news-category-btn all-btn category-active">Все новости</buttun>
-                <buttun class="news-category-btn all-btn">Все разделы</buttun>
+    <section>
+        <div class="bg-dark-blue">
+            <div class="container-xxl">
+                <h2 class="text-white fw-bold fs-1 py-5">Dashboard</h2>
             </div>
         </div>
-    </section>
-    <section class="top-news bg-dark-blue">
-        <div class="container-xxl">
-            <h2 class="top-news-title">Топ новостей</h2>
-            <div class="row breakpoints top-news__inner">
-                <div class="col-lg-8">
-                    <article class="top-news__item-main top-news__item-line">
-                        <div class="top-news__news-img">
-                            <img src="../assets/img/main-news.jpg" width="100%" alt="news">
-                        </div>
-                        <p class="top-news__item-tema">Индустриальная трансформация</p>
-                        <a href="news-item-page.html" class="top-news__item-title">Премьера промышленной трансформации в октябре на форуме</a>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="top-news__item top-news__item-line">
-                        <div class="top-news__news-img">
-                            <img src="../assets/img/сжатый%20воздух%20и%20вакуум.jpg" width="100%" alt="news">
-                        </div>
-                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Германия - страна компрессоров и мыслителей</a>
-                    </article>
-                    <article class="top-news__item top-news__item-line">
-                        <div class="top-news__news-img">
-                            <img src="../assets/img/будущее%20работы.jpg" width="100%" alt="news">
-                        </div>
-                        <p class="top-news__item-tema">Будущее работы</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры</a>
-                    </article>
-                </div>
-            </div>
-            <div class="row breakpoints top-news__inner">
-                <div class="col-lg-4">
-                    <h2 class="top-last-title">Последние новости</h2>
-                    <article class="top-news__item top-news__item-line">
-                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
-                        <p class="top-news__item-date">8 марта 2023</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Германия - страна компрессоров и мыслителей</a>
-                    </article>
-                    <article class="top-news__item top-news__item-line">
-                        <p class="top-news__item-tema">Будущее работы</p>
-                        <p class="top-news__item-date">8 марта 2023</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры</a>
-                    </article>
-                    <article class="top-news__item top-news__item-line">
-                        <p class="top-news__item-tema">Будущее работы</p>
-                        <p class="top-news__item-date">8 марта 2023</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры</a>
-                    </article>
-                    <article class="top-news__item top-news__item-line">
-                        <p class="top-news__item-tema">Будущее работы</p>
-                        <p class="top-news__item-date">8 марта 2023</p>
-                        <a href="news-item-page.html" class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ БУДУЩЕЕ" способстует развитию карьеры</a>
-                    </article>
-                </div>
-                <div class="col-lg-8">
-                    <article class="top-news__item-main top-news__item-line">
-                        <div class="top-news__news-img">
-                            <img src="../assets/img/автоматизация%20логистики.jpg" width="100%" alt="news">
-                        </div>
-                        <p class="top-news__item-tema">Автоматизация логистики</p>
-                        <a href="news-item-page.html" class="top-news__item-title">Новое поколение TMS-системы для автоматизации транспортной компании</a>
-                    </article>
-                </div>
+        <div class="bg-white py-4">
+            <div class="container-xxl">
+                <h2 class="my-0 fs-4 fw-bold">Здравствуйте, Владислав!</h2>
+                <p class="mb-0 mt-3 fs-5 opacity-75">Значимость этих проблем настолько очевидна, что сложившаяся
+                    структура организации прекрасно подходит
+                    для
+                    реализации вывода текущих активов. И нет сомнений, что сторонники тоталитаризма в науке набирают
+                    популярность среди определенных слоев населения, а значит, должны быть обнародованы.</p>
             </div>
         </div>
-    </section>
-    <section class="last-news-category bg-white">
-        <div class="container-xxl">
-            <div class="row breakpoints justify-content-center">
-                <div class="col-lg-12">
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
+        <div class="bg-grey my-4 py-5">
+            <div class="container-xxl">
+                <h2 class="my-0 fs-4 fw-bold">Сервисы</h2>
+                <div class="row breakpoints">
+                    <div class="col-lg-6 my-3 d-flex">
+                        <div class="favlist bg-white p-4 w-100">
+                            <h2 class="my-0 fs-4 fw-bold">My favourite list</h2>
+                            <ul class="my-4 p-0">
+                                <li><a href="#">
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    Участники (0)</a></li>
+                                <li><a href="#">
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    Продукты (0)
+                                </a></li>
+                                <li><a href="#">
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    События (0)
+                                </a></li>
+                            </ul>
+                            <h2 class="my-0 fs-4 fw-bold">Поиск</h2>
+                            <div class="mt-3">
+                                <svg width="22" height="22" x="0" y="0" class="me-3 mb-1">
+                                    <use xlink:href="#loupe"></use>
+                                </svg>
+                                <a class="text-black" href="#">Найти участников, продукты или события...</a>
                             </div>
                         </div>
                     </div>
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-news-category__card">
-                        <div class="last-news-category__card__inner">
-                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img"></div>
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <p class="card-category">Карбон-нейтральная продукция</p>
-                                    <p class="card-date">7 марта 2023</p>
-                                </div>
-                                <a href="news-item-page.html" class="card-title">Возведение в квадрат генерации сжатого воздуха</a>
-                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, функционально разнесены на независимые элементы.</p>
-                            </div>
+                    <div class="col-lg-6 my-3 d-flex">
+                        <div class="networking bg-white p-4 w-100">
+                            <h2 class="my-0 fs-4 fw-bold">Interested in Networking?</h2>
+                            <ul class="fw-bold my-4 p-0">
+                                <li>
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                    Publish your own profile
+                                </li>
+                                <li>
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                    Publish your own profile
+                                </li>
+                                <li>
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                    Publish your own profile
+                                </li>
+                                <li>
+                                    <svg width="26" height="26" x="0" y="0" class="me-3 mb-1">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                    Publish your own profile
+                                </li>
+                            </ul>
+                            <button class="btn network-btn">Подписаться сейчас</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="pagination">
-        <div class="container-xxl">
-            <nav aria-label="Навигация">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Предыдущая">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item" disabled><a class="page-link" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Следующая">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="mb-5 bg-white">
+            <div class="container-xxl">
+                <p class="text-start fs-5 mt-5">Возникшие вопросы вы можете уточнить по электронной почте
+                    olga.sobennikova@uec-saturn.ru или по телефону:
+                    <br>
+                    +7 (4855) 326-038 (Ольга Собенникова)
+                    <br>
+                    +7 (4855) 274-013 (Елена Коровкина)
+                </p>
+            </div>
         </div>
     </section>
 

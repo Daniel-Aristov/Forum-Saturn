@@ -54,6 +54,11 @@ footer {
     font-weight: bolder;
 }
 
+svg:hover {
+    fill: #FF0000;
+    transition: all 0.2s linear;
+}
+
 .socials a:hover {
     text-decoration: none;
 }
