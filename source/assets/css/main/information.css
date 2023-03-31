@@ -1,0 +1,91 @@
+.info__item {
+    width: 90%;
+}
+
+.card-info {
+    border: none;
+    padding: 20px;
+    border-radius: 0;
+}
+
+.info__card-title {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.info__card-title-dark-blue {
+    color: #02385A;
+}
+
+.info__card-text {
+    font-weight: normal;
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+}
+
+.info__card-text-dark-blue {
+    color: #02385A;
+}
+
+.btn-info {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px auto 10px;
+    border-radius: 30px;
+    width: 90%;
+    padding: 8px 10px;
+}
+
+.btn-info-modify_1 {
+    border: 2px solid white;
+    color: white;
+    background-color: #02385A;
+    transition: all 0.2s linear;
+}
+
+.btn-info-modify_1:hover {
+    color: #02385A;
+    border: 2px solid white;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+.btn-info-modify_2 {
+    border: 2px solid #02385A;
+    color: #02385A;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+.btn-info-modify_2:hover {
+    color: white;
+    border: 2px solid #02385A;
+    background-color: #02385A;
+    transition: all 0.2s linear;
+}
+
+.btn-info-modify_3 {
+    border: 2px solid white;
+    color: white;
+    background-color: #04ADC0;
+    transition: all 0.2s linear;
+}
+
+.btn-info-modify_3:hover {
+    color: #04ADC0;
+    border: 2px solid white;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .btn-info {
+        width: 50%;
+    }
+}

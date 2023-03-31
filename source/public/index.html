@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/color.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/navigation.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/footer.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/header.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/news.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/speakers.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/trends.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/culture.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/information.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/main/partners.css">
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/style.css" >
+
+        <title>Главная</title>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- @@INC:(block/navigation/default.html) -->
+
+            <!--=======Шапка======== -->
+        <header class="py-5 bg-dark-blue">
+            <div class="container-xxl">
+                <div class="row gy-5 justify-content-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 ">
+                        <p class="header__date">20 - 21 апреля 2023</p>
+                        <h1 class="header__title">ИННОВАЦИИ <br> ТЕХНОЛОГИИ <br> ПРОИЗВОДСТВО</h1>
+                        <p class="header__subtitle">Сотрудничество высокотехнологичного бизнеса и вузов: путь к развитию</p>
+                        <div class="row gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
+                            <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Возможности%20для%20участия.webp"
+                                            class="mx-auto d-block img-fluid" width="100%"
+                                            alt="">
+                                        <span class="header-card-text">Возможности для участия</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
+                                            class="mx-auto d-block img-fluid"
+                                            width="100%" alt="">
+                                        <span class="header-card-text">Программа форума</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 align-self-end shadow-custom">
+                        <div class="card-img big-foto">
+                            <a href="#">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/big-img-header.webp" class="mx-auto d-block img-fluid"
+                                    width="100%" alt="">
+                                <span class="header-card-text fs-1">Что вы можете увидеть на нашем форуме 2023</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 breakpoints gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
+                        <div class="card-img">
+                            <a href="#">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
+                                    class="mx-auto d-block img-fluid" width="100%"
+                                    alt="">
+                                <span class="header-card-text">Партнеры</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
+                        <div class="card-img">
+                            <a href="#">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Как%20добраться.webp"
+                                    class="mx-auto d-block img-fluid" width="100%"
+                                    alt="">
+                                <span class="header-card-text shadow-custom">Как добраться</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
+                        <div class="card-img">
+                            <a href="#">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
+                                    class="mx-auto d-block img-fluid" width="100%"
+                                    alt="">
+                                <span class="header-card-text">Регистрация</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
+                        <div class="card-img">
+                            <a href="">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Проживание.webp"
+                                    class="mx-auto d-block img-fluid" width="100%" alt="">
+                                <span class="header-card-text">Проживание</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=======Новости======== -->
+        <section class="py-5 bg-white">
+            <div class="container-xxl">
+                <div class="row gy-4 breakpoints">
+                    <div class="col-12 col-lg-8 order-lg-2">
+                        <article class="news__item">
+                            <p class="news__subtitle">Определена ключевая тема форума</p>
+                            <div class="news__img">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Фото%20новости.webp" width="100%" alt="news">
+                            </div>
+                            <p class="news__item-date">1 марта 2023</p>
+                            <p class="p-0 mb-1">
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html">Подготовка форума</a>
+                            </p>
+                            <p class="news__item-text pb-1">
+                                Идейные соображения высшего порядка, а также начало
+                                повседневной работы по формированию позиции предоставляет
+                                широкие возможности для своевременного выполнения сверхзадачи.
+                                Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности требует от нас анализа существующих финансовых
+                                и административных условий. Следует отметить, что синтетическое тестирование
+                                однозначно фиксирует необходимость укрепления моральных ценностей. Идейные
+                                соображения высшего порядка, а также начало
+                                повседневной работы по формированию позиции предоставляет
+                                широкие возможности для своевременного выполнения сверхзадачи.
+                                Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское
+                                обеспечение нашей деятельности требует от нас анализа существующих финансовых
+                                и административных условий.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4 order-lg-1">
+                        <h2 class="news__title">Последние новости</h2>
+                        <article class="news__item">
+                            <p class="news__item-date">1 марта 2023</p>
+                            <p class="p-0 mb-1">
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html">Открыта регистрация на форум</a>
+                            </p>
+                            <p class="news__item-text pb-1">
+                                Идейные соображения высшего порядка, а также начало
+                                повседневной работы по формированию позиции предоставляет
+                                широкие возможности для своевременного выполнения сверхзадачи.
+                            </p>
+                        </article>
+                        <article class="news__item">
+                            <p class="news__item-date">1 марта 2023</p>
+                            <p class="p-0 mb-1">
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html">Открыта регистрация на форум</a>
+                            </p>
+                            <p class="news__item-text pb-1">
+                                Идейные соображения высшего порядка, а также начало
+                                повседневной работы по формированию позиции предоставляет
+                                широкие возможности для своевременного выполнения сверхзадачи.
+                            </p>
+                        </article>
+                        <article class="news__item">
+                            <p class="news__item-date">1 марта 2023</p>
+                            <p class="p-0 mb-1">
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html">Открыта регистрация на форум</a>
+                            </p>
+                            <p class="news__item-text pb-1">
+                                Идейные соображения высшего порядка, а также начало
+                                повседневной работы по формированию позиции предоставляет
+                                широкие возможности.
+                            </p>
+                        </article>
+                        <div class="all-news-link text-center">
+                            <a href="<?= SITE_DIR ?>news/" class="btn">Все новости</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Спикеры======== -->
+        <section class="py-5 bg-dark-blue">
+            <h2 class="text-white text-center fw-bold py-5">Основные спикеры форума</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Яныкина.webp" class="img-fluid slide-img" alt="1">
+                            <p class="slider-text text-white">Нина Яныкина <br> Деловой альянс</p>
+                            <button class="swiper-icon">
+                                <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
+                            </button>
+                            <div class="moreInfo-speaker text-black">
+                                <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Нина Яныкина</p>
+                                <p class="d-block fw-bold fs-6 text-start my-0 px-3">Деловой альянс</p>
+                                <button class="close-more-info">
+                                    <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Авдеев.webp" class="img-fluid slide-img" alt="1">
+                            <p class="slider-text text-white">Максим Авдеев <br> Ярославская область</p>
+                            <button class="swiper-icon">
+                                <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
+                            </button>
+                            <div class="moreInfo-speaker text-black">
+                                <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Максим Авдеев</p>
+                                <p class="d-block fw-bold fs-6 text-start my-0 px-3">Ярославская область</p>
+                                <button class="close-more-info">
+                                    <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Степанова.webp" class="img-fluid slide-img" alt="1">
+                            <p class="slider-text text-white">Елена Степанова <br> ЯГТУ</p>
+                            <button class="swiper-icon">
+                                <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
+                            </button>
+                            <div class="moreInfo-speaker text-black">
+                                <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Елена Степанова</p>
+                                <p class="d-block fw-bold fs-6 text-start my-0 px-3">ЯГТУ</p>
+                                <button class="close-more-info">
+                                    <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Боровков.webp" class="img-fluid slide-img" alt="1">
+                            <p class="slider-text text-white">Алексей Боровков <br> СПбПУ</p>
+                            <button class="swiper-icon">
+                                <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
+                            </button>
+                            <div class="moreInfo-speaker text-black">
+                                <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Алексей Боровков</p>
+                                <p class="d-block fw-bold fs-6 text-start my-0 px-3">СПбПУ</p>
+                                <button class="close-more-info">
+                                    <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Поляков.webp" class="img-fluid slide-img" alt="1">
+                            <p class="slider-text text-white">Виктор Поляков <br> ПАО "ОДК-САТУРН"</p>
+                            <button class="swiper-icon">
+                                <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
+                            </button>
+                            <div class="moreInfo-speaker text-black">
+                                <p class="d-block fw-bold fs-3 text-start my-0 px-3 pt-3">Виктор Поляков</p>
+                                <p class="d-block fw-bold fs-6 text-start my-0 px-3">ПАО "ОДК-САТУРН"</p>
+                                <button class="close-more-info">
+                                    <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <button type="button" id="btn-speakers" class="btn btn-speakers">Обзор докладчиков</button>
+            </div>
+        </section>
+
+        <!--=======Видеоролик======== -->
+        <section class="py-5 bg-light-blue">
+            <div class="container-xxl">
+                <div class="thumb-wrap">
+                    <iframe title="Video Presentation Forum" width="1200" height="700"
+                            src="https://www.youtube.com/embed/dqoI2Y_PvC8"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Тренды======== -->
+        <section class="py-5 bg-red">
+            <div class="container-xxl">
+                <h2 class="trends__title">Индустриальные тренды</h2>
+                <div class="row breakpoints gy-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3"><a class="trends__link" href="#">Цифровые двойники</a></div>
+                    <div class="col-sm-6 col-md-6 col-lg-3"><a class="trends__link" href="#">Новые материалы</a></div>
+                    <div class="col-sm-6 col-md-6 col-lg-3"><a class="trends__link" href="#">Индустрия 4.0</a></div>
+                    <div class="col-sm-6 col-md-6 col-lg-3"><a class="trends__link" href="#">VR&AR</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Культура общения======== -->
+        <section class="py-5 bg-dark-blue">
+            <div class="container-xxl">
+                <h2 class="culture__title">#МТФ Культура общения</h2>
+                <div class="row breakpoints gy-5 justify-content-center">
+                    <div class="col-sm-12 col-md-4 col-lg-4 align-self-center">
+                        <div class="card card-cult">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Фотогаллерея.webp" class="card-img-top img-fluid" alt="">
+                            <div class="card-body">
+                                <p class="card__title">Фото галерея</p>
+                                <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность
+                                    дальнейших направлений развития. Внезапно, независимые государства могут быть объединены
+                                    в
+                                    целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 align-self-center">
+                        <div class="card card-cult">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/медиа.webp" class="card-img-top img-fluid" alt="">
+                            <div class="card-body">
+                                <p class="card__title">Медиа архив</p>
+                                <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность
+                                    дальнейших направлений развития. Внезапно, независимые государства могут быть объединены
+                                    в
+                                    целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 align-self-center">
+                        <div class="card card-cult">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/культурная%20програма.webp" class="card-img-top img-fluid" alt="">
+                            <div class="card-body">
+                                <p class="card__title">Культурная программа</p>
+                                <p class="card-text">Равным образом, перспективное планирование выявляет срочную потребность
+                                    дальнейших направлений развития. Внезапно, независимые государства могут быть объединены
+                                    в
+                                    целые кластеры себе подобных. Следует отметить, что граница обучения кадров.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Информация======== -->
+        <section class="py-5 bg-red">
+            <div class="container-xxl">
+                <div class="row breakpoints gy-5 justify-content-end">
+                    <div class="card-group">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="card card-info bg-dark-blue">
+                                <div class="card-body">
+                                    <h5 class="info__card-title">Посетителям</h5>
+                                    <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную
+                                        потребность дальнейших направлений развития. Внезапно, независимые государства могут
+                                        быть объединены в целые кластеры себе подобных. Следует отметить, что граница
+                                        обучения
+                                        кадров.</p>
+                                    <a href="#" class="btn btn-info btn-info-modify_1">Спланировать посещение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="card card-info bg-white">
+                                <div class="card-body">
+                                    <h5 class="info__card-title info__card-title-dark-blue">Участникам</h5>
+                                    <p class="info__card-text info__card-text-dark-blue">Равным образом, перспективное
+                                        планирование выявляет срочную потребность дальнейших направлений развития. Внезапно,
+                                        независимые государства могут быть объединены в целые кластеры себе подобных.
+                                        Следует
+                                        отметить, что граница обучения кадров.</p>
+                                    <a href="#" class="btn btn-info btn-info-modify_2">Стать участником</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="card card-info bg-light-blue">
+                                <div class="card-body">
+                                    <h5 class="info__card-title">Журналистам</h5>
+                                    <p class="info__card-text">Равным образом, перспективное планирование выявляет срочную
+                                        потребность дальнейших направлений развития. Внезапно, независимые государства могут
+                                        быть объединены в целые кластеры себе подобных. Следует отметить, что граница
+                                        обучения
+                                        кадров.</p>
+                                    <a href="#" class="btn btn-info btn-info-modify_3">Аккридитация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Партнеры======== -->
+        <section class="py-5 bg-white">
+            <div class="container-xxl">
+                <p class="partners__title text-black text-center fw-bold pb-3">Информационные партнеры 2023</p>
+                <div class="row g-0 justify-content-center">
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                    <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#" class="partners__item">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover" alt="">
+                            <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- @@INC:(block/footer/default.html) -->
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="<?=SITE_TEMPLATE_PATH?>/assets/js/slider.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="<?=SITE_TEMPLATE_PATH?>/assets/js/app.js"></script>
+    </body>
+</html>

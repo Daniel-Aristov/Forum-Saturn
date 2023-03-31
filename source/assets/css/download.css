@@ -1,0 +1,61 @@
+.downloads__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 15px;
+    border: 3px solid #e32424;
+    cursor: pointer;
+    margin: 18px auto;
+    width: 95%;
+    transition: all 0.1s linear;
+}
+
+.downloads__card:hover {
+    box-shadow: -7px 7px 0 3px rgb(206, 11, 11);
+}
+
+.downloads__card-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.downloads__card-icon img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.downloads__card__inner {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.downloads__card-title {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.downloads__card-subtitle {
+    font-weight: bolder;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .downloads__card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .downloads__card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .downloads__card {
+        width: 65%;
+    }
+}

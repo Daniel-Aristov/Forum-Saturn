@@ -1,0 +1,249 @@
+nav .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.menu-item::before {
+    content: ' ';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.date {
+    color: #02385A;
+}
+
+.dropdown.active>.menu-item::before,
+.dropdown:hover > .menu-item::before,
+.menu-item:has(+ .dropdown-content:hover)::before,
+.menu-item:hover::before {
+    transform: scaleX(1);
+    transition: all 0.25s linear;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+.active-menu-item::before {
+    content: ' ';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transform: scaleX(1);
+}
+
+.navbar-toggler {
+    margin-right: 60px;
+}
+
+.nav-logo {
+    margin-left: 40px;
+    z-index: 1000;
+}
+
+.dropdown {
+    position: static;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.dropdown-content__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px 150px 50px;
+    margin-top: 1rem;
+    background-color: #02385A;
+}
+
+.dropdown-content a {
+    font-weight: bolder;
+    text-align: start;
+    font-size: 1.2rem;
+    padding: 80px 20px 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 270px;
+    height: 160px;
+    background-color: #04ADC0;
+    transition: all 0.1s linear;
+}
+
+.dropdown-content a.active {
+    background-color: #c70404;
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+    transition: all 0.1s linear;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
+}
+
+.btn-input {
+    color: white;
+    font-weight: 800;
+    font-size: 0.8rem;
+    border-radius: 0;
+    padding: 2px 15px;
+    background-color: #cc0808;
+    z-index: 1000;
+    transition: all 0.2s linear;
+}
+
+.btn-input:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+.btn-input:active {
+    color: red;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+
+.btn-input:checked + .btn-input, :not(.btn-check) + .btn-input:active {
+    color: var(--bs-red);
+    background-color: var(--bs-white);
+    border-color: var(--bs-red);
+    transition: all 0.2s linear;
+}
+
+.btn-stars {
+    border: none;
+    color: white;
+    font-weight: 800;
+    border-radius: 0;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    z-index: 1000;
+    padding: 0 10px;
+    transition: all 0.2s linear;
+}
+
+.btn-stars:hover {
+    color: #a4a4a4;
+    transition: all 0.2s linear;
+}
+
+.btn-stars:checked + .btn-stars, :not(.btn-check) + .btn-stars:active {
+    color: white;
+    transition: all 0.2s linear;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .dropdown-content__inner {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 40px 90px;
+    }
+
+    .btn-stars {
+        z-index: 0;
+    }
+
+    .btn-input {
+        z-index: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .btn-stars {
+        z-index: 0;
+    }
+
+    .btn-input {
+        z-index: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .btn-stars {
+        z-index: 0;
+    }
+
+    .btn-input {
+        z-index: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .menu-item {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    .btn-input {
+        font-size: 0.9rem;
+    }
+
+    .btn-stars {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content a {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .menu-item {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    .btn-input {
+        font-size: 0.9rem;
+    }
+
+    .btn-stars {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-content a {
+        width: 270px;
+        height: 150px;
+    }
+}
