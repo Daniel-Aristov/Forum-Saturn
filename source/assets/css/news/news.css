@@ -1,8 +1,3 @@
-.top-news {
-    color: white;
-    padding: 60px 0;
-}
-
 .top-news-title {
     font-size: 2.5rem;
     font-weight: bolder;
@@ -14,10 +9,6 @@
     font-weight: bolder;
     text-align: left;
     padding-bottom: 20px;
-}
-
-.top-news__inner {
-    margin-top: 30px;
 }
 
 .top-news__item {
@@ -38,7 +29,7 @@
     content: ' ';
     width: 100%;
     height: 4px;
-    background-color: white;
+    background-color: var(--bs-white);
     position: absolute;
     left: 0;
     bottom: -18px;
@@ -59,13 +50,13 @@
 
 .top-news__item-date {
     font-size: 1rem;
-    color: #a4a4a4;
+    color: var(--bs-grey);
     opacity: 0.8;
     margin: 5px 0;
 }
 
 .top-news__item-title {
-    color: white;
+    color: var(--bs-white);
     text-decoration: none;
     display: block;
     font-size: 3rem;
@@ -77,11 +68,11 @@
 
 .top-news__item-title:hover {
     text-decoration: none;
-    color: white;
+    color: var(--bs-white);
 }
 
 .top-news__item-title[href]::after {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
     top: 0;
@@ -117,7 +108,7 @@
 }
 
 .last-news-category__card__inner:hover > .last-news-card__img img {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
+    box-shadow: -6px 6px 0 3px var(--bs-red);;
     transition: all 0.1s linear;
 }
 
@@ -133,7 +124,7 @@
 .card-header {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: var(--bs-white);
     border: 0;
     padding: 0;
 }
@@ -142,12 +133,12 @@
     font-size: 1.1rem;
     font-weight: bolder;
     margin: 10px 0;
-    color: red;
+    color: var(--bs-red);
 }
 
 .card-date {
     font-size: 1rem;
-    color: #6d6d6d;
+    color: var(--bs-grey);
     opacity: 0.8;
     margin: 5px 20px;
 }
@@ -157,7 +148,7 @@
     color: #202020;
     text-decoration: none;
     font-size: 2.2rem;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 2px;
     line-height: 1.1;
 }
@@ -165,7 +156,7 @@
 .card-title:hover {
     text-decoration: none;
     font-size: 2.2rem;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 2px;
     color: #202020;
 }
@@ -194,23 +185,23 @@
 }
 
 .page-link {
-    color: red;
-    border: 1px solid red;
-    font-weight: bolder;
+    color: var(--bs-red);
+    border: 1px solid var(--bs-red);
+    font-weight: bold;
 }
 
 .page-link:hover {
-    border: 1px solid red;
-    background-color: red;
-    color: white;
+    border: 1px solid var(--bs-red);
+    background-color: var(--bs-red);
+    color: var(--bs-white);
 }
 
 .pagination > .active > a
 {
-    background-color: red !Important;;
-    color: white;
-    font-weight: bolder;
-    border: solid 1px red !Important;
+    background-color: var(--bs-red) !Important;
+    color: var(--bs-white);
+    font-weight: bold;
+    border: solid 1px var(--bs-red) !Important;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {

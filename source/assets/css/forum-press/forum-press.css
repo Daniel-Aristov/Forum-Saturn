@@ -3,17 +3,17 @@
     font-weight: bolder;
     text-align: center;
     margin-bottom: 30px;
-    color: white;
+    color: var(--bs-white);
 }
 
 .forum-item__text {
     font-size: 1.2rem;
     padding: 0;
-    color: white;
+    color: var(--bs-white);
 }
 
 .forum-item__subtitle {
-    color: white;
+    color: var(--bs-white);
     font-size: 1.2rem;
     font-weight: bolder;
     padding: 0;
@@ -21,23 +21,19 @@
     margin-top: 20px;
 }
 
-.forum__inner {
-    padding: 80px 0;
-}
-
-.card {
+.card-forum-press {
     margin-bottom: 25px;
     transition: all 0.2s linear;
     cursor: pointer;
 }
 
-.card:hover {
-    background-color: #ff1616;
-    color: white;
+.card-forum-press:hover {
+    background-color: var(--bs-shadow-red);
+    color: var(--bs-white);
     transition: all 0.2s linear;
 }
 
-.card__inner {
+.card-forum-press__inner {
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -59,7 +55,7 @@
 }
 
 .card-title {
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 3px;
     font-size: 1.4rem;
 }

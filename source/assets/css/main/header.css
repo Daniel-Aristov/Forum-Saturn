@@ -1,37 +1,37 @@
 header {
-    background-image: url("<?=SITE_TEMPLATE_PATH?>/assets/img/header_bg.webp");
+    background-image: url("../../img/header_bg.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .header__date {
-    color: white;
+    color: var(--bs-white);
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 0;
-    text-shadow: 2px 2px 0 #000000;
+    text-shadow: 2px 2px 0 black;
 }
 
 .header__title {
     text-transform: uppercase;
-    color: white;
+    color: var(--bs-white);
     font-weight: 800;
     font-size: 4.2rem;
-    text-shadow: 2px 2px 0 #000000;
+    text-shadow: 2px 2px 0 black;
 }
 
 .header__subtitle {
-    color: white;
+    color: var(--bs-white);
     font-weight: bolder;
     font-size: 1.2rem;
     margin-bottom: 45px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0 #000000;
+    text-shadow: 2px 2px 0 black;
 }
 
 .header-card-text {
-    color: white;
+    color: var(--bs-white);
     font-weight: 800;
     font-size: 1.3rem;
     position: absolute;
@@ -41,7 +41,7 @@ header {
     bottom: 20px;
     padding: 0;
     text-align: left;
-    text-shadow: 2px 2px 0 #000000;
+    text-shadow: 2px 2px 0 black;
 }
 
 .shadow-custom > .card-img img, .shadow-custom-blue > .card-img img  {
@@ -50,12 +50,7 @@ header {
 }
 
 .shadow-custom:hover > .card-img img {
-    box-shadow: -7px 7px 0 3px rgb(206, 11, 11);
-    transition: all 0.1s linear;
-}
-
-.sshadow-custom-blue:hover > .card-img img {
-    box-shadow: -7px 7px 0 3px rgb(38, 151, 216);
+    box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
     transition: all 0.1s linear;
 }
 

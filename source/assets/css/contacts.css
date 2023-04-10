@@ -24,10 +24,10 @@
 .contacts__card-mail-btn {
     display: block;
     text-decoration: none;
-    color: red;
+    color: var(--bs-btn-red);
     font-size: 1.1rem;
     font-weight: bolder;
-    border: 2px solid red;
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     margin-top: 15px;
     text-align: center;
@@ -37,9 +37,9 @@
 
 .contacts__card-mail-btn:hover {
     text-decoration: none;
-    color: white;
-    background-color: red;
-    border: 2px solid red;
+    color: var(--bs-btn-white);
+    background-color: var(--bs-btn-red);
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     transition: all 0.2s linear;
 }

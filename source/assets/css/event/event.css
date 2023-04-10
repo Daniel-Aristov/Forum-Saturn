@@ -25,8 +25,8 @@
 
 .btn-sort-event-list {
     color: black;
-    border: 2px solid #e3e3e3;
-    background: white;
+    border: 2px solid var(--bs-grey);
+    background: var(--bs-btn-white);
     font-size: 1.1rem;
     font-weight: bolder;
     border-radius: 15px 15px 0 0;
@@ -38,22 +38,22 @@
 
 .btn-sort-event-list:active {
     color: black;
-    border: 2px solid #e3e3e3;
-    background: white;
+    border: 2px solid var(--bs-grey);
+    background: var(--bs-btn-white);
 }
 
 .btn-sort-event-list:hover {
     color: black;
-    border: 2px solid #e3e3e3;
+    border: 2px solid var(--bs-grey);
     border-bottom: 0;
     border-radius: 15px 15px 0 0;
-    background: #e3e3e3;
+    background: var(--bs-grey);
     transition: all 0.2s linear;
 }
 
 .event-list__inner {
     padding: 10px;
-    background-color: #e3e3e3;
+    background-color: var(--bs-grey);
 }
 
 .date-filter-item {
@@ -66,22 +66,22 @@
     width: 100%;
     margin-bottom: 5px;
     padding: 8px 80px;
-    background-color: #02385A;
-    color: white;
+    background-color: var(--bs-primary);
+    color: var(--bs-btn-white);
     font-weight: 700;
     transition: all 0.2s linear;
 }
 
 .date-btn:hover {
-    background-color: #04ADC0;
-    color: white;
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
     font-weight: 700;
     transition: all 0.2s linear;
 }
 
 .btn-track {
-    background-color: #bc2222;
-    color: white;
+    background-color: var(--bs-red);
+    color: var(--bs-white);
     margin-bottom: 10px;
     font-weight: 700;
     margin-right: 8px;
@@ -90,7 +90,7 @@
 }
 
 .btn-track:hover {
-    background-color: #9b0404;
+    background-color: var(--bs-dark-red);
     color: white;
     font-weight: 700;
     transition: all 0.2s linear;
@@ -156,7 +156,7 @@
 }
 
 .card-tema {
-    color: red;
+    color: var(--bs-red);
     font-size: 1.1rem;
     font-weight: bolder;
     opacity: 0.9;
@@ -238,7 +238,6 @@
     }
 
     .card-title {
-        color: black;
         font-size: 1.2rem;
     }
 }
@@ -270,7 +269,6 @@
     }
 
     .card-title {
-        color: black;
         font-size: 1.4rem;
     }
 }

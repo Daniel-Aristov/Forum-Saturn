@@ -41,7 +41,7 @@
 }
 
 .nav-item-link {
-    color: white;
+    color: var(--bs-white);
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.2rem;
@@ -49,7 +49,7 @@
 }
 
 .nav-item-link:hover {
-    color: white;
+    color: var(--bs-white);
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@
     content: ' ';
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: var(--bs-white);
     position: absolute;
     left: 0;
     bottom: -0px;
@@ -66,14 +66,14 @@
 }
 
 .nav-item-link:hover::before {
-    color: white;
+    color: var(--bs-white);
     text-decoration: none;
     visibility: visible;
     transition: 0.1s;
 }
 
 .nav-item-link-active {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--bs-white);
 }
 
 .page__inner {
@@ -82,20 +82,20 @@
 }
 
 .page-btn {
-    background-color: red;
+    background-color: var(--bs-btn-red);
     font-size: 1.1rem;
-    color: white;
+    color: var(--bs-btn-white);
     padding: 6px 50px;
-    border: 2px solid red;
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     margin: 10px auto 0;
     transition: all 0.2s linear;
 }
 
 .page-btn:hover {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
+    background-color: var(--bs-btn-white);
+    color: var(--bs-btn-red);
+    border: 2px solid var(--bs-btn-border-color-red);
     transition: all 0.2s linear;
 }
 
@@ -165,11 +165,11 @@
 }
 
 .bg-dark-red {
-    background-color: #7b0808;
+    background-color: var(--bs-dark-red);
 }
 
 .info__card-title {
-    color: white;
+    color: var(--bs-white);
     font-weight: bolder;
     font-size: 1.3rem;
     padding-bottom: 10px;
@@ -177,18 +177,18 @@
 }
 
 .info__card-title-dark-blue {
-    color: #02385A;
+    color: var(--bs-primary);
 }
 
 .info__card-text {
     font-weight: normal;
     font-size: 1.1rem;
-    color: white;
+    color: var(--bs-white);
     text-align: justify;
 }
 
 .info__card-text-dark-blue {
-    color: #02385A;
+    color: var(--bs-primary);
 }
 
 .btn-info {
@@ -202,45 +202,45 @@
 }
 
 .btn-info-modify_1 {
-    border: 2px solid white;
-    color: white;
-    background-color: #02385A;
+    border: 2px solid var(--bs-white);
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
     transition: all 0.2s linear;
 }
 
 
 .btn-info-modify_1:hover {
-    color: #02385A;
-    border: 2px solid white;
-    background-color: white;
+    color: var(--bs-primary);
+    border: 2px solid var(--bs-white);
+    background-color: var(--bs-white);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_2 {
-    border: 2px solid #02385A;
-    color: #02385A;
-    background-color: white;
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background-color: var(--bs-white);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_2:hover {
-    color: white;
-    border: 2px solid #02385A;
-    background-color: #02385A;
+    color: var(--bs-white);
+    border: 2px solid var(--bs-primary);
+    background-color: var(--bs-primary);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_3 {
-    border: 2px solid white;
-    color: white;
-    background-color: #7b0808;
+    border: 2px solid var(--bs-white);
+    color: var(--bs-white);
+    background-color: var(--bs-dark-red);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_3:hover {
-    color: #7b0808;
-    border: 2px solid white;
-    background-color: white;
+    color: var(--bs-dark-red);
+    border: 2px solid var(--bs-white);
+    background-color: var(--bs-white);
     transition: all 0.2s linear;
 }
 
@@ -268,8 +268,6 @@
 
     .nav-item-link {
         font-size: 0.9rem;
-        color: white;
-        text-decoration: none;
     }
 
     .main-part__card {
@@ -316,8 +314,6 @@
 
     .nav-item-link {
         font-size: 0.8rem;
-        color: white;
-        text-decoration: none;
     }
 
     .main-part__card-img img {
@@ -360,8 +356,6 @@
 
     .nav-item-link {
         font-size: 1rem;
-        color: white;
-        text-decoration: none;
     }
 
     .page-insert__inner {

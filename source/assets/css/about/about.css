@@ -1,16 +1,16 @@
 .about-btn {
-    background-color: red;
-    color: white;
-    border: 2px solid red;
+    background-color: var(--bs-btn-red);
+    color: var(--bs-btn-white);
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     padding: 8px 45px;
     transition: all 0.2s linear;
 }
 
 .about-btn:hover {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
+    background-color: var(--bs-btn-white);
+    color: var(--bs-btn-red);
+    border: 2px solid var(--bs-btn-border-color-red);
 }
 
 .carousel-img img {
@@ -34,7 +34,7 @@
 }
 
 .info__card-title {
-    color: white;
+    color: var(--bs-white);
     font-weight: bolder;
     font-size: 1.3rem;
     padding-bottom: 10px;
@@ -42,18 +42,18 @@
 }
 
 .info__card-title-dark-blue {
-    color: #02385A;
+    color: var(--bs-primary);
 }
 
 .info__card-text {
     font-weight: normal;
     font-size: 1rem;
-    color: white;
+    color: var(--bs-white);
     text-align: justify;
 }
 
 .info__card-text-dark-blue {
-    color: #02385A;
+    color: var(--bs-primary);
 }
 
 .btn-info {
@@ -68,40 +68,40 @@
 }
 
 .btn-info-modify_1 {
-    border: 2px solid white;
-    color: white;
-    background-color: #02385A;
+    border: 2px solid var(--bs-btn-border-color-white);
+    color: var(--bs-btn-white);
+    background-color: var(--bs-primary);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_1:hover {
-    color: #02385A;
-    border: 2px solid white;
-    background-color: white;
+    color: var(--bs-primary);
+    border: 2px solid var(--bs-btn-border-color-white);
+    background-color: var(--bs-btn-white);
 }
 
 .btn-info-modify_2 {
-    border: 2px solid #02385A;
-    color: #02385A;
-    background-color: white;
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    background-color: var(--bs-btn-white);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_2:hover {
-    color: white;
-    border: 2px solid #02385A;
-    background-color: #02385A;
+    color: var(--bs-btn-white);
+    border: 2px solid var(--bs-primary);
+    background-color: var(--bs-primary);
 }
 
 .btn-info-modify_3 {
-    border: 2px solid white;
+    border: 2px solid var(--bs-btn-border-color-white);
     color: #a20f0f;
-    background-color: white;
+    background-color: var(--bs-btn-white);
     transition: all 0.2s linear;
 }
 
 .btn-info-modify_3:hover {
-    color: white;
-    border: 2px solid white;
+    color: var(--bs-btn-white);
+    border: 2px solid var(--bs-btn-border-color-white);
     background-color: #a20f0f;
 }

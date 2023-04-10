@@ -1,5 +1,5 @@
 .news__title {
-    color: red;
+    color: var(--bs-red);
     text-align: center;
     font-weight: 800;
     font-size: 2rem;
@@ -24,7 +24,7 @@
     content: ' ';
     width: 100%;
     height: 4px;
-    background-color: red;
+    background-color: var(--bs-red);
     position: absolute;
     left: 0;
     bottom: -18px;
@@ -93,8 +93,8 @@
     margin: 15px auto 0;
     text-align: center;
     font-weight: 800;
-    background-color: #04ADC0;
-    color: white;
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
     border: 0;
     border-radius: 30px;
     padding: 12px 50px;
@@ -102,8 +102,8 @@
 }
 
 .all-news-link a:hover {
-    background-color: #02385A;
-    color: white;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
     transition: all 0.2s linear;
 }
 

@@ -1,15 +1,10 @@
 .category-article {
-    color: red;
+    color: var(--bs-red);
     font-size: 1.1rem;
-    font-weight: bolder;
-    margin: 0;
 }
 
 .article-title {
-    font-weight: bolder;
     font-size: 2.8rem;
-    padding: 0;
-    margin-bottom: 20px;
 }
 
 .artile-text {
@@ -23,28 +18,12 @@
     height: 260px;
 }
 
-.article-img img {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-}
-
 .menu-accordion {
-    margin-top: 50px;
-    border-bottom: 2px solid #aeaeae;
+    border-bottom: 2px solid var(--bs-grey);
 }
 
 .menu-title {
-    padding-bottom: 15px;
-    border-bottom: 2px solid #aeaeae;
-}
-
-.menu-accordion {
-    margin: 30px auto;
-}
-
-.accordion {
-    margin: 30px auto;
+    border-bottom: 2px solid var(--bs-grey);
 }
 
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
@@ -59,7 +38,7 @@
 .accordion-button:focus {
     border: none;
     outline: none;
-    background-color: #f4f4f4;
+    background-color: var(--bs-grey);
     box-shadow: none;
 }
 

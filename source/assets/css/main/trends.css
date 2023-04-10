@@ -1,6 +1,6 @@
 .trends__title {
     text-align: center;
-    color: white;
+    color: var(--bs-white);
     font-weight: bolder;
     font-size: 2em;
     padding-bottom: 50px;
@@ -12,9 +12,9 @@
     width: 100%;
     text-align: center;
     text-decoration: none;
-    border: 3px solid white;
+    border: 3px solid var(--bs-white);
     border-radius: 30px;
-    color: white;
+    color: var(--bs-white);
     font-style: normal;
     font-weight: bolder;
     padding: 8px 20px;
@@ -23,6 +23,6 @@
 
 .trends__link:hover {
     transition: all 0.2s linear;
-    background-color: white;
-    color: red;
+    background-color: var(--bs-white);
+    color: var(--bs-red);
 }

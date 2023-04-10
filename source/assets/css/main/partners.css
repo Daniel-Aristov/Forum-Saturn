@@ -9,7 +9,7 @@
 }
 
 .partners__item img {
-    border: 2px solid #cacaca;
+    border: 2px solid var(--bs-grey);
     width: 150px;
 }
 
@@ -18,6 +18,6 @@
 }
 
 .partners__item:hover > .shadow-hover {
-    box-shadow: -12px 12px 0 -1px rgb(206, 5, 5);;
+    box-shadow: -12px 12px 0 -1px var(--bs-shadow-red);
     transition: all 0.09s linear;
 }

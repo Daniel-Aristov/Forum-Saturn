@@ -7,7 +7,7 @@
     border: none;
     border-radius: 0;
     border-bottom: 2px solid black;
-    background-color: #f6f6f6;
+    background-color: var(--bs-grey);
     padding: 10px 20px;
 }
 
@@ -16,8 +16,8 @@
     border: none;
     box-shadow: none;
     border-radius: 0;
-    border-bottom: 2px solid #a51e1e;
-    background-color: #ededed;
+    border-bottom: 2px solid var(--bs-dark-red);
+    background-color: var(--bs-grey);
     padding: 10px 20px;
 }
 
@@ -26,7 +26,7 @@
     border: none;
     border-radius: 0;
     border-bottom: 1px solid black;
-    background-color: #ededed;
+    background-color: var(--bs-grey);
     padding: 10px 20px;
 }
 
@@ -35,8 +35,8 @@
     border: none;
     box-shadow: none;
     border-radius: 0;
-    border-bottom: 3px solid #a51e1e;
-    background-color: #ededed;
+    border-bottom: 3px solid var(--bs-dark-red);
+    background-color: var(--bs-grey);
     padding: 10px 20px;
 }
 
@@ -46,39 +46,39 @@
 
 .form-btn {
     text-decoration: none;
-    background-color: red;
-    color: white;
-    border: 2px solid red;
+    background-color: var(--bs-btn-red);
+    color: var(--bs-white);
+    border: var(--bs-btn-border-color-red);
     border-radius: 30px;
     padding: 8px 45px;
     transition: all 0.2s linear;
 }
 
 .form-btn:hover {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
+    background-color: var(--bs-white);
+    color: var(--bs-btn-red);
+    border: 2px solid var(--bs-btn-border-color-red);
     transition: all 0.2s linear;
 }
 
 .forgot-password {
     font-size: 1.1rem;
     display: block;
-    color: red;
+    color: var(--bs-red);
 }
 
 .link-register {
     font-size: 1.1rem;
     display: block;
-    color: red;
+    color: var(--bs-red);
 }
 
 .forgot-password:hover {
-    color: #9b0707;
+    color: var(--bs-dark-red);
 }
 
 .link-register:hover {
-    color: #9b0707;
+    color: var(--bs-dark-red);
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {

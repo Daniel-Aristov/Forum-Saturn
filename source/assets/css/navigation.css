@@ -19,7 +19,7 @@ nav .nav-container {
     content: ' ';
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: var(--bs-white);
     position: absolute;
     left: 0;
     bottom: 2px;
@@ -28,7 +28,7 @@ nav .nav-container {
 }
 
 .date {
-    color: #02385A;
+    color: var(--bs-primary);
 }
 
 .dropdown.active>.menu-item::before,
@@ -40,14 +40,14 @@ nav .nav-container {
 }
 
 .menu-item:hover {
-    color: white;
+    color: var(--bs-white);
 }
 
 .active-menu-item::before {
     content: ' ';
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: var(--bs-white);
     position: absolute;
     left: 0;
     bottom: 2px;
@@ -86,7 +86,7 @@ nav .nav-container {
     justify-content: flex-start;
     padding: 50px 150px 50px;
     margin-top: 1rem;
-    background-color: #02385A;
+    background-color: var(--bs-primary);
 }
 
 .dropdown-content a {
@@ -96,21 +96,21 @@ nav .nav-container {
     padding: 80px 20px 20px;
     margin-right: 10px;
     margin-top: 15px;
-    color: white;
+    color: var(--bs-white);
     text-decoration: none;
     display: block;
     width: 270px;
     height: 160px;
-    background-color: #04ADC0;
+    background-color: var(--bs-secondary);
     transition: all 0.1s linear;
 }
 
 .dropdown-content a.active {
-    background-color: #c70404;
+    background-color: var(--bs-dark-red);
 }
 
 .dropdown-content a:hover {
-    background-color: red;
+    background-color: var(--bs-red);
     transition: all 0.1s linear;
 }
 
@@ -121,56 +121,35 @@ nav .nav-container {
 }
 
 .btn-input {
-    color: white;
+    color: var(--bs-btn-white);
     font-weight: 800;
     font-size: 0.8rem;
     border-radius: 0;
     padding: 2px 15px;
-    background-color: #cc0808;
+    background-color: var(--bs-btn-red);
     z-index: 1000;
     transition: all 0.2s linear;
 }
 
 .btn-input:hover {
     color: black;
-    background-color: white;
+    background-color: var(--bs-btn-white);
     transition: all 0.2s linear;
 }
 
 .btn-input:active {
-    color: red;
-    background-color: white;
+    color: var(--bs-btn-red);
+    background-color: var(--bs-btn-white);
     transition: all 0.2s linear;
 }
 
 .btn-input:checked + .btn-input, :not(.btn-check) + .btn-input:active {
-    color: var(--bs-red);
-    background-color: var(--bs-white);
-    border-color: var(--bs-red);
+    color: var(--bs-btn-red);
+    background-color: var(--bs-btn-white);
+    border-color: var(--bs-btn-border-color-red);
     transition: all 0.2s linear;
 }
 
-.btn-stars {
-    border: none;
-    color: white;
-    font-weight: 800;
-    border-radius: 0;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    z-index: 1000;
-    padding: 0 10px;
-    transition: all 0.2s linear;
-}
-
-.btn-stars:hover {
-    color: #a4a4a4;
-    transition: all 0.2s linear;
-}
-
-.btn-stars:checked + .btn-stars, :not(.btn-check) + .btn-stars:active {
-    color: white;
-    transition: all 0.2s linear;
-}
 
 @media (min-width: 0px) and (max-width: 575.98px) {
     .dropdown-content__inner {

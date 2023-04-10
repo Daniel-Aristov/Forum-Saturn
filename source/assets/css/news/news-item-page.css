@@ -1,14 +1,4 @@
-.news-item {
-    padding: 0;
-    margin: 0;
-}
-
-.news-item__title-block {
-    padding: 40px 0 40px;
-    margin: 0;
-}
-
-.news-item__title-block__inner {
+.title-block {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -16,18 +6,14 @@
     align-items: flex-start;
 }
 
-.news-item__title-text {
-    color: white;
-}
-
 .news-item__title__category {
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .news-item__title {
     font-size: 3rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .news-item__subtitle {
@@ -41,27 +27,23 @@
 }
 
 .btn-news-share {
-    color: white;
-    font-weight: bolder;
+    color: var(--bs-btn-white);
+    font-weight: bold;
     font-size: 1rem;
     padding: 6px 16px;
     margin-left: 150px;
     margin-top: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--bs-btn-border-color-white);
     border-radius: 30px;
-    background-color: #02385A;
+    background-color: var(--bs-primary);
     transition: all 0.1s linear;
 }
 
 .btn-news-share:hover {
     color: black;
-    border: 2px solid white;
-    background-color: white;
+    border: 2px solid var(--bs-btn-border-color-white);
+    background-color: var(--bs-btn-white);
     transition: all 0.1s linear;
-}
-
-.news-item-article {
-    color: black;
 }
 
 .news-item__text-block {
@@ -100,9 +82,6 @@
     padding-top: 10px;
 }
 
-.link-company {
-    padding-bottom: 90px;
-}
 
 .link-company-title {
     font-size: 1.5rem;
@@ -122,7 +101,7 @@
 }
 
 .link-company__card:hover > .link-company-card__img img {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
+    box-shadow: -6px 6px 0 3px var(--bs-shadow-red);
     transition: all 0.1s linear;
 }
 
@@ -136,7 +115,7 @@
     width: 180px;
     height: 180px;
     transition: all 0.1s linear;
-    border: 2px solid #9e9e9e;
+    border: 2px solid var(--bs-grey);
 }
 
 .card-discription {
@@ -175,7 +154,7 @@
 
 .similar-news__card {
     position: relative;
-    border: 2px solid #b9b9b9;
+    border: 2px solid var(--bs-grey);
     width: 95%;
     padding: 30px;
     cursor: pointer;
@@ -183,7 +162,7 @@
 }
 
 .similar-news__card:hover {
-    box-shadow: -6px 6px 0 3px rgba(255, 23, 23, 1);
+    box-shadow: -6px 6px 0 3px var(--bs-shadow-red);
     transition: all 0.1s linear;
 }
 
@@ -229,12 +208,8 @@
 
 }
 
-.similar-company {
-    padding: 40px 0;
-}
-
 .similar-company__title {
-    color: white;
+    color: var(--bs-white);
     font-size: 1.5rem;
     font-weight: bolder;
     padding-bottom: 20px;
@@ -248,7 +223,7 @@
 }
 
 .similar-company__item img {
-    border: 2px solid #cacaca;
+    border: 2px solid var(--bs-grey);
     width: 170px;
 }
 
@@ -257,14 +232,14 @@
 }
 
 .similar-company__item:hover > .shadow-hover {
-    box-shadow: -12px 12px 0 -1px rgb(206, 5, 5);;
+    box-shadow: -12px 12px 0 -1px var(--bs-shadow-red);
     transition: all 0.09s linear;
 }
 
 .similar-company-btn-more a {
-    color: white;
-    background-color: #02385A;
-    border: 2px solid white;
+    color: var(--bs-btn-white);
+    background-color: var(--bs-primary);
+    border: 2px solid var(--bs-btn-white);
     border-radius: 30px;
     text-align: center;
     font-weight: 700;
@@ -274,9 +249,9 @@
 }
 
 .similar-company-btn-more a:hover {
-    color: #02385A;
-    background-color: #ffffff;
-    border: 2px solid white;
+    color: var(--bs-primary);
+    background-color: var(--bs-btn-white);
+    border: 2px solid var(--bs-btn-white);
     transition: all 0.2s linear;
 }
 

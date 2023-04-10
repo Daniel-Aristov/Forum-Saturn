@@ -21,12 +21,12 @@
     font-weight: 700;
     color: black;
     text-decoration: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--bs-white);
 }
 
 .dropdown-content-account p:last-child {
     padding-top: 15px;
-    border-top: 1px solid #a2a2a2;
+    border-top: 1px solid var(--bs-grey);
 }
 
 .dropdown-content-account a:hover {
@@ -45,7 +45,7 @@
 /*=======Account=======*/
 .account-data {
     padding-bottom: 40px;
-    border-bottom: 2px solid #a7a7a7;
+    border-bottom: 2px solid var(--bs-grey);
 }
 
 .title-block {
@@ -53,7 +53,7 @@
 }
 
 .edit-text-btn {
-    color: red;
+    color: var(--bs-btn-red);
     background-color: transparent;
     border: none;
 }
@@ -80,27 +80,27 @@
 .networking ul li {
     padding: 2px 0;
     font-size: 1.1rem;
-    color: red;
+    color: var(--bs-red);
     list-style: none;
 }
 
 .network-btn {
-    background: red;
-    color: white;
+    background: var(--bs-btn-red);
+    color: var(--bs-btn-white);
     font-weight: 800;
     font-size: 1rem;
     padding: 6px 40px;
-    border: 2px solid red;
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     transition: all 0.2s linear;
 }
 
 .network-btn:hover {
-    background: white;
-    color: red;
+    background: var(--bs-btn-white);
+    color: var(--bs-btn-red);
     font-weight: 800;
     font-size: 1rem;
-    border: 2px solid red;
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     transition: all 0.2s linear;
 }
