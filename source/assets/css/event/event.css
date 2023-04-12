@@ -36,17 +36,18 @@
     padding: 8px 18px;
 }
 
-.btn-sort-event-list:active {
+.btn-sort-event-list.active {
     color: black;
     border: 2px solid var(--bs-grey);
-    background: var(--bs-btn-white);
+    border-bottom: 0;
+    background: var(--bs-grey);
+    transition: all 0.2s linear;
 }
 
 .btn-sort-event-list:hover {
     color: black;
     border: 2px solid var(--bs-grey);
     border-bottom: 0;
-    border-radius: 15px 15px 0 0;
     background: var(--bs-grey);
     transition: all 0.2s linear;
 }

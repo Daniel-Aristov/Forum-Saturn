@@ -150,6 +150,29 @@ nav .nav-container {
     transition: all 0.2s linear;
 }
 
+.btn-stars {
+    display: inline-block;
+    border: none;
+    color: var(--bs-btn-white);
+    font-weight: 800;
+    border-radius: 0;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    z-index: 1000;
+    padding: 0 10px;
+    transition: all 0.2s linear;
+}
+
+.btn-stars:hover {
+    color: var(--bs-grey);
+    transition: all 0.2s linear;
+}
+
+.btn-stars:checked + .btn-stars, :not(.btn-check) + .btn-stars:active {
+    color: var(--bs-btn-white);
+    transition: all 0.2s linear;
+}
+
 
 @media (min-width: 0px) and (max-width: 575.98px) {
     .dropdown-content__inner {
