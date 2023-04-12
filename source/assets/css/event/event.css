@@ -188,6 +188,16 @@
     overflow: hidden;
 }
 
+.event-more-info a {
+    color: black;
+}
+
+.event-list-item img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
     .date-filter-item {
         display: grid;
