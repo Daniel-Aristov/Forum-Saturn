@@ -97,7 +97,7 @@
     color: var(--bs-white);
     border: 0;
     border-radius: 30px;
-    padding: 12px 50px;
+    padding: 12px 60px;
     transition: all 0.2s linear;
 }
 
@@ -107,14 +107,3 @@
     transition: all 0.2s linear;
 }
 
-@media (min-width: 0px) and (max-width: 575.98px) {
-    .all-news-link {
-        width: 50%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .all-news-link {
-        width: 50%;
-    }
-}

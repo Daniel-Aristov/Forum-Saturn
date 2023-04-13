@@ -175,6 +175,14 @@ nav .nav-container {
 
 
 @media (min-width: 0px) and (max-width: 575.98px) {
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .nav-logo {
+        margin-left: 0;
+    }
+
     .dropdown-content__inner {
         display: flex;
         flex-wrap: wrap;

@@ -55,6 +55,7 @@ header {
 }
 
 .card-img {
+    max-width: 100%;
     cursor: pointer;
     position: relative;
     display: inline-block;
@@ -63,8 +64,8 @@ header {
 .card-img img {
     background-size: cover;
     position: center;
-    width: 300px;
-    height: 230px;
+    width: 100%;
+    height: auto;
 }
 
 .big-foto img {
@@ -76,18 +77,13 @@ header {
 
 @media (min-width: 0px) and (max-width: 575.98px) {
     .header__title {
-        font-size: 2.8rem;
-    }
-
-    .header-img {
-        width: 350px;
-        height: 280px;
-        margin: 20px 0;
+        font-size: 2.3rem;
     }
 
     .header-card-text {
-        font-size: 1.9rem;
-        left: 50px;
+        font-size: 1.6rem;
+        left: 30px;
+        bottom: 30px;
     }
 
     .card-img {
@@ -95,17 +91,17 @@ header {
     }
 
     .card-img img {
+        object-fit: cover;
         background-size: cover;
         position: center;
-        width: 500px;
-        height: 420px;
     }
 
     .big-foto img {
+        object-fit: cover;
         background-size: cover;
         position: center;
-        width: 500px;
-        height: 420px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -118,29 +114,22 @@ header {
         font-size: 3.5rem;
     }
 
-    .header-img {
-        width: 370px;
-        height: 300px;
+    .header__subtitle {
+        font-size: 1rem;
     }
 
     .header-card-text {
-        font-size: 1.9rem;
-        left: 40px;
+        font-size: 2rem;
+        left: 50px;
         bottom: 50px;
     }
 
-    .card-img img {
-        background-size: cover;
-        position: center;
-        width: 500px;
-        height: 420px;
-    }
-
     .big-foto img {
+        object-fit: cover;
         background-size: cover;
         position: center;
-        width: 500px;
-        height: 420px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -150,8 +139,8 @@ header {
     }
 
     .header-card-text {
-        font-size: 1.3rem;
-        left: 40px;
+        font-size: 1.5rem;
+        left: 20px;
     }
 
     .card-img {
@@ -159,10 +148,11 @@ header {
     }
 
     .big-foto img {
+        object-fit: cover;
         background-size: cover;
         position: center;
         width: 400px;
-        max-height: 300px;
+        max-height: 600px;
     }
 }
 
@@ -176,7 +166,7 @@ header {
     }
 
     .header__title {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
     }
 
     .big-foto img {

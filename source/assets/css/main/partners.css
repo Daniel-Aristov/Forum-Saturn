@@ -21,3 +21,11 @@
     box-shadow: -12px 12px 0 -1px var(--bs-shadow-red);
     transition: all 0.09s linear;
 }
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .partners__title {
+        font-size: 2rem;
+    }
+}
+
+

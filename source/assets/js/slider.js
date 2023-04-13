@@ -13,11 +13,11 @@ const speakerSwiper = new Swiper('.swiper-container', {
         },
         576: {
             slidesPerView: 3,
-            spaceBetween: 10
+            spaceBetween: 5
         },
         768: {
-            slidesPerView: 4,
-            spaceBetween: 10
+            slidesPerView: 3,
+            spaceBetween: 5
         },
         992: {
             slidesPerView: 4,

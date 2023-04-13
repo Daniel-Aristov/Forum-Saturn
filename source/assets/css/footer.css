@@ -12,6 +12,7 @@
     padding-bottom: 30px;
     color: var(--bs-grey);
     font-size: 15px;
+    line-height: 1.3;
 }
 
 .border-line {
@@ -23,6 +24,10 @@
     font-size: 1.1rem;
     text-decoration: none;
     color: var(--bs-grey);
+}
+
+.footer__info p {
+    margin-bottom: 0.8rem;
 }
 
 .footer__info a:hover {
@@ -52,18 +57,27 @@
 @media (min-width: 0px) and (max-width: 575.98px) {
     .logo-footer {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: flex-start;
         flex-direction: column;
     }
 
+    .logo-footer img {
+        width: 32px;
+        height: 32px;
+    }
+
     .company-name {
-        margin-top: 70px;
-        font-size: 0.8rem;
+        margin-top: 50px;
+        font-size: 0.7rem;
+    }
+
+    .footer__info p {
+        margin-bottom: 0.1rem;
     }
 
     .footer__info a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .border-line {
@@ -71,21 +85,21 @@
     }
 
     .forum-name {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         padding-left: 0;
     }
 
-    .socials img {
-        width: 25px;
-        height: 25px;
+    .socials svg {
+        width: 13px;
+        height: 13px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .logo-footer {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: flex-start;
         flex-direction: column;
     }
 
@@ -94,22 +108,54 @@
         font-size: 1rem;
     }
 
+    .forum-name {
+        font-size: 0.8rem;
+        padding-left: 0;
+    }
+
     .footer__info a {
         font-size: 1rem;
     }
 
     .border-line {
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
-    .socials img {
-        width: 30px;
-        height: 30px;
+    .socials svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .logo-footer {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
     .company-name {
         font-size: 1.1rem;
+    }
+
+    .forum-name {
+        padding-left: 0;
+    }
+
+    .border-line {
+        padding-left: 20px;
+    }
+
+    .socials svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .socials svg {
+        width: 26px;
+        height: 26px;
     }
 }

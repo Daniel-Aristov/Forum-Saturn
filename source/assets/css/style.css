@@ -13,3 +13,9 @@ html, body {
 .container-xxl {
     --bs-gutter-x: 8.0rem;
 }
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .container-xxl {
+        --bs-gutter-x: 4.0rem;
+    }
+}

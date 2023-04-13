@@ -69,6 +69,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--bs-grey);
+    opacity: 0.9;
     left: 0;
     position: absolute;
     right: 0;
@@ -77,6 +78,21 @@
     z-index: 1000;
     transform: translateY(100%);
     transition: all 0.15s linear;
+}
+
+.moreInfo-speaker p {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.moreInfo-speaker-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.moreInfo-speaker-subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
 }
 
 .show {
@@ -144,30 +160,70 @@
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
+    .swiper-container {
+        padding: 20px 0;
+    }
+
     .swiper-wrapper {
         margin-left: 20px;
     }
 
     .swiper-slide img {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 130px;
     }
 
     .slider-text {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         bottom: 10px;
         right: 10px;
+    }
+
+    .moreInfo-speaker-title {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .moreInfo-speaker-subtitle {
+        font-size: 0.7rem;
+        font-style: italic;
+    }
+
+    .swiper-slide.swiper-slide-active .slider-text {
+        font-size: 0.7rem;
+        text-align: left;
+        left: 10px;
+    }
+
+    .swiper-slide .swiper-icon {
+        display: none;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .swiper-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .close-more-info svg {
+        width: 12px;
+        height: 12px;
+        top: 0
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .swiper-wrapper {
-        margin-left: 100px;
+        margin-left: 70px;
     }
 
     .swiper-slide img {
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 210px;
     }
 
     .slider-text {
@@ -179,12 +235,12 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .swiper-wrapper {
-        margin-left: 200px;
+        margin-left: 150px;
     }
 
     .swiper-slide img {
-        width: 240px;
-        height: 240px;
+        width: 270px;
+        height: 270px;
     }
 
     .slider-text {
