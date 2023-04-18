@@ -190,7 +190,7 @@ nav .nav-container {
         z-index: 0;
     }
 
-    .nav-logo {
+    .nav-logo img {
         width: 45px;
     }
 }
@@ -202,6 +202,10 @@ nav .nav-container {
 
     .btn-input {
         z-index: 0;
+    }
+
+    .nav-logo img {
+        width: 55px;
     }
 }
 
