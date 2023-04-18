@@ -7,15 +7,13 @@
     cursor: pointer;
     width: 95%;
     transition: all 0.1s linear;
-}
-
-.downloads__card a {
     text-decoration: none;
     color: black;
 }
 
 .downloads__card:hover {
     box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
+    color: black;
 }
 
 .downloads__card-icon {
