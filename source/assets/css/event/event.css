@@ -100,7 +100,6 @@
 .event-list-item {
     display: grid;
     grid-template-columns: 160px 1fr;
-    cursor: pointer;
     padding: 20px;
     transition: all 0.2s linear;
     margin-bottom: 15px;

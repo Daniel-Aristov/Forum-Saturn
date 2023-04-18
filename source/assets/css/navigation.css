@@ -2,10 +2,10 @@ nav .nav-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 5rem;
+    align-items: center;
     width: 100%;
-    max-width: 1400px;
+    padding: 0 1.5rem;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -54,13 +54,14 @@ nav .nav-container {
     transform: scaleX(1);
 }
 
-.navbar-toggler {
-    margin-right: 60px;
+.nav-logo img {
+    width: 70px;
 }
 
-.nav-logo {
-    margin-left: 40px;
-    z-index: 1000;
+.navbar-toggler-icon,
+.navbar-toggler {
+    max-height: 50px;
+    color: var(--bs-white);
 }
 
 .dropdown {
@@ -175,14 +176,6 @@ nav .nav-container {
 
 
 @media (min-width: 0px) and (max-width: 575.98px) {
-    .navbar-toggler {
-        margin-right: 0;
-    }
-
-    .nav-logo {
-        margin-left: 0;
-    }
-
     .dropdown-content__inner {
         display: flex;
         flex-wrap: wrap;
@@ -195,6 +188,10 @@ nav .nav-container {
 
     .btn-input {
         z-index: 0;
+    }
+
+    .nav-logo {
+        width: 45px;
     }
 }
 
