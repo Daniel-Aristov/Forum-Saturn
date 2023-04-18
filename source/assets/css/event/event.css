@@ -188,6 +188,20 @@
     overflow: hidden;
 }
 
+.btn-more-info-event {
+    border: none;
+    color: #484444;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: all 0.2s linear;
+    padding: 0;
+}
+
+.btn-more-info-event:hover {
+    color: #0e0e0e;
+    transition: all 0.2s linear;
+}
+
 .event-more-info a {
     color: black;
 }
