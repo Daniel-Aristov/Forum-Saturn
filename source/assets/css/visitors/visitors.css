@@ -1,12 +1,3 @@
-.category-article {
-    color: var(--bs-red);
-    font-size: 1.1rem;
-}
-
-.article-title {
-    font-size: 2.8rem;
-}
-
 .artile-text {
     font-size: 1.2rem;
     opacity: 0.9;

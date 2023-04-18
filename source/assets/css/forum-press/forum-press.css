@@ -1,26 +1,3 @@
-.section-forum-name {
-    font-size: 3rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--bs-white);
-}
-
-.forum-item__text {
-    font-size: 1.2rem;
-    padding: 0;
-    color: var(--bs-white);
-}
-
-.forum-item__subtitle {
-    color: var(--bs-white);
-    font-size: 1.2rem;
-    font-weight: bolder;
-    padding: 0;
-    margin-bottom: 6px;
-    margin-top: 20px;
-}
-
 .card-forum-press {
     margin-bottom: 25px;
     transition: all 0.2s linear;

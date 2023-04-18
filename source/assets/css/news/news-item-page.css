@@ -6,21 +6,6 @@
     align-items: flex-start;
 }
 
-.news-item__title__category {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.news-item__title {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.news-item__subtitle {
-    font-size: 1.2rem;
-    padding-top: 10px;
-}
-
 .news-item__date {
     font-size: 1rem;
     opacity: 0.9;
