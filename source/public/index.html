@@ -42,9 +42,10 @@
                         <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
                             <div class="card-img">
                                 <a href="#">
-                                    <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Возможности%20для%20участия.webp"
-                                         class="mx-auto d-block img-fluid" width="100%"
-                                         alt="">
+                                    <div class="card-img-wrapper">
+                                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Возможности%20для%20участия.webp"
+                                             class="m-auto">
+                                    </div>
                                     <span class="header-card-text">Возможности для участия</span>
                                 </a>
                             </div>
@@ -52,33 +53,31 @@
                         <div class="col-sm-12 col-md-12 col-lg-6 shadow-custom">
                             <div class="card-img">
                                 <a href="#">
-                                    <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
-                                         class="mx-auto d-block img-fluid"
-                                         width="100%" alt="">
+                                    <div class="card-img-wrapper"></div>
                                     <span class="header-card-text">Программа форума</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 align-self-end shadow-custom">
+                <div class="col-sm-12 col-md-6 col-lg-6 align-self-end shadow-custom mt-0 mt-sm-5">
                     <div class="card-img big-foto">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/big-img-header.webp"
-                                 class="mx-auto d-block img-fluid"
-                                 width="100%" alt="">
+                            <div class="card-img-wrapper-big">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/big-img-header.webp"
+                                     class="mx-auto d-block img-fluid"
+                                     width="100%" alt="">
+                            </div>
                             <span class="header-card-text fs-1">Что вы можете увидеть на нашем форуме 2023</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row mt-4 breakpoints gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
+            <div class="row mt-0 mt-lg-4 breakpoints gy-sm-5 gy-md-0 gy-lg-0 align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
-                                 class="mx-auto d-block img-fluid" width="100%"
-                                 alt="">
+                            <div class="card-img-wrapper"></div>
                             <span class="header-card-text">Партнеры</span>
                         </a>
                     </div>
@@ -86,9 +85,10 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Как%20добраться.webp"
-                                 class="mx-auto d-block img-fluid" width="100%"
-                                 alt="">
+                            <div class="card-img-wrapper">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Как%20добраться.webp"
+                                     class="m-auto">
+                            </div>
                             <span class="header-card-text shadow-custom">Как добраться</span>
                         </a>
                     </div>
@@ -96,18 +96,18 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Заглушка.webp"
-                                 class="mx-auto d-block img-fluid" width="100%"
-                                 alt="">
+                            <div class="card-img-wrapper"></div>
                             <span class="header-card-text">Регистрация</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 shadow-custom">
                     <div class="card-img">
-                        <a href="">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Проживание.webp"
-                                 class="mx-auto d-block img-fluid" width="100%" alt="">
+                        <a href="#">
+                            <div class="card-img-wrapper">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/Проживание.webp"
+                                     class="m-auto">
+                            </div>
                             <span class="header-card-text">Проживание</span>
                         </a>
                     </div>
@@ -121,7 +121,7 @@
         <div class="container-xxl">
             <div class="row gy-4 breakpoints">
                 <div class="col-12 col-lg-8 order-lg-2">
-                    <h2 class="news__title d-none d-sm-block d-md-block d-lg-none">Последние новости</h2>
+                    <h2 class="news__title d-block d-lg-none">Последние новости</h2>
                     <article class="news__item">
                         <p class="news__subtitle">Определена ключевая тема форума</p>
                         <div class="news__img">
@@ -149,7 +149,7 @@
                     </article>
                 </div>
                 <div class="col-12 col-lg-4 order-lg-1">
-                    <h2 class="news__title d-block d-sm-none d-md-none d-lg-block">Последние новости</h2>
+                    <h2 class="news__title d-none d-lg-block">Последние новости</h2>
                     <article class="news__item">
                         <p class="news__item-date">1 марта 2023</p>
                         <p class="p-0 mb-1">
@@ -204,7 +204,8 @@
                             <?= XTZ::getSvgSprite('icon-plus', 26, 26) ?>
                         </button>
                         <div class="moreInfo-speaker text-black">
-                            <p class="moreInfo-speaker-title d-block text-start my-sm-0 my-md-2 my-lg-2 px-3 pt-3">Нина Яныкина</p>
+                            <p class="moreInfo-speaker-title d-block text-start my-sm-0 my-md-2 my-lg-2 px-3 pt-3">Нина
+                                Яныкина</p>
                             <p class="moreInfo-speaker-subtitle d-block text-start my-0 px-3">Деловой альянс</p>
                             <button class="close-more-info">
                                 <?= XTZ::getSvgSprite('icon-close', 19, 19) ?>
@@ -412,99 +413,127 @@
             <div class="row g-0 justify-content-center">
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="//placehold.it/100x50/0289A7/fff" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="//placehold.it/300x300/0289A7/fff" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="//placehold.it/50x50/0289A7/fff" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>
                 <div class="col col-5 col-sm-4 col-md-3 col-lg-2">
                     <a href="#" class="partners__item">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
-                             alt="">
+                        <div class="partners-img-wrapper">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/partners.webp" class="img-fluid shadow-hover"
+                                 alt="">
+                        </div>
                         <p class="text-center fs-6 pb-0 pt-4 m-0 text-black">INDUSTRIAL Production</p>
                     </a>
                 </div>

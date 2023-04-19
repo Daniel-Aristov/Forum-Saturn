@@ -8,16 +8,26 @@
     padding: 0 20px 40px;
 }
 
-.partners__item img {
-    border: 2px solid var(--bs-grey);
+.partners-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
+    height: 150px;
+}
+
+.partners-img-wrapper img {
+    border: 2px solid var(--bs-grey);
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
 }
 
 .shadow-hover {
     transition: all 0.09s linear;
 }
 
-.partners__item:hover > .shadow-hover {
+.partners__item:hover .shadow-hover {
     box-shadow: -12px 12px 0 -1px var(--bs-shadow-red);
     transition: all 0.09s linear;
 }

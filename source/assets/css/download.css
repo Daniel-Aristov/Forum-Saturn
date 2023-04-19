@@ -5,10 +5,10 @@
     padding: 5px 15px;
     border: 3px solid var(--bs-shadow-red);
     cursor: pointer;
-    width: 95%;
     transition: all 0.1s linear;
     text-decoration: none;
     color: black;
+    margin-bottom: 10px;
 }
 
 .downloads__card:hover {
@@ -22,6 +22,7 @@
 }
 
 .downloads__card-icon img {
+    object-fit: cover;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -33,30 +34,12 @@
 }
 
 .downloads__card-title {
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 1.3rem;
 }
 
 .downloads__card-subtitle {
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 1rem;
     opacity: 0.9;
-}
-
-@media (min-width: 0px) and (max-width: 575.98px) {
-    .downloads__card {
-        width: 70%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .downloads__card {
-        width: 70%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .downloads__card {
-        width: 65%;
-    }
 }

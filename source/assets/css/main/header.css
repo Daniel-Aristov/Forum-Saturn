@@ -3,6 +3,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 .header__date {
@@ -35,7 +36,6 @@ header {
     font-weight: 800;
     font-size: 1.3rem;
     position: absolute;
-    z-index: 1000;
     letter-spacing: 2px;
     left: 20px;
     bottom: 20px;
@@ -44,28 +44,31 @@ header {
     text-shadow: 2px 2px 0 black;
 }
 
-.shadow-custom > .card-img img, .shadow-custom-blue > .card-img img  {
-    transition: all 0.1s linear;
-    box-shadow: none;
-}
-
-.shadow-custom:hover > .card-img img {
+.card-img:hover .card-img-wrapper,
+.card-img:hover .card-img-wrapper-big {
     box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
     transition: all 0.1s linear;
 }
 
 .card-img {
-    max-width: 100%;
     cursor: pointer;
     position: relative;
-    display: inline-block;
 }
 
-.card-img img {
+.card-img-wrapper {
+    min-height: 208px;
+    background-color: var(--bs-secondary);
+}
+
+.card-img-wrapper-big {
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
     background-size: cover;
-    position: center;
+    background-position: center;
     width: 100%;
-    height: auto;
+    min-height: 210px;
 }
 
 .big-foto img {
@@ -91,9 +94,7 @@ header {
     }
 
     .card-img img {
-        object-fit: cover;
-        background-size: cover;
-        position: center;
+        max-height: 200px;
     }
 
     .big-foto img {
@@ -106,10 +107,6 @@ header {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    header {
-        background-position: center;
-    }
-
     .header__title {
         font-size: 3.5rem;
     }
@@ -124,6 +121,14 @@ header {
         bottom: 50px;
     }
 
+    .card-img-wrapper {
+        max-height: 210px;
+    }
+
+    .card-img img {
+        max-height: 210px;
+    }
+
     .big-foto img {
         object-fit: cover;
         background-size: cover;
@@ -134,10 +139,6 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    header {
-        background-position: center;
-    }
-
     .header-card-text {
         font-size: 1.5rem;
         left: 20px;
@@ -145,6 +146,14 @@ header {
 
     .card-img {
         margin-bottom: 20px;
+    }
+
+    .card-img-wrapper {
+        max-height: 210px;
+    }
+
+    .card-img img {
+        max-height: 210px;
     }
 
     .big-foto img {
@@ -157,10 +166,6 @@ header {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    header {
-        background-position: center;
-    }
-
     .header-card-text {
         font-size: 1.2rem;
     }

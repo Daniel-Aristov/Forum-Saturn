@@ -181,10 +181,14 @@
     color: black;
 }
 
-.event-list-item img {
-    display: block;
+.company-img {
+    width: 150px;
+}
+
+.company-img img {
     width: 100%;
-    max-width: 150px;
+    object-fit: cover;
+    background-position: center;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
