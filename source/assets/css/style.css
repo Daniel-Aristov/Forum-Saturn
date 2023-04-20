@@ -47,6 +47,18 @@ html, body {
     html, body {
         font-size: 14px;
     }
+
+    .page-title {
+        font-size: 2.6rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+
+    .page-text {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
