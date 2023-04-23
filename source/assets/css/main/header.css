@@ -50,7 +50,7 @@ header {
 }
 
 .card-img-wrapper {
-    min-height: 208px;
+    min-height: 210px;
     background-color: var(--bs-secondary);
 }
 
@@ -66,8 +66,9 @@ header {
 }
 
 .big-foto img {
+    object-fit: cover;
     background-size: cover;
-    position: center;
+    background-position: center;
     width: 630px;
     height: 510px;
 }
