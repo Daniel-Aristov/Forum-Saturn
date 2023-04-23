@@ -44,12 +44,6 @@ header {
     text-shadow: 2px 2px 0 black;
 }
 
-.card-img:hover .card-img-wrapper,
-.card-img:hover .card-img-wrapper-big {
-    box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
-    transition: all 0.1s linear;
-}
-
 .card-img {
     cursor: pointer;
     position: relative;

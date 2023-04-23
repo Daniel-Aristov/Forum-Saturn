@@ -39,6 +39,24 @@ html, body {
     --bs-gutter-x: 8.0rem;
 }
 
+.shadow-hover {
+    --shadow-offset: 7px;
+    --shadow-z: 3px;
+    transition: box-shadow 0.1s linear;
+}
+.shadow-hover-2 {
+    --shadow-offset: 12px;
+    --shadow-z: -1px;
+    transition: box-shadow 0.09s linear;
+}
+
+.shadow-trigger:hover .shadow-hover,
+.shadow-trigger:hover .shadow-hover-2,
+.shadow-hover:hover,
+.shadow-hover-2:hover {
+    box-shadow: calc(-1*var(--shadow-offset)) var(--shadow-offset) 0 var(--shadow-z) var(--bs-shadow-red);
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
     .container-xxl {
         --bs-gutter-x: 1.5rem;

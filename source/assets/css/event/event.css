@@ -172,20 +172,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid var(--bs-grey);
+    background-position: center;
     width: 130px;
     height: 130px;
 }
 
 .company-img-wrapper img {
-    border: 2px solid var(--bs-grey);
-    background-position: center;
-    object-fit: contain;
+    object-fit: cover;
     max-height: 130px;
-}
-
-.company-img-wrapper:hover .shadow-hover {
-    box-shadow: -12px 12px 0 -1px var(--bs-shadow-red);
-    transition: all 0.09s linear;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
