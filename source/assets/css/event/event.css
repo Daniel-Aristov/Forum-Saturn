@@ -169,11 +169,6 @@
 }
 
 .company-img-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--bs-grey);
-    background-position: center;
     width: 130px;
     height: 130px;
 }

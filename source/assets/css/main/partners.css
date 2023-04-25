@@ -9,11 +9,6 @@
 }
 
 .partners-img-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--bs-grey);
-    background-position: center;
     width: 150px;
     height: 150px;
 }

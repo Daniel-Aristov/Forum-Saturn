@@ -52,9 +52,7 @@ header {
 .card-img-wrapper {
     min-height: 210px;
     background-color: var(--bs-secondary);
-}
-
-.card-img-wrapper-big {
+    background-position: center;
 }
 
 .card-img-wrapper img {

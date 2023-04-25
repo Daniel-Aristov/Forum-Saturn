@@ -48,7 +48,7 @@
     text-decoration: none;
     background-color: var(--bs-btn-red);
     color: var(--bs-white);
-    border: var(--bs-btn-border-color-red);
+    border: 2px solid var(--bs-btn-border-color-red);
     border-radius: 30px;
     padding: 8px 45px;
     transition: all 0.2s linear;

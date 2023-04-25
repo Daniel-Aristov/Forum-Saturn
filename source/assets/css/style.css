@@ -2,6 +2,13 @@ html, body {
     scroll-behavior: smooth !important;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fw-bolder {
+    font-weight: 800!important;
 }
 
 .page-title {
@@ -30,13 +37,19 @@ html, body {
 }
 
 .wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    flex: 1 0 auto;
 }
 
 .container-xxl {
     --bs-gutter-x: 8.0rem;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bs-grey);
+    background-position: center;
 }
 
 .shadow-hover {
@@ -55,6 +68,22 @@ html, body {
 .shadow-hover:hover,
 .shadow-hover-2:hover {
     box-shadow: calc(-1*var(--shadow-offset)) var(--shadow-offset) 0 var(--shadow-z) var(--bs-shadow-red);
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.form-select:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
