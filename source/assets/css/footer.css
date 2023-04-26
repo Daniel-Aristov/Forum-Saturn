@@ -54,7 +54,30 @@
     text-decoration: none;
 }
 
+.footer-lang a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
+    .footer__title {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .border-line {
+        border: none;
+        margin-bottom: 20px;
+    }
+
     .logo-footer {
         display: flex;
         justify-content: left;
@@ -63,21 +86,21 @@
     }
 
     .logo-footer img {
-        width: 32px;
-        height: 32px;
+        width: 52px;
+        height: 52px;
     }
 
     .company-name {
-        margin-top: 50px;
-        font-size: 0.7rem;
+        margin-top: 20px;
+        font-size: 0.8rem;
     }
 
     .footer__info p {
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.4rem;
     }
 
     .footer__info a {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .border-line {
@@ -85,13 +108,18 @@
     }
 
     .forum-name {
-        font-size: 0.5rem;
+        font-size: 1rem;
         padding-left: 0;
     }
 
+    .socials {
+        margin-top: 20px;
+    }
+
     .socials svg {
-        width: 13px;
-        height: 13px;
+        width: 19px;
+        height: 19px;
+        margin-right: 8px;
     }
 }
 
