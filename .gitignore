@@ -10,5 +10,4 @@ Thumbs.db
 
 build/
 node_modules/
-
-npm-debug.*
+package-lock.json
