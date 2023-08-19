@@ -1,0 +1,45 @@
+.downloads__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 15px;
+    border: 3px solid var(--bs-shadow-red);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.downloads__card:hover {
+    box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
+    color: black;
+}
+
+.downloads__card-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.downloads__card-icon img {
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.downloads__card__inner {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.downloads__card-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.downloads__card-subtitle {
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: 0.9;
+}

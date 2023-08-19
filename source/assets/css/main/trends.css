@@ -1,0 +1,28 @@
+.trends__title {
+    text-align: center;
+    color: var(--bs-white);
+    font-weight: bolder;
+    font-size: 2em;
+    padding-bottom: 50px;
+}
+
+.trends__link {
+    display: block;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid var(--bs-white);
+    border-radius: 30px;
+    color: var(--bs-white);
+    font-style: normal;
+    font-weight: bolder;
+    padding: 8px 20px;
+    transition: all 0.2s linear;
+}
+
+.trends__link:hover {
+    transition: all 0.2s linear;
+    background-color: var(--bs-white);
+    color: var(--bs-red);
+}

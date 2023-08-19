@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/color.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/navigation.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/account/authorization.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/contacts.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/style.css">
+
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- @@INC:(block/navigation/default.html) -->
+<div class="wrapper">
+    <div class="form-wrap py-5">
+        <div class="container-xxl">
+            <h2 class="title fw-bold fs-2">Онлайн-регистрация</h2>
+            <form class="col-sm-12 col-md-12 col-lg-9">
+                <div>
+                    <div class="form-title mt-4 fw-bold fs-4">Создайте аккаунт пользователя</div>
+                    <p class="form-subtitle fs-5">В вашем личном кабинете на веб-сайте у вас есть доступ к вашим
+                        билетам,
+                        вашим
+                        статьям, отмеченным звездами, вашей подписке на новостную службу или вашим личным данным в любое
+                        время после регистрации. Используя свои данные доступа, вы также можете войти на все другие
+                        веб-сайты </p>
+                </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 form-title-block">
+                        <p class="form-title my-2 fw-bold fs-4 form-title-border">Персональные данные</p>
+                        <p class="my-2 fs-5 mandatory-text">* Обязательные поля</p>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp"
+                               placeholder="Фамилия*">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                               placeholder="Имя*">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="patronymic" aria-describedby="patronymicHelp"
+                               placeholder="Отчество*">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 form-title-block">
+                        <p class="form-title my-2 fw-bold fs-4 form-title-border">Данные для входа</p>
+                        <p class="my-2 fs-5 mandatory-text">* Обязательные поля</p>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                               placeholder="Адрес электронной почты*">
+                        <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" class="form-control" id="InputPassword" placeholder="Пароль*">
+                        <div id="passwordHelp" class="form-text">Пароль не менее 6 символов длинной.</div>
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" class="form-control" id="InputPasswordRepeat"
+                               placeholder="Повторите пароль*">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 form-title-block">
+                        <p class="form-title my-2 fw-bold fs-4 form-title-border">Данные о компании</p>
+                        <p class="my-2 fs-5 mandatory-text">* Обязательные поля</p>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="сompany" aria-describedby="сompanyHelp"
+                               placeholder="Наименование компании*">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" id="post" aria-describedby="postHelp"
+                               placeholder="Должность*">
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp"
+                               placeholder="Телефон*">
+                    </div>
+                    <select class="form-select" aria-label="Профиль компании*">
+                        <option selected>Выберите профиль компании</option>
+                        <option value="1">Промышленность</option>
+                        <option value="2">Образование</option>
+                        <option value="3">Органы исполнительной власти</option>
+                        <option value="3">Средства массовой информации</option>
+                        <option value="3">Другое</option>
+                    </select>
+                </div>
+
+                <div class="mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 form-title-block">
+                        <p class="form-title my-2 fw-bold fs-4 form-title-border">Персональные данные</p>
+                        <p class="my-2 fs-5 mandatory-text">* Обязательные поля</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center captha-block">
+                        <div class="g-recaptcha" data-sitekey="6LcYtSQTAAAAAPNjrDKIiFFhwwcpaqzIkxwxxZMS"></div>
+                        <p class="ms-sm-0 ms-lg-5 fs-sm-4 fs-lg-5" style="opacity: 0.8">Чтобы избежать злоупотреблений,
+                            пожалуйста, <br>
+                            подтвердите капчу безопасности. Спасибо!</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-4">
+                    <div class="my-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Ознакомление с Уведомлением о защите
+                            данных</label>
+                        <div id="checkboxhelp1" class="form-text">Я должным образом ознакомился с Уведомлением о защите
+                            данных Deutsche Messe AG, содержащим дополнительную информацию об обработке моих
+                            персональных
+                            данных в соответствии с Общим регламентом ЕС по защите данных (GDPR), включая обработку
+                            данных в
+                            маркетинговых целях и передачу дочерним компаниям и торговым партнерам Deutsche Messe AG
+                            имои
+                            права в соответствии с GDPR.
+                        </div>
+                    </div>
+                    <div class="my-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Я хотел(а) бы подписаться на службу
+                            новостей</label>
+                        <div id="checkboxhelp2" class="form-text">Я должным образом ознакомился с Уведомлением о защите
+                            данных Deutsche Messe AG, содержащим дополнительную информацию об обработке моих
+                            персональных
+                            данных в соответствии с Общим регламентом ЕС по защите данных (GDPR), включая обработку
+                            данных в
+                            маркетинговых целях и передачу дочерним компаниям и торговым партнерам Deutsche Messe AG
+                            имои
+                            права в соответствии с GDPR.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn fw-bold form-btn">Создать аккаунт</button>
+            </form>
+            <section class="py-5 contacts">
+                <div class="container-xxl">
+                    <h2 class="text-center">Контакты</h2>
+                    <div class="row breakpoints d-flex justify-content-center">
+                        <div class="col-lg-6 ">
+                            <div class="contacts__card">
+                                <div class="contacts__card-avatar">
+                                    <img src="//placehold.it/120x120/0289A7/fff" alt="avatar">
+                                    <a href="#" class="contacts__card-mail-btn">E-mail</a>
+                                </div>
+                                <div class="contacts__card__inner">
+                                    <h2 class="contacts__card-title">Иван Иванов</h2>
+                                    <p class="contacts__card-subtitle">Инженер</p>
+                                    <p class="contacts__card-subtitle">+7-920-152-65-78</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contacts__card">
+                                <div class="contacts__card-avatar">
+                                    <img src="//placehold.it/120x120/0289A7/fff" alt="avatar">
+                                    <a href="#" class="contacts__card-mail-btn">E-mail</a>
+                                </div>
+                                <div class="contacts__card__inner">
+                                    <h2 class="contacts__card-title">Евгений Смирнов</h2>
+                                    <p class="contacts__card-subtitle">Программист</p>
+                                    <p class="contacts__card-subtitle">+7-914-157-89-56</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+    <!-- @@INC:(block/footer/default.html) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/app.js"></script>
+</body>
+</html>

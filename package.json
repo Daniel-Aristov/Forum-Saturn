@@ -1,0 +1,32 @@
+{
+  "name": "bitrix-gulp-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp",
+    "tasks": "gulp --tasks",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "applause": "^2.0.4",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
+    "del": "^6.1.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace-task": "^2.0.1",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss-csso": "^6.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

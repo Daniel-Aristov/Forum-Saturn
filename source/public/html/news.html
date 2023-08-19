@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/color.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/navigation.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/news/news.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/news/category-news.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/assets/css/style.css">
+
+    <title>Новости</title>
+</head>
+<body>
+    <!-- @@INC:(block/navigation/default.html) -->
+<div class="wrapper">
+    <section class="py-4 bg-red">
+        <div class="container-xxl">
+            <div class="news__category mx-1">
+                <buttun class="news-category-btn">Цифровые двойники</buttun>
+                <buttun class="news-category-btn">Новые материалы</buttun>
+                <buttun class="news-category-btn">Индустрия 4.0</buttun>
+                <buttun class="news-category-btn">VR&AR</buttun>
+                <buttun class="news-category-btn all-btn category-active">Все новости</buttun>
+                <buttun class="news-category-btn all-btn">Все разделы</buttun>
+            </div>
+        </div>
+    </section>
+    <section class="text-white py-5 bg-dark-blue">
+        <div class="container-xxl">
+            <h2 class="page-title">Топ новостей</h2>
+            <div class="row breakpoints mt-4">
+                <div class="col-lg-8">
+                    <article class="top-news__item-main top-news__item-line">
+                        <div class="top-news__news-img">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/main-news.webp" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Индустриальная трансформация</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="top-news__item-title">Премьера
+                            промышленной трансформации в октябре на форуме</a>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="top-news__item top-news__item-line">
+                        <div class="top-news__news-img">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/сжатый%20воздух%20и%20вакуум.webp" width="100%"
+                                 alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Германия - страна компрессоров и
+                            мыслителей</a>
+                    </article>
+                    <article class="top-news__item top-news__item-line">
+                        <div class="top-news__news-img">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/будущее%20работы.webp" width="100%" alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ
+                            БУДУЩЕЕ" способстует развитию карьеры</a>
+                    </article>
+                </div>
+            </div>
+            <div class="row breakpoints mt-4">
+                <div class="col-lg-4">
+                    <h2 class="top-last-title">Последние новости</h2>
+                    <article class="top-news__item top-news__item-line">
+                        <p class="top-news__item-tema">Сжатый воздух и вакуум</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Германия - страна компрессоров и
+                            мыслителей</a>
+                    </article>
+                    <article class="top-news__item top-news__item-line">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ
+                            БУДУЩЕЕ" способстует развитию карьеры</a>
+                    </article>
+                    <article class="top-news__item top-news__item-line">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ
+                            БУДУЩЕЕ" способстует развитию карьеры</a>
+                    </article>
+                    <article class="top-news__item top-news__item-line">
+                        <p class="top-news__item-tema">Будущее работы</p>
+                        <p class="top-news__item-date">8 марта 2023</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html"
+                           class="top-news__item-title top-news__item-title-submain">Инициатива молодых талантов "ТВОЕ
+                            БУДУЩЕЕ" способстует развитию карьеры</a>
+                    </article>
+                </div>
+                <div class="col-lg-8">
+                    <article class="top-news__item-main top-news__item-line">
+                        <div class="top-news__news-img">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/автоматизация%20логистики.webp" width="100%"
+                                 alt="news">
+                        </div>
+                        <p class="top-news__item-tema">Автоматизация логистики</p>
+                        <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="top-news__item-title">Новое
+                            поколение TMS-системы для автоматизации транспортной компании</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last-news-category bg-white">
+        <div class="container-xxl">
+            <div class="row breakpoints justify-content-center">
+                <div class="col-lg-12">
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-news-category__card">
+                        <div class="last-news-category__card__inner">
+                            <div class="last-news-card__img"><img src="//placehold.it/340x240/0289A7/fff" alt="img">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <p class="card-category">Карбон-нейтральная продукция</p>
+                                    <p class="card-date">7 марта 2023</p>
+                                </div>
+                                <a href="<?=SITE_TEMPLATE_PATH?>/html/news-item.html" class="card-title">Возведение в
+                                    квадрат генерации сжатого воздуха</a>
+                                <p class="card-text">Есть над чем задуматься: акционеры крупнейших компаний освещают
+                                    чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                                    разумеется, функционально разнесены на независимые элементы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pagination">
+        <div class="container-xxl">
+            <nav aria-label="Навигация">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Предыдущая">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item" disabled><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Следующая">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</div>
+    <!-- @@INC:(block/footer/default.html) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark-blue pt-0">
+    <div class="nav-container">
+
+        <div class="--nav-meta w-100 justify-content-between d-none d-lg-flex" style="margin-bottom: -1.5rem">
+            <div class="date d-flex">asd</div>
+            <div class="meta d-flex">
+                <div class="dropdown-account">
+                    <a href="<?=SITE_TEMPLATE_PATH?>/html/error.html" class="btn btn-stars mt-1"><?= XTZ::getSvgSprite('icon-star', 13, 13) ?> ИЗБРАННОЕ</a>
+                    <button class="btn btn-input btn-meta-login">МОЙ АККАУНТ &#9660;</button>
+                    <div class="dropdown-content-account">
+                        <span class="droapdown-note">Профиль</span>
+                        <p class="my-3"><a href="<?=SITE_TEMPLATE_PATH?>/html/dashboard.html">Дашборд</a></p>
+                        <p class="my-3"><a href="<?=SITE_TEMPLATE_PATH?>/html/account.html">Аккаунт пользователя</a></p>
+                        <p class="my-3"><a href="<?=SITE_TEMPLATE_PATH?>/html/news.html">Сервис новостей</a></p>
+                        <p class="mt-3"><a href="<?=SITE_TEMPLATE_PATH?>/index.html">Выйти</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="navbar-brand nav-logo" href="<?=SITE_TEMPLATE_PATH?>/index.html"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/logo.webp" height="70" alt="logo"
+                                                                loading="lazy"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="dropdown d-lg-none mb-2">
+                    <a href="<?=SITE_TEMPLATE_PATH?>/html/error.html" class="btn btn-stars mx-2"><?= XTZ::getSvgSprite('icon-star', 13, 13) ?> ИЗБРАННОЕ</a>
+                    <a class="btn btn-input btn-meta-login mx-2" aria-current="page" href="#">МОЙ АККАУНТ &#9660;</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/forum.html">Форум</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-content__inner">
+                            <div><a href="#">Продукты</a></div>
+                            <div><a href="#">Разделы</a></div>
+                            <div><a href="#">Партнеры</a></div>
+                            <div><a href="#">Инновации</a></div>
+                            <div><a href="#">Технологии</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/event.html">События</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/news.html">Новости</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-content__inner">
+                            <div><a href="#">Цифровые двойники</a></div>
+                            <div><a href="#">Новые материалы</a></div>
+                            <div><a href="#">Индустрия 4.0</a></div>
+                            <div><a href="#">VR&AR</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/visitors.html">Посетителям</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/participants.html">Участникам</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/press.html">Пресса</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/gallery.html">Галерея</a>
+                </li>
+                <li class="dropdown">
+                    <a class="menu-item text-white fs-5 fw-bold py-2" aria-current="page"
+                       href="<?=SITE_TEMPLATE_PATH?>/html/about.html">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,43 @@
+.culture__title {
+    text-align: center;
+    color: var(--bs-white);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.card-cult {
+    background-color: var(--bs-primary);
+    border: none;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card-cult img {
+    background-size: cover;
+    position: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card__title {
+    text-transform: uppercase;
+    color: var(--bs-white);
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding: 15px 0 0;
+    margin: 0;
+}
+
+.card-text {
+    text-align: justify;
+    color: var(--bs-white);
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin: 0;
+}
