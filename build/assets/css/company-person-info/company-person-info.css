@@ -1,0 +1,30 @@
+.company-person-info-img-wrapper {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.company-person-info-img-wrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 400px;
+}
+
+.event__card {
+    display: block;
+    padding: 5px 15px;
+    border: 2px solid var(--bs-grey);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.event__card:hover {
+    box-shadow: -7px 7px 0 3px var(--bs-shadow-red);
+    color: black;
+}
+
+.event-date-block {
+    color: red;
+}

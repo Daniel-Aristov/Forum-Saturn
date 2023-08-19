@@ -1,0 +1,41 @@
+.artile-text {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.article-img {
+    float: right;
+    width: 380px;
+    height: 260px;
+}
+
+.menu-accordion {
+    border-bottom: 2px solid var(--bs-grey);
+}
+
+.menu-title {
+    border-bottom: 2px solid var(--bs-grey);
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    color: black;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+}
+
+.accordion-button:focus {
+    border: none;
+    outline: none;
+    background-color: var(--bs-grey);
+    box-shadow: none;
+}
+
+.accordion-body {
+    color: black;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding: 15px 10px 30px;
+}

@@ -1,0 +1,39 @@
+:root {
+    --bs-primary: #02385A;
+    --bs-secondary: #04ADC0;
+    --bs-white: white;
+    --bs-grey: #e9ecef;
+    --bs-red: red;
+    --bs-dark-red: #a20f0f;
+
+    --bs-btn-red: red;
+    --bs-btn-white: white;
+    --bs-btn-border-color-red: red;
+    --bs-btn-border-color-white: white;
+
+    --bs-shadow-red: rgb(206, 5, 5);
+}
+
+.bg-dark-blue {
+    background-color: var(--bs-primary);
+}
+
+.bg-light-blue {
+  background-color: var(--bs-secondary);
+}
+
+.bg-white {
+  background-color: var(--bs-white);
+}
+
+.bg-grey {
+  background-color: var(--bs-grey);
+}
+
+.bg-dark-red {
+    background-color: var(--bs-dark-red);
+}
+
+.bg-red {
+  background-color: var(--bs-red);
+}
