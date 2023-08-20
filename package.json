@@ -6,9 +6,7 @@
   "license": "ISC",
   "scripts": {
     "build": "gulp build",
-    "start": "gulp",
-    "tasks": "gulp --tasks",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "dependencies": {
     "applause": "^2.0.4",

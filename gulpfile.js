@@ -37,7 +37,6 @@ exports.copy = copy;
 const html = () => {
   return gulp.src([
     "source/public/**/*.html",
-    // Skip include templates
     "!source/public/include/**/*.html",
   ], {
     base: 'source/public',
@@ -45,7 +44,6 @@ const html = () => {
     .pipe(
       gulpReplace({})
     )
-    .pipe(htmlmin({ /* collapseWhitespace: true */ }))
     .pipe(gulp.dest(baseDir));
 };
 exports.html = html;
@@ -56,9 +54,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(postcss([
       autoprefixer(),
-      // csso(),
     ]))
-    // .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(baseDir + "/assets/css"))
     .pipe(sync.stream());
 };
@@ -67,8 +63,7 @@ exports.styles = styles;
 // * Scripts
 const scripts = async () => {
   return gulp.src("source/assets/js/**/*.js")
-    //.pipe(terser())
-    //.pipe(rename({ suffix: '.min' }))
+    .pipe(terser())
     .pipe(gulp.dest(baseDir + "/assets/js"))
     .pipe(sync.stream());
 };
@@ -78,7 +73,6 @@ exports.scripts = scripts;
 const copyImages = () => {
   return gulp.src([
     "source/assets/img/**/*.{png,jpg,svg}",
-    // Skip svg sprites
     "!source/assets/img/sprites/**/*.svg",
   ], {
     base: "source",
@@ -135,7 +129,6 @@ const createSprite = () => {
 exports.createSprite = createSprite;
 
 const assetsImagesBuild = gulp.parallel(
-  // copyImages,
   optimizeImages,
   createWebp,
   createSprite,
@@ -148,7 +141,6 @@ const build = gulp.series(
   copy,
   gulp.parallel(
     html,
-    // stylesSass,
     styles,
     scripts,
     assetsImagesBuild,
@@ -180,8 +172,6 @@ const reload = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch("source/**/*.html", gulp.series(html, reload));
-  // gulp.watch("source/assets/sass/**/*.scss", gulp.series(stylesSass));
-  // gulp.watch("source/assets/sass/**/*.css", gulp.series(styles));
   gulp.watch("source/assets/css/**/*.css", gulp.series(styles));
   gulp.watch("source/assets/js/*.js", gulp.series(scripts));
   gulp.watch("source/assets/img/**/*", gulp.series(assetsImagesBuild));
